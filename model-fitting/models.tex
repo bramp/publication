@@ -1,0 +1,143 @@
+%input "models.bib"
+
+\documentclass[a4paper]{sig-alternate}
+%\documentclass[letterpaper,nocopyrightspace]{acm_proc_article-sp}
+\sloppy % makes TeX less fussy about line breaking
+
+%for PDF features - http://www.ce.cmu.edu/~kijoo/latex2pdf.pdf
+\usepackage[pdftex,colorlinks]{hyperref} % For the bookmark/hyperlinks
+
+\usepackage{scrpage2}
+\usepackage[nofancy]{svninfo}
+\svnInfo $Id:$
+
+% for \sout
+\usepackage{ulem}
+\normalem
+
+% Some code to add a footer to the page
+\cfoot[]{{\footnotesize\emph{Rev: \svnInfoRevision, \svnInfoTime~\svnInfoLongDate}}}%
+\pagestyle{scrheadings}%
+
+% style of the figure captions
+\newcommand{\capttext}{\protect\centering\em}
+
+%\setlength{\pdfpagewidth}{8.5in}
+%\setlength{\pdfpageheight}{11in}
+
+\hypersetup{%
+    pdftitle={},
+    pdfauthor={},
+    pdfkeywords={},
+    bookmarksnumbered,
+    pdfstartview={FitV},
+    linkcolor={black},%: Color for normal internal links.
+    anchorcolor={black},%: Color for anchor text.
+    citecolor={black},%: Color for bibliographical citations in text.
+    filecolor={black},%: Color for URLs which open local files.
+    menucolor={black},%: Color for Acrobat menu items.
+    pagecolor={black},%: Color for links to other pages
+    urlcolor={black}%: Color for linked URLs.
+}
+
+%\numberofauthors{3}
+\author{Andrew Brampton}
+\date{}
+
+\begin{document}
+
+\title{Quick notes on model fitting}
+\maketitle
+
+\section{Fitting}
+Some useful variables:
+
+\begin{itemize}
+  \item $y_{i}$ is the observed at $x_{i}$
+  \item $\hat{y}_{i} = m(x_{i},...)$ is the value given by the model at $x_{i}$
+  \item $\bar{y}$ is the mean value of $y_{1}...y_{n}$
+  \item $n$ is the number of values.
+\end{itemize}
+
+\subsection{Residual Sum of Squares}
+The residual sum of squares or sum of the squares of the errors:
+\begin{displaymath}
+    RSS(\theta) = \sum_{i=1}^n w_{i}(y_{i} - m(x_{i}, \theta))^{2}
+\end{displaymath}
+
+\begin{itemize}
+  \item $w_{i}$ is the weighting value.
+  \item $\theta$ is the parameters to give the model.
+\end{itemize}
+
+$RSS$ is ordinary least square (OLS) if the the weighted values are the same, otherwise it is considered a weighted least square (WLS).
+
+By using the Gausss-Newton algorithm we can iteratively minimize $RSS$ by varying $\theta$ until we have a global minimum. However sometimes the algorithm will find local minimums or not converge.
+
+\subsection{Variance}
+Estimating the variance:
+\begin{displaymath}
+    \hat{\sigma}^{2} = \frac{RSS}{ ( n - 2 ) }
+\end{displaymath}
+
+\section{Goodness of fit}
+    Once a model has been found a goodness of fit test is used to determine how well the model matches.
+
+\subsection{R Squared $R^{2}$}
+
+Coefficient of determination aka $R^{2}$:
+\begin{displaymath}
+    R^{2} = \frac{SS_{R}}{SS_{T}} = 1 - \frac{SS_{E}}{SS_{T}}
+\end{displaymath}
+
+The regression sum of squares:
+\begin{displaymath}
+    SS_{R} = \sum_{i=1}^n (\hat{y}_{i} - \bar{y})^{2}
+\end{displaymath}
+
+The total sum of squares:
+\begin{displaymath}
+    SS_{T} = \sum_{i=1}^n (y_{i} - \bar{y})^{2}
+\end{displaymath}
+
+The sum of squared errors (the same as RSS without the weight):
+\begin{displaymath}
+    SS_{E} = \sum_{i=1}^n (y_{i} - \hat{y}_{i})^{2}
+\end{displaymath}
+
+\subsection{Kolmogorov-Smirnov Test}
+The KS test compares the empirical distribution function (ECDF) with the cumulative distribution function (CDF). It simplest measures the largest distance between the two functions.
+\begin{displaymath}
+    KS = max_{i=1...n} ( F(y_{i}) - E(y_{i}) )
+\end{displaymath}
+where $E(y_{i})$ is the empirical cumulative distribution at $y_{i}$
+\begin{displaymath}
+    E(y_{i}) = \frac{1}{n} \sum_{i=1}^n I_{y_{i} \leq y}
+\end{displaymath}
+$F(y_{i})$ is the theoretical cumulative distribution of the model at $y_{i}$\\
+
+\subsection{Pearson's Chi-Square Test }
+Pearson's chi-square is the original and most widely-used chi-square test, and is commonly refered to as just the Chi-Square test.
+\begin{displaymath}
+    chi^2 = \sum_{i=1}^n \frac{ ( y_{i} - \hat{y}_{i} )^2 } {\hat{y}_{i}}
+\end{displaymath}
+
+Chi-square is calculated by finding the difference between each observed and theoretical frequency for each possible outcome, squaring them, dividing each by the theoretical frequency, and taking the sum of the results
+
+%References:
+%
+%@BOOK{texbook,
+%   author = "Sandord Weisberg",
+%   title= "Applied Linear Regression",
+%   publisher = "Wiley",
+%   year = 2005
+%   }
+%
+%http://en.wikipedia.org/wiki/Coefficient_of_determination
+%http://en.wikipedia.org/wiki/Pearson%27s_chi-square_test
+%http://en.wikipedia.org/wiki/Kolmogorov-Smirnov_test
+%http://www.itl.nist.gov/div898/handbook/eda/section3/eda35g.htm
+%eprob.math.nsysu.edu.tw/LomnWeb/homepage/class/92/kstest/kolmogorov.pdf
+
+
+\end{document} 

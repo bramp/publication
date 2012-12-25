@@ -12,3 +12,5 @@ ivod/NOSSDAV07 - "Characterising user interactivity for sports video-on-demand" 
 ivod/NOSSDAV07-slides - Slides for NOSSDAV'07
 ivod/MMSJ - "Characterising and Exploiting Workloads of Highly Interactive Video-on-Demand" in Multimedia Systems Journal Feb 2009
 
+model-fitting - One page on model fitting
+
