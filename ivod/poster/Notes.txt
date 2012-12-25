@@ -1,0 +1,60 @@
+* What we wanted to find out
+ - Understand how people would use interactive TV
+ - Effect of advanced interactive functions (bookmarking)
+ - Generate models to drive future simulations etc.
+ 
+* What we did
+ - Set up VoD system (and interface)
+ - Gathered logs over ~5 week period (World Cup)
+ - Analysed results
+ 
+* What we found out
+ - Bookmarks' influence
+   - Different from classic start-to-finish
+ - Frequency of actions
+ - Sequence prediction
+ - Jump graph
+ - Inter-seek/Session times
+ - Bookmark/sought distance (penalty/placement issue)
+   - Automatic repositioning
+ - Models
+
+* Why its useful (Conclusions/Outlook)
+More efficient caching/replication
+
+------
+
+Include table of models
+Include table of actions (maybe summarise) (barchart above button symbols)
+
+Simple control annotations
+
+Interseek/Session times - how impatient users are, how little of the overall content they view
+
+Jump graph - shows the path/actions of users through the content (& clustering)
+  - why is the plot useful
+
+Prediction diagram - probablities of users moving from bookmark to bookmark
+  - find out what a user will do in advance, and prepare accordingly
+  
+When users are presented with bookmarks, it highly influences their behaviour. This can be seen from the high usage of the bookmark controls (Fig 2), as well as the increased popularity around the bookmarks (Fig 1). This is clearly different from the standard start-to-finish playback model.
+
+Users spent a very short time viewing the video and were impatient when moving around the video (Fig 3). This impacts the usefulness of existing techniques to deliver video across the Internet.
+
+We wished to gain insight into the next-generation of interactive TV, however there are no publicly available suitable data. Thus we ran our own experiments, this allowed us to study the effect of advanced interactivity on a Video-on-Demand system, as well as derive models for future simulations.
+
+To achieve our goal, a web-based Video-on-Demand was setup with novel interactive features. Logs of all user actions were recorded over approximately a 5 week period during the 2006 FIFA World Cup.
+
+Afterwards, the logs were analysed to reveal characteristics of the users of this highly interactive system.
+
+Users typically viewed bookmarks and it can be seen the order that they are viewed in is similar between users (Fig 4). Because users all follow a similar pattern (Fig 5), they become predictable and thus strategies can be developed to exploit this behaviour.
+
+To aid in future development of techniques to exploit the behaviour of highly interactive users, we derived several models to reproduce and help understand their behaviour (Table 1)
+
+---
+
+Overall, these results show a distinct difference from the classical start-to-finish playback model. Specfically, with bookmarks highly influencing users’ behaviour. In the future we will create algorithms to exploit this new interactivity model. We also plan to look at this kind of interactivity in other genres, such as other sports, news, music videos and so on. 
+
+* Hotspot detection
+* Auto-bookmark creation
+* Moving bookmarks

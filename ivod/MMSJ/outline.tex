@@ -1,0 +1,245 @@
+\documentclass[a4paper]{article}
+%\documentclass[letterpaper,nocopyrightspace]{acm_proc_article-sp}
+\sloppy % makes TeX less fussy about line breaking
+
+%for PDF features - http://www.ce.cmu.edu/~kijoo/latex2pdf.pdf
+\usepackage[pdftex,colorlinks]{hyperref} % For the bookmark/hyperlinks
+
+\usepackage{scrpage2}
+\usepackage[nofancy]{svninfo}
+\svnInfo $Id: outline.tex 1808 2007-10-03 09:00:01Z bramp $
+
+\usepackage{changebar}
+
+% Some code to add a footer to the page
+\cfoot[]{{\footnotesize\emph{Rev: \svnInfoRevision, \svnInfoTime~\svnInfoLongDate}}}%
+\pagestyle{scrheadings}%
+
+\newcommand{\note}[1]{
+    {~\\~\color{red}\sf #1 }
+}
+
+\hypersetup{%
+    pdftitle={},
+    pdfauthor={Andrew Brampton},
+    pdfkeywords={},
+    bookmarksnumbered,
+    pdfstartview={FitV},
+    linkcolor={black},%: Color for normal internal links.
+    anchorcolor={black},%: Color for anchor text.
+    citecolor={black},%: Color for bibliographical citations in text.
+    filecolor={black},%: Color for URLs which open local files.
+    menucolor={black},%: Color for Acrobat menu items.
+    urlcolor={black}%: Color for linked URLs.
+}
+
+%\numberofauthors{3}
+\author{}
+\date{}
+
+\begin{document}
+
+\title{Worldcup Journal Paper Outline}
+\maketitle
+
+%\begin{abstract}
+%This space left intentionally blank
+%\end{abstract}
+
+%\section{Plan of Attack}
+%This is what I need to do to finish Worldcup Paper 2, and is a summary of what the paper will contain.
+%
+%\begin{itemize}
+%  \item Title: Autonomic Techniques to Improve Delivery of Interactive Content
+%
+%  \item Introduce the experiment and previous work
+%
+%  \item Talk about bookmarks moving, and discuss algorithms
+%    \begin{itemize}
+%        \item Show from original results how moving the bookmark reduced seeking
+%        \item Show from new experience that the moving algorithm worked, and reduced seeks
+%
+%        \item Why $\alpha=0.1$? Why have different $\alpha$ for forward? How can we test this without re-running experiments?
+%    \end{itemize}
+%
+%  \item Talk about new music experiment, and show how similar results hold true
+%    \begin{itemize}
+%        \item Find a mathematical way to show the football and the music results are similar
+%    \end{itemize}
+%
+%  \item Pre-fetching, discuss the different strategies
+%    \begin{itemize}
+%        \item Show how accurate/wasteful each one is.
+%        \item Show the benefits (ie zero seek latency).
+%        \item Talk about collecting this data in real time and using hybrid SequenceNext/Preditive approach
+%    \end{itemize}
+%
+%  \item Ideas that seem to have been forgotten about
+%    \begin{itemize}
+%        \item Hot Spot Detection, position, length, how?
+%
+%        \item Non-Sequential Multicast - The idea of streaming the video non-sequentially, or streaming just hotspots. Not sure this fits in.
+%    \end{itemize}
+%
+%\end{itemize}
+
+The journal paper can be organised in two main ways. This is what the journal paper could look like, and what areas need more work. The new material is marked with think lines and the material with some changes has thinner lines.
+
+\subsection{Version 1 - Intermingled}
+This version has the analysis of the Eurovision and Worldcup together, followed by a section of new techniques. Pros: More concise analysis. Cons: Hard to identify  the new analysis material.
+
+\begin{itemize}
+
+    \item Title: Exploiting User Interactivity in Video-on-Demand Systems
+
+    \item Introduce the lack of understanding of user's behaviours in interactive content
+
+    \item Related Work
+
+    \item Experiment Setup
+        \note{This can mostly be copied from the original paper}
+
+        \begin{itemize}
+            \item Describe the setup of the VoD system and interface
+
+\cbstart
+            \item Talk about the talk two main experiments, Worldcup and Eurovision
+            \item Explain all the types of content we provided
+\cbend
+        \end{itemize}
+
+\cbstart
+    \item Analysis (Characterising the user's behaviours for all experiments)
+        \note{We have all these results, they just need to be checked and written down formally}
+
+        \begin{itemize}
+            \item Interactions (The amount of use of each interactive feature)
+
+            \item Popularity (The popularity of objects/segments, and show how these can be modelled and how both sets of results have similar models)
+
+            \item Longevity (How the popularity changed over time, and models of this)
+
+            \item Session Length, and Inter-seek Time (How long users stayed, and how long each viewing spurt was, with models for both sets of data)
+
+            \item Sequences (How people followed a similar pattern of bookmarks, use a tree instead of the current silly CDF we use)
+
+\cbend
+\cbstart[7pt]
+            \item Bookmark Length (Discuss how the bookmark length can be modelled)
+\cbend
+\cbstart
+            \item Models (Summaries all the models with parameters, and basically give everyone enough information to run their own experiments)
+\cbend
+        \end{itemize}
+
+\cbstart[7pt]
+    \item New Techniques (Exploiting this user behaviour)
+        \note{Most of the work should go here}
+
+        \begin{itemize}
+
+            \item Moving Bookmark
+                \begin{itemize}
+                    \item Note how we noticed some bookmarks were incorrectly placed and how we could reduce \# of seeks if moved.
+                    \item Discuss the moving bookmark algorithm
+                    \item Discuss setup of experiment and results
+                    \note{Currently I can show the bookmarks did indeed move, but I can't show that the number of seeks was reduced}
+                \end{itemize}
+
+            \item Predictive Pre-fetching
+                \begin{itemize}
+                    \item Discuss what this is, and the different algorithms developed.
+                    \item Show results (accurate/wasteful), and benefits (ie zero seek latency).
+                    \item Talk about collecting this data in real time and using hybrid SequenceNext/Preditive approach
+
+                    \note{We have results for this, but I'm not sure what I'm going to show is the best way to show it. I don't think I have the true feel for the topic. Also I say pre-fetching can reduce the load on the server. I don't have code/metrics to show that. Any suggestions?}
+                \end{itemize}
+
+        \end{itemize}
+\cbend
+
+    \item Conclusion and Future Work
+        \note{Conclusions are easy, but what future work? Talk about determining things like prediction data in real time?}
+
+\end{itemize}
+
+\subsection{Version 2 - Separated}
+This version has the two analysis sections, one for the Worldcup and one for the Eurovision, followed by a section of new techniques. Pros: Flows better with what we actually did. Easy to find the new material. Cons: Repetitive analysis
+
+\begin{itemize}
+
+    \item Title: Exploiting User Interactivity in Video-on-Demand Systems
+
+    \item Introduce the lack of understanding of user's behaviours in interactive content
+
+    \item Related Work
+
+    \item Experiment Setup
+        \note{This can mostly be copied from the original paper}
+
+        \begin{itemize}
+            \item Describe the setup of the VoD system and interface
+
+\cbstart
+            \item Talk about the talk two main experiments, Worldcup and Eurovision
+            \item Explain all the types of content we provided
+\cbend
+        \end{itemize}
+
+    \item Worldcup Analysis (Characterising the user's behaviours from the Worldcup experiment)
+        \begin{itemize}
+            \item Interactions (The amount of use of each interactive feature)
+
+            \item Popularity (The popularity of objects/segments, and show how these can be modelled and how both sets of results have similar models)
+
+            \item Longevity (How the popularity changed over time, and models of this)
+
+            \item Session Length, and Inter-seek Time (How long users stayed, and how long each viewing spurt was, with models for both sets of data)
+
+            \item Sequences (How people followed a similar pattern of bookmarks, use a tree instead of the current silly CDF we use)
+
+            \item Models (Summaries all the models with parameters, and basically give everyone enough information to run their own experiments)
+        \end{itemize}
+
+\cbstart[7pt]
+    \item Eurovision Analysis (Characterising the user's behaviours from the Eurovision experiment)
+    \note{We have all these results, they just need to be checked and written down formally}
+    
+    \begin{itemize}
+        \item Explain how the results were the same, and how they differed
+        \item Bookmark Length (Discuss how the bookmark length can be modelled)
+    \end{itemize}
+\cbend
+
+\cbstart[7pt]
+    \item New Techniques (Exploiting this user behaviour)
+        \note{Most of the work should go here}
+
+        \begin{itemize}
+
+            \item Moving Bookmark
+                \begin{itemize}
+                    \item Note how we noticed some bookmarks were incorrectly placed and how we could reduce \# of seeks if moved.
+                    \item Discuss the moving bookmark algorithm
+                    \item Discuss setup of experiment and results
+                    \note{Currently I can show the bookmarks did indeed move, but I can't show that the number of seeks was reduced}
+                \end{itemize}
+
+            \item Predictive Pre-fetching
+                \begin{itemize}
+                    \item Discuss what this is, and the different algorithms developed.
+                    \item Show results (accurate/wasteful), and benefits (ie zero seek latency).
+                    \item Talk about collecting this data in real time and using hybrid SequenceNext/Preditive approach
+
+                    \note{We have results for this, but I'm not sure what I'm going to show is the best way to show it. I don't think I have the true feel for the topic. Also I say pre-fetching can reduce the load on the server. I don't have code/metrics to show that. Any suggestions?}
+                \end{itemize}
+
+        \end{itemize}
+\cbend
+
+    \item Conclusion and Future Work
+        \note{Conclusions are easy, but what future work? Talk about determining things like prediction data in real time?}
+
+\end{itemize}
+
+\end{document}

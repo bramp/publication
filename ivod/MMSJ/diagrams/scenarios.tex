@@ -1,0 +1,74 @@
+%http://www.ctan.org/tex-archive/graphics/pgf/doc/generic/pgf/version-for-pdftex/en/pgfmanual.pdf
+\begin{tikzpicture}[scale=2.3]
+
+    \node[right] at (-1.5, 0.85) {\textbf{Scenario A}};
+
+    \draw [|->] (-1.5,0) -- (2,0);
+    \draw (0, 0) -- (0,0.125);
+
+    \node (start) at (0,-0.3)  {};
+    \node (bookmark) at (0,0)  {};
+    \node (wait) at (1,0) {};
+    \node (jump) at (-1,0) {};
+
+    \begin{scope}[>=latex, very thick]
+        \draw [->] (start.north) -- node[left] {1. Jumps to $B_{t}$} (bookmark.south);
+        \draw [->] (bookmark.north) -- node[near end, below=3pt] {2. Watches for $w$} (wait.north);
+        \draw [<-] (jump.north) .. controls +(up:0.4) and +(up:0.4) .. node[above] {
+            3. Seeks to $S_{t}$ ($S_{t} < B_{t}$)
+        } (wait.north);
+    \end{scope}
+
+    %\draw [|-|, dotted] (bookmark.south) -- node[below] {$d$} (jump.south);
+
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=2.3]
+
+    \node[right] at (-1.5, 0.7) {\textbf{Scenario B}};
+
+    \draw [|->] (-1.5,0) -- (2,0);
+    \draw (0, 0) -- (0,0.125);
+
+    \node (start) at (0,-0.3)  {};
+    \node (bookmark) at (0,0)  {};
+    \node (wait) at (1,0) {};
+    \node (jump) at (0.25,0) {};
+
+    \begin{scope}[>=latex, very thick]
+        \draw [->] (start.north) -- node[left] {1. Jumps to $B_{t}$} (bookmark.south);
+        \draw [->] (bookmark.north) -- node[near end, below=3pt] {2. Watches for $w$} (wait.north);
+        \draw [<-] (jump.north) .. controls +(up:0.25) and +(up:0.25) .. node[above] {
+            3. Seeks to $S_{t}$ ($B_{t} < S_{t} < B_{t} + w$)
+        } (wait.north);
+    \end{scope}
+
+    %\draw [|-|, dotted] (bookmark.south) -- node[below] {$d$} (jump.south);
+
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=2.3]
+
+    \node[right] at (-1.5, 0.7) {\textbf{Scenario C}};
+
+    \draw [|->] (-1.5,0) -- (2,0);
+    \draw (0, 0) -- (0,0.125);
+
+    \node (start) at (0,-0.3)  {};
+    \node (bookmark) at (0,0)  {};
+    \node (wait) at (1,0) {};
+    \node (jump) at (1.75,0) {};
+
+%TODO If have time maybe fix point 3 to be cantered better
+
+    \begin{scope}[>=latex, very thick]
+        \draw [->] (start.north) -- node[left] {1. Jumps to $B_{t}$} (bookmark.south);
+        \draw [->] (bookmark.north) -- node[near end, below=3pt] {2. Watches for $w$} (wait.north);
+        \draw [<-] (jump.north) .. controls +(up:0.25) and +(up:0.25) .. node[above left=12pt, pos=0] {
+            3. Seeks to $S_{t}$ ($S_{t} > B_{t} + w$)
+        } (wait.north);
+    \end{scope}
+
+    %\draw [|-|, dotted] (bookmark.south) -- node[below] {$d$} (jump.south);
+
+\end{tikzpicture} 

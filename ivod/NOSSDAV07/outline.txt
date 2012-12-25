@@ -1,0 +1,29 @@
+2 Papers - NOSDAV is only 6 pages long. Currently there is atleast 10 pages of results
+
+1st Paper, Analysis how the World Cup media was accessed, the novel results, and some dicussion on how the network could adapt to these results.
+
+1. Introduction -
+2. Motivation - This could be incorpricated into section 1
+3. Related Work - Talk about other characterising work
+4. Experiment Setup - Describe the setup of the worldcup website
+5. Results
+     Popularity of objects
+     Popularity of seconds within the objects
+     Session times, per media, and per viewed section
+     Jumps within a game
+     Predicting jumps
+6. Implications - Say how CDNs must change to adapt to the above results
+
+
+2nd Paper, Mention we have these novel results, and discuss in detail algorithms that can be used, with results of their benefits.
+
+1. Introduction
+2. Quick Overview of worldcup results
+3. Results
+     Detecting Hotspots (on the fly)
+     Correcting Bookmarks (and their impact)
+     Collecting linking data
+     Using linking data
+
+
+Or, small parts of the 2nd paper can be placed in the first paper, but I'm unsure of space

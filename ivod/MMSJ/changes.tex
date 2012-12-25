@@ -1,0 +1,85 @@
+\documentclass[a4paper]{article}
+%\documentclass[letterpaper,nocopyrightspace]{acm_proc_article-sp}
+\sloppy % makes TeX less fussy about line breaking
+
+%for PDF features - http://www.ce.cmu.edu/~kijoo/latex2pdf.pdf
+\usepackage[pdftex,colorlinks]{hyperref} % For the bookmark/hyperlinks
+
+%\usepackage{scrpage2}
+%\usepackage[nofancy]{svninfo}
+%\svnInfo $Id: changes.tex 1800 2007-09-19 13:31:19Z bramp $
+%
+%% Some code to add a footer to the page
+%\cfoot[]{{\footnotesize\emph{Rev: \svnInfoRevision, \svnInfoTime~\svnInfoLongDate}}}%
+%\pagestyle{scrheadings}%
+
+\hypersetup{%
+    pdftitle={List of changes for "Characterising and Exploiting Workloads of Highly Interactive Video-on-Demand"},
+    pdfauthor={Andrew Brampton, Andrew MacQuire, Michael Fry, Idris A. Rai, Nicholas J. P. Race and Laurent Mathy},
+    pdfkeywords={List of changes for "Characterising and Exploiting Workloads of Highly Interactive Video-on-Demand"},
+    bookmarksnumbered,
+    pdfstartview={FitV},
+    linkcolor={black},%: Color for normal internal links.
+    anchorcolor={black},%: Color for anchor text.
+    citecolor={black},%: Color for bibliographical citations in text.
+    filecolor={black},%: Color for URLs which open local files.
+    menucolor={black},%: Color for Acrobat menu items.
+    urlcolor={black}%: Color for linked URLs.
+}
+
+%\numberofauthors{3}
+\author{Andrew Brampton \and Andrew MacQuire \and Michael Fry \and Idris A. Rai \and Nicholas J. P. Race \and Laurent Mathy}
+\date{}
+
+%The papers should not be longer than 25-30 pages, single column, double space, 11 or 12 pt font, including figures, tables and references. If the submitted papers are extensions of existing conference publications, the authors must submit a corresponding letter, specifying clearly what is new in the journal paper and how the submitted paper distinguishes itself from the published conference paper.
+
+\begin{document}
+
+\title{\Large List of changes from\\~\\\emph{``Characterising User Interactivity for Sports Video-on-Demand''}\\to\\\emph{``Characterising and Exploiting Workloads of Highly Interactive Video-on-Demand''}}
+\maketitle
+
+\begin{abstract}
+
+This document specifies what has changed between the original NOSSDAV'07 paper~\cite{Brampton07Characterising}, and the MMSJ Journal paper~\cite{Brampton08Characterising}. We offer a brief outline of what has changed, and then a more detailed section-by-section list of changes and additions.
+
+\end{abstract}
+
+\section{Changes}
+
+The original paper~\cite{Brampton07Characterising} analysed and characterised user behaviour observed in a one month Video-on-Demand experiment serving specifically the 2006 FIFA World Cup. This journal submission~\cite{Brampton08Characterising} extends this work by running the experiment for many more months and serving a greater range of content. In addition we tested new autonomic techniques during the second experiment which have been evaluated and discussed. We feel the aspects which distinguish this paper from the original are: the expanded and more detailed analysis of a wider range of content, and more importantly the development, and evaluation of the new autonomic techniques which exploit the behaviour identified in the original paper.
+
+~\\
+Here is a section by section list of the changes and additions:
+
+\begin{description}
+  \item[Introduction]
+    is similar to the original, but now takes into account our latest video trial.
+
+  \item[Related Work]
+    is a new section covering state of the art work in the similar fields, and how it is relevant to our study.
+
+
+  \item[Experimental Setup]
+    describes the setup of the Video-on-Demand system used; as such the description has remained mostly the same. However, a new subsection has been added to explain the expanded range of content served by the system which includes sports (football, Formula 1), music (videos and contests) as well as miscellaneous content.
+
+  \item[Analysis]
+    was the main section of the original paper, focusing on characterising different user behaviours observed in the 2006 FIFA World Cup. This section now conducts a more detailed analysis on the all media considered, as well as discussing how sport genres are similar or different to music (and other) genres.
+    
+    As well as this many of the previous results have been improved through the use of improved statistical techniques, and obtaining more data from a longer running experiment. This has also allowed us to add section 4.9 ``User Behaviour Models'' which better discusses how the data can be modelled and what impact this has.
+
+    A more important change in this section is the inclusion of some new analysis such as Sections 4.2 Seek Distance, 4.7 Sequence and 4.8 Hotspot Length; all of which are useful for generating autonomic content distribution techniques. We feel these additions help distinguish this paper from the original.
+
+  \item[Techniques for Interactivity Support]
+    is an entirely new section discussing and evaluating autonomic content distribution techniques that can exploit observed user behaviour to improve performance within content distribution networks. These techniques were briefly touched upon in the original paper's future work discussion. This is also one of the main distinguishing areas of work.
+
+  \item[Conclusions and Future Work]
+    has been entirely re-worked to include the original conclusion as well as the new conclusion found in the additions to this paper. Future work has changed completely since new avenues of research have been identified.
+
+\end{description}
+
+Overall we have extended our 5,200 word NOSSDAV submission to a more detailed and diverse 10,300 word submission.
+
+\bibliographystyle{abbrv}
+\bibliography{worldcup}
+
+\end{document}
