@@ -1,0 +1,319 @@
+\documentclass{beamer}
+
+
+\mode<presentation> {
+  \usetheme{Warsaw}
+  \setbeamercovered{transparent}
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\usepackage{ulem}
+
+\title[Stealth DHT]
+{Authentication in\\Stealth Distributed Hash Tables}
+
+\institute[Lancaster University, UK] {
+  \textbf{Andrew MacQuire}, Andrew Brampton, Idris A. Rai, \\Nicholas J. P. Race and Laurent Mathy\\
+  \{macquire,brampton,rai,race,laurent\}@comp.lancs.ac.uk\\
+  Computing Department\\
+  Lancaster University, UK
+}
+
+\date[30th August 2006]
+{Wednesday 30th August \\ \textbf{Euromicro 2006}}
+
+\subject{Stealth Distributed Hash Table}
+
+ \pgfdeclareimage[height=1.1cm]{university-logo}{lancslogo}
+ \logo{ \pgfuseimage{university-logo} }
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\subsection{What is a Distributed Hash Table?}
+\begin{frame}
+  \frametitle{What is a Distributed Hash Table?}
+  \begin{columns}
+
+  \column{6cm}
+
+  \begin{block}{Common Characteristics}
+     \begin{itemize}
+     \item{DHTs allow data sharing amongst \textbf{numerous} machines}
+     \item{Nodes and data are \textbf{consistently identified} via hash functions}
+     \item{Distributed routing algorithms allow \textbf{any node} to be located}
+     \item{Peer-to-peer system: typically \textbf{all nodes are treated equally}}
+     \end{itemize}
+  \end{block}
+
+  \column{4.5cm}
+
+  \begin{center}
+    \pgfdeclareimage[height=4.5cm]{dht}{diagrams/DHT}
+    \pgfuseimage{dht}
+  \end{center}
+
+\end{columns}
+
+\end{frame}
+
+\subsection{What security problems exist?}
+\begin{frame}
+  \frametitle{What security problems exist?}
+  \begin{columns}
+  \column{4.5cm}
+
+  \begin{center}
+    \pgfdeclareimage[height=4.5cm]{through}{diagrams/Through}
+    \pgfuseimage<1>{through}
+    \pgfdeclareimage[height=4.5cm]{flood}{diagrams/Flood}
+    \pgfuseimage<2>{flood}
+  \end{center}
+
+  \column{6cm}
+  \begin{block}{Common Attacks}
+    \begin{itemize}
+    \item<1>{Messages are \textbf{routed through} intermediate nodes}
+        \begin{itemize}
+        \item{\it Sniffing}
+        \item{\it Man-in-the-Middle}
+        \item{\it Denial of Service}
+        \end{itemize}
+    \item<2>{Nodes can inject \textbf{unwanted} messages}
+        \begin{itemize}
+        \item{\it Spoofing}
+        \item{\it Pollution}
+        \end{itemize}
+  \end{itemize}
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What can be done?}
+  \begin{itemize}
+
+  \item<1->{Could simply \textbf{deny access} to untrusted nodes...}
+  \begin{itemize}
+    \item{...might \textbf{exclude} well-behaved nodes unnecessarily}
+  \end{itemize}
+  ~\\ %added a bit of padding
+  \item<2>{Better to \textbf{restrict} the operations untrusted nodes can perform}
+  \begin{itemize}
+    \item{...but how can nodes be \textbf{separated} into trusted and untrusted?}
+  \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\section{Stealth Distributed Hash Tables}
+\subsection{How can a Stealth DHT help?}
+\begin{frame}
+  \frametitle{How can a Stealth DHT help?}
+  \begin{itemize}
+  \item{Stealth DHTs separate nodes into \textbf{Service} and \textbf{Stealth} classes}
+    \begin{itemize}
+    \item{An altered join procedure (without phase `b') \textbf{stops} Stealth nodes from being routing \textbf{intermediaries}}
+    \end{itemize}
+  \end{itemize}
+
+  \begin{center}
+    \pgfdeclareimage[height=4.5cm]{join}{diagrams/Join}
+    \pgfuseimage{join}
+  \end{center}
+\end{frame}
+
+\subsection{How can nodes be authenticated?}
+\begin{frame}
+  \frametitle{How can nodes be authenticated?}
+
+  \begin{itemize}
+  \item{Service node status is given to \textbf{trusted} nodes only, all others become Stealth nodes}
+    \begin{itemize}
+    \item{...however, a system is required to \textbf{enforce} this separation}
+    \end{itemize}
+  \end{itemize}
+
+  \begin{columns}
+
+
+
+    \column{6cm}
+
+  \begin{itemize}
+  \item<2->{\textbf{Public Key Infrastructures}}
+    \begin{itemize}
+    \item{...allow multiple users to validate each other's identities and messages (as well as encrypt traffic) with \textbf{no prior exchange} of data}
+    \end{itemize}
+  \end{itemize}
+
+  \column{5.0cm}
+  \begin{block}<3->{Typical PKI Components}
+    \begin{itemize}
+    \item{\textbf{Registration Authority}}
+    \item{\textbf{Certification Authority}}
+    \item{\textbf{Certificate Repository}}
+    \item{\it{Revocation List?}}
+    \end{itemize}
+  \end{block}
+
+  \end{columns}
+
+\end{frame}
+
+\section{Authentication}
+\subsection{How does a Stealth DHT PKI work?}
+\begin{frame}
+  \frametitle{How does a Stealth DHT PKI work?}
+  \begin{itemize}
+  \item{Could be a completely \textbf{external} system...}
+  \item{Could also consist of one or more \textbf{internal} service nodes...}
+    \begin{itemize}
+    \item{The {\it Registration} and {\it Certification Authorities} \textbf{must be highly trusted}}
+    \item{The {\it Certificate Repository} can be \textbf{any node(s)}, as certificates are immutable and digitally signed}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\subsection{What implementation considerations exist?}
+\begin{frame}
+  \frametitle{What implementation considerations exist?}
+  \begin{itemize}
+  \item{\textbf{Certification Hierarchy}}
+    ~\\
+    \begin{itemize}
+    \item{\it Single globally trusted key?}
+       \begin{itemize}
+       \item{\textbf{Simple}, but problematic if the key is ever \textbf{compromised}}
+       \end{itemize}
+    ~\\
+    \item{\it Hierarchy of keys?}
+       \begin{itemize}
+       \item{More \textbf{complex}, but allows for finer-grained \textbf{control}}
+       \item{\textbf{Highest-level} keys can be kept secure and used \textbf{rarely}}
+       \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What implementation considerations exist?}
+  \begin{itemize}
+  \item{\textbf{Permissions Management}}
+    \begin{itemize}
+    \item{\it Permissions within certificates?}
+    ~\\
+       \begin{itemize}
+       \item{\textbf{Simple}, but \textbf{increases} message size}
+       \item{Does \textbf{not} require an extra lookup}
+       \item{Difficult to alter; certificates are \textbf{immutable}}
+       \end{itemize}
+    ~\\
+    \item{\it Hold permissions on dedicated service node(s)?}
+       \begin{itemize}
+       \item{\textbf{Complex}, yet \textbf{flexible}}
+       \item{\textbf{Increases} messaging overhead through lookups}
+       \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What implementation considerations exist?}
+  \begin{itemize}
+  \item{\textbf{Certificate Revocation}}
+    \begin{itemize}
+    \item{\it Short expiry times?}
+    ~\\
+       \begin{itemize}
+       \item{Nodes are \textbf{re-issued} certificates periodically; unwanted certificates are \textbf{not} re-issued}
+       \item{\textbf{Tradeoff} between certification overhead and response time}
+       \end{itemize}
+    ~\\
+    \item{\it Certificate Revocation List?}
+       \begin{itemize}
+       \item{List stored/replicated across dedicated service node(s)}
+       \item{Polled periodically or per-authentication operation; \textbf{another tradeoff} between overhead and response time}
+       \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What implementation considerations exist?}
+  \begin{itemize}
+  \item{\textbf{Authentication Granularity}}
+    \begin{itemize}
+    \item{\it How often are messages validated?}
+    ~\\
+       \begin{itemize}
+       \item{Per-\textbf{hop}?}
+       \item{Per-\textbf{message}?}
+       \item{Per-\textbf{session}?}
+       \end{itemize}
+    ~\\
+    \item{\it Are complete certificates chains included in messages?}
+       \begin{itemize}
+       \item{\textbf{Increased} message size, but \textbf{no extra messaging} required}
+       \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Percentage increase in number of messages...}
+
+  \begin{center}
+    \pgfdeclareimage[height=6cm]{granularity}{diagrams/Granularity}
+    \pgfuseimage{granularity}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Percentage increase in lookup latency...}
+
+  \begin{center}
+    \pgfdeclareimage[height=6cm]{granularity2}{diagrams/Granularity2}
+    \pgfuseimage{granularity2}
+  \end{center}
+
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+  \frametitle{Conclusion}
+  \begin{itemize}
+  \item{Stealth DHTs were originally proposed to separate \textbf{powerful from less powerful} nodes}
+  \item{This distinction can be extended to \textbf{trusted and untrusted} nodes}
+  \item{By \textbf{limiting} the operations stealth nodes can perform, untrusted nodes \textbf{can still be serviced}}
+  \item{By \textbf{enforcing} the separation through a \textbf{PKI}, Stealth DHTs can supply a \textbf{secure, resilient overlay}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Thank you for listening.}
+  \begin{center}
+    \textbf{Any questions?}
+    \titlepage
+  \end{center}
+\end{frame}
+
+\end{document}

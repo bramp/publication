@@ -1,0 +1,141 @@
+Overview of Changes
+
+We would like to thank the reviewers for their insightful comments. The following is an overview of how and where the reviewers' comments have been incorporated into the text, covered point by point.
+
+Reviewer #1:
+
+"The overview of Stealth DHTs, however, is presented in such a way, that it is hard to grasp the details of the mechanism."
+
+Section 2's discussion has been clarified slightly, but remains fairly abstract; the reader is now explicitly referred to our earlier paper proposing the Stealth DHT concept for further details.
+
+"Especially when looking at the results, the regarded 100 service nodes even seem to be much less than actual server farms like Google etc."
+
+Simulation size has now been expanded considerably to provide more realistic results with atleast 1000 service nodes, and many more stealth nodes.
+
+"Moreover, the really interesting questions like how to decide which nodes become service nodes are more or less left to the reader."
+
+How to allocate permissions to nodes is now discussed further in Section 6.1, although we generally consider service node allocation to be an application-dependent issue, where in some cases you may wish for a minority of core service nodes, or may wish for any arbibrary node to become a service when needed, neither is prescribed or constrained by the Stealth DHT itself.
+
+"It would also be interesting to see what happens if a single service node gets hacked or becomes malicious for some other reason. What exactly would prevent this node from performing a Sybil-Attack on the other service nodes?"
+
+It is now noted in the paper that, regarding certification schemes 'Such a solution is effective because certificates are associated with individual nodes; a single compromised node cannot assume the identity of many without having the extra associated certificates.'
+
+"Also the concept of using a PKI for authentication immediately raises the question of security. The trade-off between security and overhead/scalability is briefly mentioned in the last paragraph of Section 4.3, while I think this is one of the more interesting aspect, which should therefore be discussed in greater detail."
+
+Sections 5 & 6 focus on how security must often be traded for scalability concerns, notes to this effect have been added to 4.3.
+
+"It is also not clear, why the authors use a packet-level simulator."
+
+We now note that 'Packet-level simulations were conducted to allow for detailed examination throughout our experimentation, although the metrics used in this paper are DHT level.' Our existing software has always operated at the packet level, and scalability is now a much reduced problem due to recent improvements in it. As a result, we have increased our simulation sizes without the need to sacrifice any lower-level detail.
+
+"In the second paragraph of Section 5.3 it is suggested to only verify messages upon arrival at their destination. Why not let the first service node verify such messages?"
+
+The per-hop mechanism will verify the message at the first service node (as well as each additional hop). Verifying at just the first service has now been noted in the relevant section as a further possibility, however this would add additional overheads into the DHT, where each node will have to be able to determine who the previous node was, perhaps with additional authenication checks.
+
+"Regarding the figures in Section 5.3 it is not clear how long the simulations were performed, how many simulation runs were made or what the confidence intervals, if any, look like."
+
+Appropriate details regarding the simulation methodology have now been added where required.
+
+"Especially Fig. 4.b looks like the simulations did not run long enough. I would have expected a smooth run of the curve."
+
+Initially, many iterations (> 25) were run here, but the randomisation effect of very small networks led to high variance in the results. Simulation size and the number of iterations have been increased further to counteract this, and much smoother plots are shown.
+
+"Also in the first paragraph it is stated that using per-hop authentication should generate roughly logN messages where N is the number of service nodes. This seems to be perfectly reasonable. However, in Fig. 4.a the number N of service nodes is constant. So why is it the number of messages actually decreases with the number of stealth nodes."
+
+This is due to certificates being cached among service nodes: a greater number of stealth nodes means a greater number of messages being sent, and so more certificates are likely to be cached, causing a decrease in the number of messages sent relative to a Stealth DHT with no authentication. This is explained in the paper shortly after the initial mention of Fig. 4.
+
+"Additionally using 100 service nodes probably does not capture any scalability issues."
+
+Simulation size has been increased accordingly.
+
+"Finally while using a certificate chain seems to be reasonable at first glance, it does not offer the possibility to check whether the certificate might have been revoked by now."
+
+Text has been added in this section to indicate that should certificate revocation be a required feature, the approaches discussed in Section 5.5 would have to be appropriately applied for certificates within the chain.
+
+"What about the relationship between service and stealth nodes. How many stealth nodes can be handled by one service node, etc.?"
+
+This is discussed in greater depth in our previous work initially proposing the Stealth DHT concept, as referenced in the paper.
+
+"In an internal PKI one has to retrieve a certificate from a service node (using a query) in order to authenticate another message. This sounds a bit like a recursive problem. Shouldn't the query for the certificate be authenticated itself?"
+
+This should not be an issue: queries are authenticated, and eventually the query will recursively arrive at the root certificate, which is implicitly trusted by all nodes.
+
+"There are no details regarding the PlanetLab results."
+
+Appropriate detail for the PlanetLab methodology has been added to all result discussions (number of nodes, iterations, the need for result sanitisation etc.).
+
+"I would recommend to cut the Figure [5] at 30s to improve the readability."
+
+The figure has been edited as suggested, and now looks better for it.
+
+"While the stealth approach reduces the effect of join/leave attacks, it would e.g. be interesting to see how well it does so. What prevents stealth nodes to flood the service overlay with unlimited join messages? What is the exact percentage of malicious nodes that can be handled by a stealth DHT?"
+
+We claim in the paper that churn has little effect on a Stealth DHT, making it perhaps more suitable than other solutions for networks that may have this problem in a security context. Simulation results backing up these points are not explicitly shown, as they are covered in detail in our previous work proposing the Stealth DHT concept. This has now been clarified in the main text.
+
+
+Reviewer #2:
+
+"In the abstract the authors describe that peers differ in their trustworthiness, it would be nice to introduce a metric later on in the paper, which describes this aspect."
+
+Some discussion has been added to the opening of Section 6.2 discussing how a metric of trust could be used.
+
+"However, it would be interesting to discuss which incentive a peer has to be a service node in case of stealth nodes which do not have to provide service in order to receive service."
+
+Some text has been added in 6.3 discussing how a provider may offer incentives.
+
+"The motivation for unauthorized peers to participate in such a network is doubtable, when "having only authorized nodes storing and retrieving content"."
+
+Our original phrasing was ambiguous; we meant that highly-trusted nodes would be storing content exclusively, whereas potentially any node could access it (although this could also be restricted to another set of nodes if necessary). The sentence in question has been changed accordingly.
+
+"The reviewer still has doubts that this separation in service and stealth nodes is possible for the majority of DHTs. The authors assume that the peer IDs are picked randomly and the existence of stealth peers may be hidden. In many DHTs this is not the case. Consider for example the most commonly used DHT: Kademlia. Peers learn from the existence of other nodes by receiving requests from them. Location-based structured overlays are emerging as well. In these the peer IDs are based on their geographical positions. The reviewers see some practical problems in hiding stealth peers in the network. "
+
+Notes have been added to the Stealth DHT overview, explaining how the approach can be applied to DHTs with differing means of gathering routing state. In particular, the Kademlia problem is explained as being solvable by simply adding a flag to messages from stealth nodes, ensuring they are not used for the gathering of routing state. In the case of location-based systems, the approach should not differ non-location-based arrangements: the stealth nodes apparently don't exist to the service nodes
+
+"a centralized PKI is a single point of failure in the system, and the creation of a distributed PKI is not discussed. How to bootstrap a set of service node providing a distributed PKI, how to cope with churn...?"
+
+Existing discussion on the creation of a distributed PKI has been emphasised, and the problem of bootstrapping and churn will be handled in the same way as the underlying DHT, as the Stealth DHT concept only acts as an extension of it.
+
+"In Section 4.2 the authors describe how to join the DHT. Here the authors miss to discuss several attacks, like the man-in-the-middle attack before being authenticated ("...and then pass his or her public key along with any requested proof of identity...")."
+
+We now note that credentials should be passed over a pre-existing secure channel in the appropriate section.
+
+"In this context it would be good when the authors re-check the terminology used on the first page, last line: "i.e. a sniffing, man-in-the-middle or denial of service"). Attacks on confidentiality, integrity and availability are not described with these terms."
+
+The terminology used here (and later in the paper) has been changed accordingly.
+
+"In Section 4.3 the authors discuss secure mechanism to send messages. They propose to encrypt (first!) messages and after wards (!!) sign the encrypted message using asymmetric (!!!) cryptography. It would be nice to check carefully if this is a good idea, as it is opposing common best practices in cryptography."
+
+More detailed discussion of the sign/encrypt - encrypt/sign problem is now found in Section 4.3.
+
+"Furthermore the certificate of the source of each (!!) message is suggested to be retrieved before processing the message..."
+
+Further notes have been added to Section 5.3, noting the measurement study listed by the reviewer and how it relates to authentication granularity concerns (i.e. p2p systems potentially having many small flows).
+
+"it would be nice to use a simulation setup that match the requirements of nowadays, i.e. at least 10,000 peers."
+
+Simulation size has been increased accordingly.
+
+"The overhead is further discussed in section 5.4. Here the authors should not only describe the overhead resulting from the encryption, which is done once per message, but should also include the overhead resulting from the signature verification, which is done log(N) times per message."
+
+Section 5.4 discusses the overhead of signing and verifying a signature (essentially the same operation), and encryption benchmarks have now been added for completeness.
+
+"The proposed solution for Certificate Revocation consists of either using a centralized server, or using distributed strategies like broadcasting CRLs periodically or upon updates. Both solutions may not scale in P2P networks. Maybe the authors should discuss this problems."
+
+Notes have been added on how known-scalable DHT-based application-level multicast systems such as SCRIBE and Bayeux could be utilised here for broadcast purposes.
+
+"Some more discussion is needed in the discussion of permission handling as well. Neither the storage of the permissions in the certificates (large message sizes) nor "within the network somehow" (huge overhead) is satisfactory. Why not use per-day signed permission tokens?"
+
+Further explanation has been added, particularly the point that '[the] cost could be offset somewhat by e.g., handling permissions using tokens that remain valid for a day or so.'
+
+"In the Section 6.2 it would be nice to present how the trustworthiness of a peer is determined, which metrics can be used. The authors follow a static approach, in which the trustworthiness of the nodes does not change. The separation in pre-defined trustworthy and not-trustworthy peers is not satisfactory."
+
+As noted in our response to a similar comment from the first reviewer, some discussion has been added to the opening of Section 6.2 discussing how a metric of trust could be used.
+
+"One important point in the paper, related work, is described in some parts very nice, but in some more work is needed. Were exactly is the difference to the paper [5] Castro et al. : "Secure routing for structured p2p overlay networks"?. It is not sufficient to say "For example, [27] and [5] both discuss possible DHT attacks and defenses"."
+
+These papers are both used at several points throughout the related work section, when appropriate, and further discussion has been added.
+
+"Furthermore the difference of the authors work to [9] and [2] (completely decentralized PKI) should be pointed out in more detail. Is it really a problem when the solution of [2] breaks down in presence of 25% malicious nodes? How would the network look like in case of Stealth DHT in presence of 25% malicious nodes in terms of load balancing?"
+
+[2]'s solution allows malicious nodes into any part of the network, and breaks down once 25% of the population are malicious Our point is that we relegate potentially malicious nodes into being stealth nodes, meaning we can have approaching 100% malicious and still service any non-malicious nodes with no issue, given the core, trustworthy service nodes. Emphasis to this effect has been added.
+

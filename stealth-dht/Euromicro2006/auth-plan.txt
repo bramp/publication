@@ -1,0 +1,131 @@
+• Introduction
+   - Most [generic DHTs] assume node homogeneity, treating all peers as equal
+      - In reality, nodes are heterogeneous: some may be trustworthy, others not
+   
+   - In [Stealth DHT], we proposed the concept of a Stealth DHT, where the issue of heterogeneity was addressed with a focus on node performance and stability
+      - Stealth DHTs maintain two distinct sets of nodes, Service and Stealth
+         - Originally defined as ideally having the properties of being powerful/reliable and weak/unreliable respectively
+            - In this paper, we extend the distinction to also include trustworthy and untrustworthy respectively
+               - Role assignment remains application specific, and is in no way prescribed or constrained by the Stealth DHT itself
+      - In [Stealth DHT], the separation was shown to reduce maintenance overhead both with and without churn, resulting in accordingly improved DHT performance
+         - We did not, however, discuss how the distinction between Service and Stealth nodes was enforced
+         - In this paper, we intend to demonstrate how a distributed Public Key Infrastructure can be leveraged to achieve this goal
+      
+   - Section 1 discusses foo, Section 2 etc...
+
+• Overview of Stealth DHTs
+   - Joining most DHTs involves gathering state by putting a message into the DHT via a bootstrap node, then announcing your presence
+      - Stealth DHTs modify this procedure slightly to create two types of node on the network
+         - Service nodes are expected to be highly capable, reliable machines
+            - They provide the routing infrastructure for the overlay
+         - Stealth nodes are expected to be less capable, unstable machines
+            - They act as consumers, communicating with and through service nodes only
+   
+   - In a Stealth DHT, Service nodes perform the entire join procedure
+   - Stealth nodes gather state, but do not announce their presence
+      - Therefore they do not appear in any routing tables
+         - And so they cannot forward any messages, or store any keys (although they may be allowed to put keys into the DHT)
+         - The state they gather can be used to send messages through a number of separate nodes in the DHT, rather than just proxying through one node
+         - Critically, no Service nodes need update their routing tables when a Stealth node joins or leaves
+            - The lack of maintenance overhead for Stealth nodes greatly reduces the effect of churn on DHT performance
+   
+   - Ideal for applications where many transient users want access to a network quickly (e.g. content distribution)
+
+   - Increased stress on the Service nodes is inevitable, but
+      - Service nodes are assumed to be powerful machines on overprovisioned networks
+      - The overhead of fully joining nodes to a normal DHT outweighs that of performing a lightweight join for stealth nodes under heavy churn
+
+• The Need for Authentication in a (Stealth) DHT
+   - Without authentication,
+      - Stealth nodes can masquerade as Service nodes
+         - Malicious nodes could then examine or alter messages in transit (sniffing, man-in-the-middle, denial of service etc.)
+         - Malicious nodes could also corrupt/poison other nodes' routing tables by generating false maintenance messages
+      - Anyone can put keys into the DHT
+         - In the context of e.g. content distribution, this could equate to unwanted, unlicensed or illegal content being made available               
+      - Replay attacks
+         
+   - Through the use of an authentication scheme, these problems can be avoided
+      - A common approach is to make use of a Public Key Infrastructure, as described in Section [X].
+
+• Overview of a Public Key Infrastructure
+   - A Public Key Infrastructure (PKI) is
+   
+      - An authentication scheme
+      - Achieved through the use of certificates as a means to confirm the identity of a user
+         - Beyond the identity of the holder, certificates also contain information such as
+            - the holder's public key, which is used to encrypt/decrypt messages
+            - the expiration date of the certificate
+            - the digital signature of the issuer
+                 
+      - Typically composed of several building blocks
+         - Most importantly, a Certification Authority
+
+• Authentication of Nodes in a DHT
+   • Message Format
+      - From ID
+      - To ID
+      - Subject
+         - Username or Certificate
+      - Mandatory Signature
+   
+   • Certificate Format
+      - Version
+      - Serial Number
+      - Validity
+         - After
+         - Before
+      - Subject
+         - Username
+         - Public Key
+         - Permissions
+      - Issued By
+      - Issuer's Signature
+      
+   • Acquiring a Certificate
+      - A user first generates a public/private key pair
+      - The user's public key, username and password are then passed to the Registration Authority
+      - The RA then authenticates the user's credentials, and if valid, passes them on to the Certification Authority with the appropriate permissions for that user
+      - The CA signs the public key and creates the certificate, which is returned to the user via the RA
+         - The CA may also store the certificate in a Certificate Repository, although this step is unnecessary if the CR is DHT based and certificates are hashed to the appropriate user
+         
+   • Sending a Message / Checking a Signature
+      - User A creates a message, signs it, and sends it to user B
+      - User B verifies the signature with the encapsulated certificate/username
+         - User B acquires the issuer's certificate (i.e. the CA) from the CR
+         - User B verifies the issuer's certificate, and acts accordingly, depending on the validity of User A's certificate
+   
+   • Non-Distributed PKI DHT Join
+      - User first acquires a certificate
+      - User sends a Join Message containing the certificate to a bootstrap node
+      
+• Distributed PKI in a DHT
+   • Distributed PKI DHT Join
+      - A user first generates a public/private key pair
+      - The user places the public key, username and password into a Join Message and sends it to the RA/CA
+      - The RA/CA checks the credentials, signs the public key and alters the Join Message to include an (optionally signed) certificate
+      - The RA/CA simultaneously passes a certificate chain back to the user for verification, and forwards the Join Message to the next hop on the DHT if appropriate
+
+• Experimental Results
+   • Methodology
+      - Using our own packet-level discrete-event simulator
+      - GT-ITM topology of 1,000 routers (4% transit nodes)
+      
+   • Overhead
+      - Increase in number of messages
+      - Increase in startup delay
+      - Increase in lookup latency
+
+• Related Work
+   - LMS-PKI (http://www.cs.umd.edu/~ruggero/papers/infocom06.pdf - submitted to Infocom '06)
+   
+   - http://lsirpeople.epfl.ch/adatta/Research/PKI-DHT.htm
+      - A decentralized public key infrastructure for customer-to-customer e-commerce
+      - Beyond "Web of Trust": Enabling P2P E-commerce
+   
+   - Web of trust is a poor solution because...
+
+• Conclusion
+
+
+--NOTES
+How do we handle replay attacks?

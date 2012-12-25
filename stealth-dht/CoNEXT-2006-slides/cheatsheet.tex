@@ -1,0 +1,49 @@
+
+Validation - Fig 3
+
+Join Overhead: Messages (Simulation) - Fig 4
+    Explain decrease compared to Pastry
+    Stealth 95\% has ~ 95\% decrease in join messages
+    Stealth 80\% has ~ 85\% decrease in join messages
+    Stealth 50\% has ~ 55\% decrease in join messages
+    Hiccup at the beginning due to the small network size
+
+Join Overhead: Messages (PlanetLab) - Fig 13
+    Similar to previous graph, but shows actual figures rather than relative
+    Pastry 40-50 messages per join
+    Stealth 50\% < 20 messages
+    Stealth 95\% around 5 messages
+
+Join Overhead: Latency (Simulation) - Fig5
+    Compared to Pastry
+    Stealth 95\% 10-15\% decrease
+    Stealth 90\% ~5\% decrease
+    Stealth 50\% minor decrease
+    Hiccup at the beginning due to the small network size
+
+Lookup: Latency with and without churn (Simulation) - Fig6
+    4 lines, No Churn, Stealth Churn, Service Churn, Both Churning, compared to Pastry not churning
+    When Service nodes don't churn, we can see up to 40\% decrease in lookup latency
+    When they do churn, we see upto 20\% increase in lookup latency
+    Hiccup at the beginning due to the churn rate and how a large fraction of the nodes in small networks have churned
+    
+Lookup: Misses under churn (Simulation) - Fig7
+    Lookup with replication (with all churning)
+    Stealth and Pastry with no replication has 40-60\% misses
+    With replication Stealth and Pastry exhibit similar rates of misses (20\%)
+    Numbers seem large due to high churn rate
+
+Lookup: Misses under decreasing churn (Simulation) - Fig11
+    Decreasing rates of churn
+    High churn, no replication 75\% misses, some replication 45\% misses
+    Low churn, no replication 50\% misses, some replication 15\% misses
+    Tends to zero off the graph
+    
+Load balancing: No Churn (Simulation) - Fig8a
+    Stealth show most nodes (ie the Stealth receive 5-20 messages), and Service nodes 30-1000 messages
+    Pastry between 1 and 1000 messages
+
+Load balancing: Churn (Simulation) - Fig8b
+    Stealth nodes between 1 and 20, Service 30-1000 messages
+    Pastry however goes to crap, non uniform load, with 30\% of nodes receiving >1000!
+

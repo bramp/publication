@@ -1,0 +1,670 @@
+\documentclass[xcolor=pdftex,dvipsnames,table]{beamer}
+
+
+\mode<presentation> {
+  \usetheme{Warsaw}
+  \setbeamercovered{transparent}
+%  \useoutertheme{infolines}
+%  \setbeamertemplate{headline}[default]
+%  \setbeamertemplate{footline}[infolines theme]{}
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\usepackage{ulem}
+
+\hypersetup{%
+    pdftitle={Stealth Distributed Hash Table: A Robust and Flexible Super-Peered DHT},
+    pdfauthor={Andrew Brampton, Andrew MacQuire, Idris A. Rai, Nicholas J. P. Race and Laurent Mathy},
+    pdfkeywords={Distributed Hash Tables, Peer-to-Peer, Stealth DHT},
+    bookmarksnumbered,
+    pdfstartview={FitV},
+    linkcolor={black},%: Color for normal internal links.
+    anchorcolor={black},%: Color for anchor text.
+    citecolor={black},%: Color for bibliographical citations in text.
+    filecolor={black},%: Color for URLs which open local files.
+    menucolor={black},%: Color for Acrobat menu items.
+    pagecolor={black},%: Color for links to other pages
+    urlcolor={black},%: Color for linked URLs.
+}%
+
+\title[Stealth Distributed Hash Table]
+{\textbf{Stealth Distributed Hash Table}\\A Robust and Flexible Super-Peered DHT}
+
+\institute[Lancaster University, UK] {
+  \textbf{Andrew Brampton}, Andrew MacQuire, Idris A. Rai, \\Nicholas J. P. Race and Laurent Mathy\\
+  {\it \{brampton,macquire,rai,race,laurent\}@comp.lancs.ac.uk}\\
+  Computing Department\\
+  Lancaster University, UK
+}
+
+\date[7th December 2006]
+{Thursday 7th December \\ \textbf{CoNEXT 2006}}
+
+\subject{Stealth Distributed Hash Table}
+
+\logo{\includegraphics[height=0.85cm]{uni-logo-win}}
+
+\setbeamertemplate{navigation symbols}{}
+
+%\renewcommand{\textbf}{\alert}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+%\subsection{Distributed Hash Table Overview}
+\subsection{Distributed Hash}
+%\begin{frame}
+%  \frametitle{Distributed Hash Table Overview}
+%  \begin{columns}
+%
+%  \column{6cm}
+%  \begin{itemize}
+%
+%  \item{\textbf{DHTs are:}}
+%     \begin{itemize}
+%     \item{Scalable}
+%     \item{Decentralised}
+%     \item{Self-organising}
+%     \item{Fault-tolerant}
+%     \item{Overlay networks}
+%     \end{itemize}
+%
+%  ~\\
+%  \item{Examples}
+%    \begin{itemize}
+%        \item{\textbf{Pastry}}
+%        \item{Chord}
+%        \item{CAN}
+%        \item{Tapestry}
+%    \end{itemize}
+%
+%
+%  \hfill\\
+%
+%%  \item<2-5>{\textbf{Capable of:}}
+%%     \begin{itemize}
+%%     \item{{\it Efficient} request routing}
+%%     \item{{\it Deterministic} object location}
+%%     \item{{\it Effective} load balancing}
+%%     \end{itemize}
+%
+%  \end{itemize}
+%
+%  \column{6cm}
+%
+%  \begin{center}
+%    \begin{overlayarea}{\textwidth}{0.8\textheight}
+%        \includegraphics<1>[width=6cm]{diagrams/DHT}
+%%         \includegraphics<3>[width=6cm]{diagrams/DHT-1}
+%%         \includegraphics<4>[width=6cm]{diagrams/DHT-2}
+%%         \includegraphics<5>[width=6cm]{diagrams/DHT-3
+%    \end{overlayarea}
+%  \end{center}
+%
+%\end{columns}
+%\end{frame}
+
+\begin{frame}
+  \frametitle{Distributed Hash Table Overview}
+  \begin{columns}
+
+  \column{6cm}
+    \textbf{Pastry}
+     \begin{itemize}
+     \item{Circular Identifier Space (typically $0-2^{128}$)}
+     \item{Each node has ID\\Each key has ID}
+     \item{Nodes are responsible for keys closest to them (on the ring)}
+     \item{Routing done iteratively closer and closer to a ID}
+     \end{itemize}
+  \column{6cm}
+  \begin{center}
+    \begin{overlayarea}{\textwidth}{0.8\textheight}
+        \includegraphics<1>[width=6cm]{diagrams/DHT}
+    \end{overlayarea}
+  \end{center}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Distributed Hash Table Problems}
+  \begin{columns}
+
+  \column{6cm}
+
+  \begin{itemize}
+    \frametitle{}
+    \item<1-2>{\textbf{Assumed homogeneity}}~\\
+        {Varying bandwidth, processing or storage abilities}
+    \item<3>{\textbf{Churn overhead}}~\\
+        {Joining causes updates, Leaving causes staleness}
+    \item<4>{\textbf{Free-riding}}~\\
+        {Users don't want to participate, or stay for a very short time}
+    \item<5>{\textbf{Security issues}}~\\
+        {Sniffing, Man in the middle, Poisoning, Denial of Service}
+  \end{itemize}
+
+  \column{6cm}
+
+  \begin{center}
+    \begin{overlayarea}{\textwidth}{0.8\textheight}
+        \includegraphics<1>[width=6cm]{diagrams/DHT}
+        \includegraphics<2>[width=6cm]{diagrams/Homogeneity}
+        \includegraphics<3-4>[width=6cm]{diagrams/Churn}
+        %AB: Maybe some kind of graphic for 4
+        \includegraphics<5>[width=5.5cm]{diagrams/Security}
+    \end{overlayarea}
+  \end{center}
+\end{columns}
+\end{frame}
+
+
+\subsection{Related Work}
+\begin{frame}
+    \frametitle{Related Work}
+
+    \begin{columns}
+
+    \column{6cm}
+
+    \begin{center}
+        \begin{overlayarea}{\textwidth}{0.8\textheight}
+        \includegraphics<1>[width=6cm]{diagrams/StaticBinding}
+
+        \includegraphics<2>[width=6cm]{diagrams/MultipleOverlays}
+        \end{overlayarea}
+    \end{center}
+
+    \column{5cm}
+    Typical approaches to tackling outlined problems:\\~\\
+    \begin{itemize}
+    \item<1>{\textbf{Static binding}}
+        \begin{itemize}
+        \item{Single point of failure per client}
+        %Peer-to-Peer Internet Telephony using SIP - Singh et al
+        \item{\it e.g. Singh et al.}
+        \end{itemize}
+    \item<2>{\textbf{Multiple overlays}}
+        \begin{itemize}
+        \item{Large associated overhead}
+        %A Super-Peer Based Lookup in Structured Peer-to-Peer Systems - Zhu et al
+        %Structured Superpeers: Leveraging Heterogeneity to Provide Constant-Time Lookup - Mizrak et al
+        \item{\it e.g. Mizrak et al. and Zhu et al.}
+        \end{itemize}
+    \end{itemize}
+
+\end{columns}
+\end{frame}
+
+\section{Stealth DHT}
+\begin{frame}
+    \frametitle{Stealth DHT}
+
+    \begin{itemize}
+    \item{Provides support for \textbf{heterogeneous} nodes on a DHT}
+    \end{itemize}
+
+    \begin{columns}
+
+    \column{6cm}
+
+    \begin{itemize}
+    \item<1>{\textbf{Service Nodes} (Super-peers)}
+        \begin{itemize}
+        \item{Assumed to be \textbf{highly provisioned}}
+        \item{Responsible for \textbf{forwarding and storing} data}
+        \item{Just a normal DHT node}
+        \end{itemize}
+    \item<2>{\textbf{Stealth Nodes}}
+        \begin{itemize}
+        \item{Potentially \textbf{underpowered or unreliable} ({\it e.g.} mobile)}
+        \item{\textbf{No} forwarding or storing responsibilities}
+        \item{\textbf{Invisible} to all nodes, \textbf{including} Service nodes}
+        \end{itemize}
+    \end{itemize}
+
+    \column{6cm}
+
+    \begin{overlayarea}{\textwidth}{0.8\textheight}
+    \includegraphics<1>[width=6cm]{Diagrams/ServiceHighlight}
+    \includegraphics<2>[width=6cm]{Diagrams/StealthHighlight}
+    \end{overlayarea}
+
+    \end{columns}
+
+\end{frame}
+
+\subsection{Join Procedures}
+\begin{frame}
+    \frametitle{
+    \only<1-10>{Service Node / Pastry Join Procedure}
+    \only<11-12>{Stealth Node Join Procedure}
+    }
+
+    \begin{columns}
+
+    \column{5cm}
+
+    \only<1-9>{
+
+    \textbf{Phase A:} Gathering state
+        \begin{itemize}
+        \item<1>{Node \it{X} wants to join}
+        \item<2>{\it{X} contacts bootstrap \it{A}}
+        \item<3>{\it{A} responds with state}
+        \item<4>{\it{A} forwards towards \it{Y}}
+        \item<5>{More state returned}
+        \item<6>{Continues towards \it{Y}}
+        \item<7>{More state returned}
+        \item<8>{Reaches closest node \it{Y}}
+        \item<9>{\it{Y} informs \it{X} of finish}
+        \end{itemize}
+    }
+    \only<10>{
+
+    \textbf{Phase B:} Announcement
+        \begin{itemize}
+        \item{X announces presence}
+        \item{Others update tables}
+        \end{itemize}
+        \hfill\\
+        \hfill\\
+    X is now a member of the DHT and can be used for \textbf{forwarding
+    messages}, \textbf{storing data} etc.
+    }
+
+    \only<11>{
+    \textbf{Stealth DHT Phase A}
+        \begin{itemize}
+        \item{A stealth node X gathers state in the same way as before}
+        \end{itemize}
+    }
+
+    \only<12>{
+    \textbf{Stealth nodes \it{do not} announce their presence}
+        \begin{itemize}
+        \item{This ensures stealth nodes \textbf{cannot} be used for forwarding messages or storing data}
+        \end{itemize}
+    }
+
+\column{6cm}
+  \begin{center}
+    \begin{overlayarea}{\textwidth}{0.8\textheight}
+        \includegraphics<1>[width=6cm]{diagrams/PhaseA-1}
+        \includegraphics<2>[width=6cm]{diagrams/PhaseA-2}
+        \includegraphics<3>[width=6cm]{diagrams/PhaseA-3}
+        \includegraphics<4>[width=6cm]{diagrams/PhaseA-4}
+        \includegraphics<5>[width=6cm]{diagrams/PhaseA-5}
+        \includegraphics<6>[width=6cm]{diagrams/PhaseA-6}
+        \includegraphics<7>[width=6cm]{diagrams/PhaseA-7}
+        \includegraphics<8>[width=6cm]{diagrams/PhaseA-8}
+        \includegraphics<9>[width=6cm]{diagrams/PhaseA-9}
+        \includegraphics<10>[width=6cm]{diagrams/PhaseB}
+        \includegraphics<11>[width=6cm]{diagrams/PhaseA-Stealth}
+        \includegraphics<12>[width=6cm]{diagrams/PhaseB-No}
+    \end{overlayarea}
+  \end{center}
+  \end{columns}
+\end{frame}
+
+\subsection{Routing Information}
+\begin{frame}
+    \frametitle{Routing Information}
+
+    \begin{columns}
+
+    \column{5.5cm}
+    \begin{overlayarea}{\textwidth}{1\textheight}
+    Service Node (0x0F23...)
+
+    \begin{itemize}
+        \item{Routing table}
+    \end{itemize}
+
+    \rowcolors[\hline]{1}{blue!20}{blue!10}
+    \begin{tabular}{l!{\vrule}c c c c c c}
+    & 0 & 1 & 2 & 3 & ... & F\\
+    \hline
+    0 & - & x & x & x & ... & x\\
+    1 & x & x & x & x & ... & -\\
+    2 & x & - & x & x & ... & x\\
+    . & . & . & . & . & ... & .\\
+    \end{tabular}
+
+    ~\\
+    \begin{itemize}
+        \item{Leafset}
+    \end{itemize}
+
+    \rowcolors[\hline]{1}{blue!20}{blue!10}
+    \begin{tabular}{c c c c c c c}
+    \hline
+    x & x & x & ... & x & x & x\\
+    \hline
+    \end{tabular}
+
+    \end{overlayarea}
+
+    \column{5.5cm}
+
+    \begin{center}
+        \begin{overlayarea}{\textwidth}{\textheight}
+            \includegraphics[width=6cm]{diagrams/ServiceHighlight}
+        \end{overlayarea}
+    \end{center}
+
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Routing Information}
+
+    \begin{columns}
+
+    \column{5.5cm}
+    \begin{overlayarea}{\textwidth}{1\textheight}
+    Stealth Node (0x3284...)
+
+    \begin{itemize}
+        \item{Routing table}
+        \begin{itemize}
+            \item{Single row}
+            \item{Extra cell}
+            \item{\footnotesize 97\% of time first row is used}
+            \item{\footnotesize Better than random first hops}
+        \end{itemize}
+    \end{itemize}
+
+    \rowcolors[\hline]{1}{blue!20}{blue!10}
+    \begin{tabular}{l!{\vrule}c c c c c c}
+    \hline
+      & 0 & 1 & 2 & 3 & ... & F\\
+    0 & x & x & x & x & ... & x\\
+    \end{tabular}
+
+    ~\\
+    \begin{itemize}
+        \item{No Leafset}
+    \end{itemize}
+
+    \end{overlayarea}
+
+    \column{5.5cm}
+
+    \begin{center}
+        \begin{overlayarea}{\textwidth}{\textheight}
+            \includegraphics[width=6cm]{diagrams/StealthHighlight}
+        \end{overlayarea}
+    \end{center}
+
+    \end{columns}
+
+\end{frame}
+
+\subsection{Stealth Node State}
+\begin{frame}
+    \frametitle{Stealth Node State}
+
+    \begin{itemize}
+    \item{Stealth node routing tables become \textbf{stale}...}
+    \end{itemize}
+
+    \begin{columns}
+
+    \column{6cm}
+
+    \begin{overlayarea}{\textwidth}{0.75\textheight}
+        \includegraphics<1>[width=6cm]{diagrams/Polling}
+        \includegraphics<2>[width=6cm]{diagrams/Piggybacking}
+        \includegraphics<3>[width=6cm]{diagrams/Rejoin}
+    \end{overlayarea}
+
+    \column{6cm}
+
+    \begin{itemize}
+        \item<1>{\textbf{Polling}}
+            \begin{itemize}
+            \item{Periodically requesting state}
+            \end{itemize}
+            ~\\
+        \item<2>{\textbf{Piggybacking}}
+            \begin{itemize}
+            \item{Receiving state with replies}
+            \end{itemize}
+            ~\\
+        \item<3>{\textbf{Rejoining}}
+            \begin{itemize}
+            \item{Occasional full rejoin}
+            \end{itemize}
+    \end{itemize}
+
+    \end{columns}
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Recovery Method Comparison}
+%    \includegraphics[width=10.75cm]{diagrams/Fig2a}
+%\end{frame}
+%
+%\begin{frame}
+%    \frametitle{Recovery Method Comparison}
+%    \includegraphics[width=10.75cm]{diagrams/Fig2b}
+%\end{frame}
+
+\subsection{Stealth Node Addressability}
+\begin{frame}
+    \begin{itemize}
+    \item{Stealth nodes \textbf{cannot be contacted} by default...}
+    \end{itemize}
+
+    \frametitle{Stealth Node Addressability}
+    \begin{itemize}
+        \item<1>{\textbf{Registration}}
+        \begin{itemize}
+        \item{Stealth nodes \textbf{register} with their \textbf{closest} service node}
+        \item{Service nodes forward reply messages to their registered stealth nodes}
+        \end{itemize}
+
+    \hfill\\
+
+    \item<2>{\textbf{Encapsulation}}
+        \begin{itemize}
+        \item{Stealth nodes route a message towards the destination.}
+        \item{The first Service nodes \textbf{encapsulate} the Stealth node's network details in the outgoing message and act as a NAT}
+        \end{itemize}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Addressability Method Comparison}
+    \begin{center}
+%    Dependent nodes in an Application Level Multicast example
+    \includegraphics[width=10cm]{diagrams/Addressability}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Benefits}
+    \begin{itemize}
+    \item{Nodes on the same DHT are \textbf{separated based on capabilities}}
+        \begin{itemize}
+        \item{\textbf{More powerful} nodes are given \textbf{more responsibility}}
+        \end{itemize}
+    ~\\
+    \item{Churning stealth nodes generate \textbf{little to no} overhead}
+        \begin{itemize}
+        \item{Stealth node joins are \textbf{lightweight} i.e. No Announcements}
+        \item{Service node have \textbf{no} Stealth node \textbf{state}}
+        \end{itemize}
+    ~\\
+    \item{\textbf{Improved security}}
+        \begin{itemize}
+        \item{If service nodes are \textbf{appropriately authenticated} then \textbf{only authorised} nodes store and forward data}
+        \item{Stealth nodes \textbf{cannot} commit \textbf{sniff}ing or corruption attacks}
+        \end{itemize}
+%    \item{Support for commercial applications}
+%        \begin{itemize}
+%        \item{Service nodes provided by a commercial entity}
+%        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\section{Evaluation}
+
+\subsection{Methodology}
+\begin{frame}
+    \frametitle{Evaluation Methodology}
+    \begin{itemize}
+%    \item{\textbf{Simulator}}
+%        \begin{itemize}
+%        \item{Our own Java-based discrete-event packet-level platform}
+%        \end{itemize}
+%        ~\\
+%    \item{\textbf{Implementation}}
+%        \begin{itemize}
+%        \item{Our own C++ based system, running over PlanetLab}
+%        \end{itemize}
+%        ~\\
+    \item{\textbf{Methodology}}
+        \begin{itemize}
+        \item{Simulations \& PlanetLab implementation}
+        \item{Pastry as reference (and results shown relative to Pastry)}
+        \end{itemize}
+        ~\\
+    \item{\textbf{Typical Workload}}
+        \begin{itemize}
+        \item{Large number of keys placed into the network}
+        \item{Key popularity according to a Zipf distribution}
+        \item{With and without churn}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% results section
+
+\subsection{Results}
+%\begin{frame}
+%    \frametitle{Validation}
+%    \includegraphics[width=10.75cm]{diagrams/Validation}
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Join Overhead: Messages (Simulation)}
+    \includegraphics[width=10.75cm]{diagrams/Fig4}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Join Overhead: Messages (PlanetLab)}
+    \includegraphics[width=10.75cm]{diagrams/Fig13}
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Join Overhead: Latency (Simulation)}
+%    \includegraphics[width=10.75cm]{diagrams/Fig5}
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Lookup: Latency with and without churn (Simulation)}
+    \includegraphics[width=10.75cm]{diagrams/Fig6}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Lookup: Misses under churn (Simulation)}
+    \includegraphics[width=10.75cm]{diagrams/Fig7}
+\end{frame}
+
+%\begin{frame}
+%    \frametitle{Lookup: Misses under decreasing churn (Simulation)}
+%    \includegraphics[width=10.75cm]{diagrams/Fig11}
+%\end{frame}
+
+\begin{frame}
+    \frametitle{Load balancing: No Churn (Simulation)}
+    \includegraphics[width=10.75cm]{diagrams/Fig8a}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Load balancing: Churn (Simulation)}
+    \includegraphics[width=10.75cm]{diagrams/Fig8b}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Single row routing vs Random selection}
+    \includegraphics[width=10.75cm]{diagrams/RandomNodeStressLog}
+\end{frame}
+
+\subsection{Conclusion}
+\begin{frame}
+    \frametitle{Conclusion}
+
+    % Better conclusion/summary
+
+    \begin{itemize}
+        \item{Pros}
+        \begin{itemize}
+            \item{Reduces effects of clients churning}
+            \item{Increase performance due to smaller routing population}
+            \item{Improves security}
+        \end{itemize}
+        ~\\
+        \item{Cons}
+        \begin{itemize}
+            \item{Service nodes churn has greater impact}
+        \end{itemize}
+        ~\\
+        \item{Applications}
+        \begin{itemize}
+            \item{Mobile environments}
+            \item{Content Distribution Networks (CDNs)}
+        \end{itemize}
+    \end{itemize}
+
+%    \begin{itemize}
+%    \item{Stealth DHTs:}
+%        \begin{itemize}
+%        \item{\textbf{Partition} the network into two groups}
+%        \item{\textbf{Increase performance} in most areas}
+%        \item{\textbf{Return control} to the service provider}
+%        \end{itemize}
+%    \end{itemize}
+
+%    \begin{itemize}
+%    {\footnotesize
+%    \item{Extended Work}
+%        \begin{itemize}
+%        {\footnotesize
+%        \item{{\it Performance Analysis of Stealth DHT with Mobile Nodes} - MP2P'06}
+%        \item{{\it Authentication in Stealth Distributed Hash Tables} - Euromicro'06}
+%        \item{{\it Performance Modelling of Peer-to-Peer Routing} - Submitted to HotP2P'07}
+%        }
+%        \end{itemize}
+%    }
+%    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  %\frametitle{Thank you for listening}
+  \begin{center}
+    \textbf{Thank you for listening\\
+    Any questions?\\}
+    \titlepage
+  \end{center}
+\end{frame}
+
+\end{document}

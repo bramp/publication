@@ -1,0 +1,163 @@
+* Introduction
+-- Previous DHT's assume autonomous/homogeneous nodes [CITE]
+ -- Autonomicity = nodes may join, leave, send and receive
+ -- Homogeneity = similar capabilities
+
+-- Mobile devices are becoming more popular
+ -- Increasingly connected to the Internet [CITE]
+ -- Wide range of capabilities (e.g. mobile phone vs. wifi laptop)
+
+-- Many mobile devices don't have much bandwidth, processing power or storage relative to fixed nodes
+ -- Attaching them to DHTs means homogeneity assumption is broken
+  -- Especially when fixed nodes are also in the network
+ -- GSM, GPRS (14.4k / ~56k), lower than fixed devices [CITE]
+ -- Too much signalling due to churn might cause problems
+ -- Problematic if they are expected to serve content in a p2p network!!!
+   
+-- Mobile nodes are likely to lose connectivity often
+ -- Limited battery power / moving in and out of signal range
+ -- Known as mobility churn [CITE]
+ -- Mobility churn is similar to normal churn (in repsects that nodes join and leave randomly) [CITE]
+ -- Normal churn breaks DHTs [CITE]
+   -- Churn leads to stale routing state
+     -- Degrades DHT efficiency
+   -- Increases signalling overhead
+  -- Ergo mobility churn breaks DHTs
+  -- Severe mobility churn is not unusual [CITE]
+
+-- Using a Stealth DHT resolves these issues
+ -- Paper's goal is to evaluate the performance in a mobile environment
+
+-- A Stealth DHT assigns different roles to different nodes on a DHT
+ -- A subset of nodes are made invisible to routing decisions
+ -- Service nodes can execute all operations in a generic DHT
+ -- Stealth nodes are prevented from storing keys/forwarding data
+  -- Service nodes could be capable machines owned by a service provider
+  -- Stealth nodes could be autonomous devices owned by end-users
+
+-- Stealth DHTs purposely breaks the paradigm of equality amongst peers
+ -- Equality leads to poor performance in mobile environments
+ -- We can reduce the problem by stealthing less capable nodes
+
+-- Stealth DHTs inherit scalability, resilience and self-organisation from DHTs [CITE US]
+ -- and they provide the performance and control, like CDNs
+ -- In a mobile environment, stealthed mobile nodes will mean they have little effect on performance
+
+-- The rest of the paper is organised as follows...
+
+* Stealth DHT Overview
+
+-- Stealth DHT has Service and Stealth nodes
+ -- Service nodes execute all operations supported by the DHT
+ -- Stealth nodes are prevented from storing keys/forwarding data
+ -- Assignment is application dependent, not prescribed by the Stealth DHT!!
+
+-- Routing state of all nodes in the Stealth DHT contains service node entries only
+ -- Nodes can only send messages to service nodes, which will forward it to its destination
+ -- Stealth nodes cannot communicate directly with one another
+  -- Nor will service nodes communicate with stealth nodes, except to reply directly to their requests
+ -- When stealth nodes are 'quiet', they are effectively invisible
+
+-- Stealth nodes use a lightweight join mechanism to differentiate themselves from service nodes
+ -- They do not announce their presence on the network, thus staying out of other nodes' routing tables
+ -- When they join or leave, no updates are required and no information becomes stale
+ -- Stealth nodes however still obtain their routing tables in the same way
+
+-- Stealth nodes do not appear in service node routing tables, so they do not receive updates themselves
+ -- Stealth nodes have increasingly stale routing tables as a result
+ -- This is solved by obtainain addition state perioidcally (from the network, actively or passively)
+
+* Stealth DHT with Mobile Nodes
+
+-- Proposal of using Stealth DHT in environments where fixed and mobile nodes are interconnected
+ -- From the p2p network provider's perspective, two scenarios are considered:
+  -- A network with only mobile clients
+  -- A network with a mixture of stationary and mobile clients
+ -- It is assumed mobile peers can connect via a WAP 
+  -- When a node connects can either receive a new IP upon each handover, or use a Mobile IP infrastructure to retain its previous address
+ -- Changing IP causes churn in the DHT
+  -- Retaining an IP does not (however has side effects of invalidating proximity info)
+ -- Assumption is made that a node does not know its mobility pattern in advance, and cannot warn other peers (as assumed by [CITE])
+
+-- First consider a p2p network that offers service to mobile end-users only
+ -- e.g. a mobile phone data/multimedia service
+-- A provider's network is made up of base stations and servers, which make up the service nodes on the Stealth DHT
+ -- End-users have varied mobile devices (e.g. phones, PDAs, laptops etc.), making up the stealth nodes. [FIG 1]
+
+-- Mobile devices join the DHT via a WAP or base station, using the procedure outlined in the Stealth DHT overview
+ -- Once joined, a mobile peer can communicate via the service nodes in its routing table
+
+ -- Service providers instead use the service nodes to relay messages around the DHT
+ -- Service nodes use the IP infrastructure to respond to mobile node requests
+
+-- Imagine a mobile node M sends a Get message which hashs to service node B2
+ -- M uses a nearby WAP (base station B1) which relays the message to B2 via the DHT
+ -- B2 uses the IP of M to deliver the GetReply message
+  -- The GetReply travels through B1 only because it is the WAP to which M is connected
+
+-- Another network infrastructure we consider is a p2p network with a mixture of mobile and fixed nodes [FIG 2]
+ -- e.g. a CDN that caters to both
+
+-- Fixed devices may be interconnected with mobile devices, and may be better located to help out
+ -- Stealth DHT can isolate end users from the operations of the network
+  -- Results in greater security, fewer legal worries
+ -- With the appropriate security mechanisms, however, capable nodes could be exploited to alleviate the load on service nodes
+  -- Pro/demotion
+
+-- Pro/demotion is not straightforward
+ -- Who pro/demotes, When and how do they pro/demote, Who do they pro/demote?
+ -- This is future work
+
+* Performance Evaluation
+
+-- Pastry and Stealth DHT implemented in our own discrete-event packet-level simulator
+-- 1000 routers on a transit-stub network (4% transit nodes), generated with GT-ITM [CITE]
+-- Each stub/edge-router was also a WAP
+-- Nodes were attached to the network in a random fashion
+ -- Mobile nodes were attached to edge routers via a 1Mbit shared wifi link, average latency 200ms
+ -- Wired peers were attached to edge routers via a 1Mbit unshared link, average latency 5ms
+
+-- Randomly selected nodes PUT 1,000,000 keys before the simulation begins
+-- Once the simulation starts, 10 GET operations are performed by each node
+ -- Exponentially distributed interval with a mean of six minutes
+ -- Requested according to a Zipf distribution (a = 1.2)
+  -- Thus providing a realistic access pattern [CITE]
+
+-- 3 sets of simulations to model mobility churn
+ -- 1 - some nodes connected via wireless links, but did not move (static)
+ -- 2 - some nodes connected via wireless links, moved according to a random waypoint model [CITE] (moving)
+  -- "Thinking time" modelled by an exponential distribution with a 60 minute mean [CITE]
+  -- IP addresses are retained, but proximity metrics may be rendered incorrect
+ -- 3 - same as 2, but IP addresses change (hard)
+  -- Other nodes must update the moving node's IP address
+   -- Moving node may retain its routing table
+
+* Related Work
+
+-- Hsiao et al propose a timeout free mobile DHT design [CITE]
+ -- Stale state information and maintenance overhead is reduced by letting nodes invalidate state before moving
+  -- Nodes don't always know when they will move
+   -- Can also use periodic failure detection and the recovery mechanisms already in DHTs
+   -- Also propose to use cooperative failure mechanism and 'knowing reverse neighbours'
+ -- Increases state information and signalling overhead, however
+
+-- Hsiao et al investigated DHT performance under mobility churn [CITE]
+ -- Looked to see if DHT mechanisms handle mobility churn already
+ -- Also uses a system where a node invalidates its state before moving
+  -- Shows that a DHT with these mechanisms provides fair performance under churn through simulation
+   -- However, also shows that high levels of overhead result
+ -- Also pointed out a possible design where mobile nodes are excluded from routing decisions - much like a Stealth DHT
+
+-- The design goals of a Stealth DHT are similar to those in [CITE]
+ -- A system which allows a provider to participate in creation and control of the service
+ -- And also to offer value-added services such as higher performance and security
+ -- Maintains direct, peer to peer interaction between users
+  -- Based on eDonkey2000 [CITE]
+   -- Uses central servers to provide file sharing services, whereas Stealth DHT is a versatile DHT
+   
+   -- Some work exists into DHTs on MANETs [CITE]
+ -- Ad-hoc networks differ from the ones considered in this paper in that they do not rely on a fixed infrastructure
+ -- We believe a Stealth DHT can also be used on a MANET only if promotion/demotion is implemented
+
+* Conclusion
+ 

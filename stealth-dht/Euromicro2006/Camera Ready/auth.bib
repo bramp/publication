@@ -1,0 +1,452 @@
+% Related work
+% ** GENERAL
+%
+% "Security Considerations for Peer-to-Peer Distributed Hash Tables"
+% - DHT papers generally don't consider malicious nodes
+% - Routing attacks
+%    - Incorrect lookup routing
+%    - Incorrect routing updates
+%    - Partitioning into incorrect networks
+% - Storage attacks
+%    - Denying storage/retrieval (solve through replication with multiple functions?)
+% - Miscellaneous attacks
+%    - Inconsistent behaviour (difficult to identify malicious nodes)
+%    - Denial of service on targeted nodes
+%    - Rapid churning to introduce overhead
+%    - Unsolicited messages
+%
+
+@inproceedings{Sit02Security,
+  author    = {Emil Sit and Robert Morris},
+  title     = {Security Considerations for Peer-to-Peer Distributed Hash Tables},
+  booktitle = {Proc. of the 1st International Workshop on Peer-to-Peer Systems (IPTPS)},
+  year      = {2002},
+  month     = {March},
+  %address   = {Cambridge, Massachusetts, USA}
+}
+
+%
+% "Secure Routing for Structured Peer-to-Peer Overlay Networks"
+%
+
+@inproceedings{Castro02Secure,
+  author    = {Miguel Castro and Peter Druschel and Ayalvadi Ganesh and Antony Rowstron and Dan S. Wallach},
+  title     = {Secure Routing for Structured Peer-to-Peer Overlay Networks},
+  booktitle = {Proc. of the 5th Symposium on Operating Systems Design and Implementation (OSDI)},
+  year      = {2002},
+  month     = {December},
+  %address   = {Boston, Massachusetts, USA}
+}
+
+%
+% "Practical Byzantine Fault-Tolerance"
+%
+
+@inproceedings{Castro99Practical,
+  author    = {Miguel Castro and Barbara Liskov},
+  title     = {Practical Byzantine Fault-Tolerance},
+  booktitle = {Proc. of the 3rd Symposium on Operating Systems Design and Implementation (OSDI)},
+  year      = {1999},
+  month     = {February},
+  %address   = {New Orleans, Louisiana, USA}
+}
+
+%
+% "Beyond "Web of Trust": Enabling P2P E-commerce" and the following
+% "A Decentralized Public Key Infrastructure for Customer-to-Customer e-Commerce"
+% - eBay has problems with centralized servers, suggests a decentralized approach
+%   based on P-Grid DHT
+%
+
+@inproceedings{Datta03Beyond,
+  author    = {Anwitaman Datta and Manfred Hauswirth and Karl Aberer},
+  title     = {Beyond ``Web of Trust'': Enabling P2P E-Commerce},
+  booktitle = {Proc. of the IEEE International Conference on E-Commerce Technology (CEC)},
+  year      = {2003},
+  month     = {June},
+  %address   = {Newport Beach, California, USA}
+}
+
+@article    {Aberer04Decentralized,
+  author  = {Karl Aberer and Anwitaman Datta and Manfred Hauswirth},
+  title   = {A Decentralized Public Key Infrastructure for Customer-to-Customer E-Commerce},
+  journal = {International Journal of Business Process Integration and Management},
+  volume  = {1},
+  number  = {1},
+  year    = {2005},
+  pages   = {26--33}
+}
+
+@inproceedings{Plaxton97Accessing,
+  author    = {C. Greg Plaxton and Rajmohan Rajaraman and Andrea W. Richa},
+  title     = {Accessing Nearby Copies of Replicated Objects in a Distributed Environment},
+  booktitle = {Proc. of the 9th Annual ACM Symposium on Parallel Algorithms and Architectures},
+  year      = {1997},
+  month     = {June},
+  %address   = {Newport, Rhode Island, USA}
+}
+
+% "Tradeoffs in Certificate Revocation Schemes"
+% - detailed look into revocation in PKIs
+%
+
+@article    {Zheng03Tradeoffs,
+  author  = {Peifang Zheng},
+  title   = {Tradeoffs in Certificate Revocation Schemes},
+  journal = {ACM SIGCOMM Computer Communication Review},
+  volume  = {33},
+  number  = {2},
+  year    = {2003},
+  month   = {April},
+  pages   = {103--112}
+}
+
+% "PAST: A large-scale, persistent peer-to-peer storage utility"
+% - further details on certificate-based security measures in PAST (file storage on Pastry)
+%
+
+@inproceedings{Druschel01PAST,
+  author    = {Peter Druschel and Antony Rowstron},
+  title     = {{PAST}: A Large-scale, Persistent Peer-to-Peer Storage Utility},
+  booktitle = {Proc. of the 8th Workshop on Hot Topics in Operating Systems (HotOS)},
+  year      = {2001},
+  month     = {May},
+  %address   = {Schoss Elmau, Germany}
+}
+
+@inproceedings{Dabek01Wide,
+  author    = {Frank Dabek and M. Frans Kaashoek and David Karger and Robert Morris and Ion Stoica},
+  title     = {Wide-area Cooperative Storage with {CFS}},
+  booktitle = {Proc. of the 18th ACM Symposium on Operating Systems Principles (SOSP)},
+  year      = {2001},
+  month     = {October},
+  %address   = {Banff, Canada}
+}
+
+@inproceedings{Kubiatowicz00OceanStore,
+  author    = {John Kubiatowicz and Davic Bindel and Yan Chen and Steven Czerwinski and Patrick Eaton and Dennis Geels and Ramakrishna Gummadi and Sean Rhea and Hakim Weatherspoon and Westley Weimer and Chris Wells and Ben Zhao},
+  title     = {{OceanStore}: An Architecture for Global-Scale Persistent Storage},
+  booktitle = {Proc. of ACM ASPLOS},
+  year      = {2000},
+  month     = {November},
+  %address   = {Cambridge, Massachusetts, USA}
+}
+
+% "SureMail: Notification Overlay for Email Reliability"
+% - attempts to address the 0.5-1% SMTP e-mail loss rate using DHTs and a PKI
+%
+
+@inproceedings{Agarwal05SureMail,
+  author    = {Sharad Agarwal and Venkata N. Padmanabhan and Dilip A. Joseph},
+  title     = {SureMail: Notification Overlay for E-mail Reliability},
+  booktitle = {Proc. of the 4th Workshop on Hot Topics in Networks (HotNets-IV)},
+  year      = {2005},
+  month     = {November},
+  %address   = {College Park, Maryland, USA}
+}
+
+% ** ATTACKS
+%
+% "Eclipse Attacks on Overlay Networks: Threats and Defenses"
+% - DDoS-like attack where cooperating nodes partition overlays through false routing info
+%
+
+@inproceedings{Singh06Eclipse,
+  author    = {Atul Singh and Tseun Ngan and Peter Druschel and Dan Wallach},
+  title     = {Eclipse Attacks on Overlay Networks: Threats and Defenses},
+  booktitle = {Proc. of IEEE INFOCOM},
+  year      = {2006},
+  month     = {April},
+  %address   = {Barcelona, Spain}
+}
+
+% "The Index Poisoning Attack in P2P File Sharing Systems"
+% - Inserting rubbish data into file-sharing indices
+%
+
+@inproceedings{Liang06Index,
+  author    = {Jian Liang and Naoum Naoumov and Keith W. Ross},
+  title     = {The Index Poisoning Attack in {P2P} File Sharing Systems},
+  booktitle = {Proc. of IEEE INFOCOM},
+  year      = {2006},
+  month     = {April},
+  %address   = {Barcelona, Spain}
+}
+
+% "Countering Targeted File Attacks Using Location Keys"
+% - Even with cryptographic systems, a small number of nodes are publically known to hold
+%   a particular file on many p2p storage systems, making them easily targetable
+%
+
+@inproceedings{Srivatsa05Countering,
+  author    = {Mudhakar Srivatsa and Ling Liu},
+  title     = {Countering Targeted File Attacks Using Location Keys},
+  booktitle = {Proc. of the 14th USENIX Security Symposium},
+  year      = {2005},
+  month     = {July},
+  %address   = {Baltimore, Maryland, USA}
+}
+
+%
+% "The Sybil Attack"
+%
+
+@inproceedings{Douceur02Sybil,
+  author    = {John R. Douceur},
+  title     = {The {S}ybil Attack},
+  booktitle = {Proc. of the 1st International Workshop on Peer-to-Peer Systems (IPTPS)},
+  year      = {2002},
+  month     = {March},
+  %address   = {Cambridge, Massachusetts, USA}
+}
+
+%
+% "Sybil-Resistant DHT Routing"
+% - routing strategy to alleviate the effects of co-ordinated multi-node attacks on DHT routing
+% - 'uses latent social information present in the introduction graph of the network'
+%
+
+@inproceedings{Danezis05Sybil,
+  author    = {George Danezis and Chris Lesniewski-Laas and M. Frans Kaashoek and Ross Anderson},
+  title     = {{S}ybil-Resistant {DHT} Routing},
+  booktitle = {Proc. of the 10th European Symposium on Research in Computer Security (ESORICS)},
+  year      = {2005},
+  month     = {September},
+  %address   = {Milan, Italy}
+}
+
+% ------
+
+% Stealth DHT papers
+
+@inproceedings{Brampton05Stealth,
+  author    = {Andrew Brampton and Andrew MacQuire and Idris A. Rai and Nicholas J. P. Race and Laurent Mathy},
+  title     = {{S}tealth {D}istributed {H}ash {T}able: Unleashing the Real Potential of Peer-to-Peer},
+  booktitle = {Proc. of the ACM Conference on Emerging Network Experiments and Technology (CoNEXT) (Student Workshop Session)},
+  year      = {2005},
+  month     = {October},
+  %address   = {Toulouse, France}
+}
+
+@inproceedings{MacQuire06Performance,
+  author    = {Andrew MacQuire and Andrew Brampton and Idris A. Rai and Laurent Mathy},
+  title     = {Performance Analysis of {S}tealth {DHT} with Mobile Nodes},
+  booktitle = {Proc. of the 3rd IEEE International Workshop on Mobile Peer-to-Peer Computing},
+  year      = {2006},
+  month     = {March},
+  %address   = {Pisa, Italy}
+}
+
+@unpublished  {Brampton06Stealth,
+  author    = {Andrew Brampton and Andrew MacQuire and Idris A. Rai and Nicholas J. P. Race and Laurent Mathy},
+  title     = {{S}tealth {D}istributed {H}ash {T}able: A Robust and Flexible Super-Peered {DHT}},
+  note      = {Pending review from ACM SIGCOMM},
+  year      = {2006},
+  month     = {February}
+}
+
+% GT-ITM topology modelling
+
+@article    {Calvert97Modeling,
+  author  = {Kenneth L. Calvert and Matthew B. Doar and Ellen W. Zegura},
+  title   = {Modeling {I}nternet Topology},
+  journal = {IEEE Communications Magazine},
+  volume  = {35},
+  number  = {6},
+  year    = {1997},
+  month   = {June},
+  pages   = {160--163}
+}
+
+% DHTs
+
+@inproceedings{Rowstron01Pastry,
+  author    = {Antony Rowstron and Peter Druschel},
+  title     = {Pastry: Scalable, Distributed Object Location and Routing for Large-scale Peer-to-Peer Systems},
+  booktitle = {Proc. of the 18th IFIP/ACM International Conference on Distributed Systems Platforms (Middleware)},
+  year      = {2001},
+  month     = {November},
+  %address   = {Heidelberg, Germany}
+}
+
+@inproceedings{Stoica01Chord,
+  author    = {Ion Stoica and Robert Morris and David Karger and M. Frans Kaashoek and Hari Balakrishnan},
+  title     = {Chord: A Scalable Peer-To-Peer Lookup Service for {I}nternet Applications},
+  booktitle = {Proc. of ACM SIGCOMM},
+  year      = {2001},
+  month     = {August},
+  %address   = {San Diego, California, USA}
+}
+
+@inproceedings{Ratnasamy01Scalable,
+  author    = {Sylvia Ratnasamy and Paul Francis and Mark Handley and Richard Karp and Scott Shenker},
+  title     = {A Scalable Content-Addressable Network},
+  booktitle = {Proc. of ACM SIGCOMM},
+  year      = {2001},
+  month     = {August},
+  %address   = {San Diego, California, USA}
+}
+
+@inproceedings{Maymounkov02Kademlia,
+  author    = {Petar Maymounkov and David Mazi\`{e}res},
+  title     = {Kademlia: A Peer-to-Peer Information System Based on the {XOR} Metric},
+  booktitle = {Proc. of the 1st International Workshop on Peer-to-Peer Systems (IPTPS)},
+  year      = {2002},
+  month     = {March},
+  %address   = {Cambridge, Massachusetts, USA}
+}
+
+@techreport     {Zhao01Tapestry,
+  author      = {Ben Y. Zhao and John D. Kubiatowicz and Anthony D. Joseph},
+  title       = {Tapestry: An Infrastructure for Fault-tolerant Wide-area Location and Routing},
+  year        = {2001},
+  month       = {April},
+  institution = {University of California, Berkeley, USA},
+  number      = {UCB/CSD-01-1141}
+}
+
+@article    {Neuman94Kerberos,
+  author  = {Barry Clifford Neuman and Theodore Ts'o},
+  title   = {Kerberos: An Authentication Service for Computer Networks},
+  journal = {IEEE Communications},
+  volume  = {32},
+  number  = {9},
+  year    = {1994},
+  month   = {September},
+  pages   = {33--38}
+}
+
+% proxy-like dht superpeer approaches
+
+@inproceedings{Mizrak03Structured,
+  author    = {Alper Tugay Mizrak and Yuchung Cheng and Vineet Kumar and Stefan Savage},
+  title     = {Structured Superpeers: Leveraging Heterogeneity to Provide Constant-Time Lookup},
+  booktitle = {Proc. of the 3rd IEEE Workshop on Internet Applications (WIAPP)},
+  year      = {2003},
+  month     = {June},
+  %address   = {San Jose, California, USA}
+}
+
+@inproceedings{Zhu03Superpeer,
+  author    = {Yingwu Zhu and Honghao Wang and Yiming Hu},
+  title     = {A Super-Peer Based Lookup in Structured Peer-to-Peer Systems},
+  booktitle = {Proc. of the 16th International Conference on Parallel and Distributed Computing Systems (PDCS)},
+  year      = {2003},
+  month     = {August},
+  %address   = {Reno, Nevada, USA}
+}
+
+% churn
+
+@inproceedings{Li04Comparing,
+  title     = {Comparing the Performance of Distributed Hash Tables Under Churn},
+  author    = {Jinyang Li and Jeremy Stribling and Thomer M. Gil and Robert Morris and M. Frans Kaashoek},
+  booktitle = {Proc. of the 3rd International Workshop on Peer-to-Peer Systems (IPTPS)},
+  year      = {2004},
+  month     = {February},
+  %address   = {La Jolla, California, USA}
+}
+
+@inproceedings{Rhea04Handling,
+  author    = {Sean Rhea and Dennis Geels and Timothy Roscoe and John Kubiatowicz},
+  title     = {Handling Churn in a {DHT}},
+  booktitle = {Proc. of the USENIX Annual Technical Conference},
+  year      = {2004},
+  month     = {June},
+  %address   = {Boston, Massachusetts, USA}
+}
+
+% x509
+
+@misc            {rfc2459,
+  author       = {R. Housley and W. Ford and W. Polk and D. Solo},
+  title        = {{RFC 2459}: Internet X.509 Public Key Infrastructure Certificate and CRL Profile},
+  howpublished = {http://www.ietf.org/rfc/rfc2459.txt},
+  year         = {1999},
+  month        = {January}
+}
+
+@misc            {X509,
+  title        = {{ITU-T} {R}ecommendation {X}.509},
+  howpublished = {Information Technology Open Systems Interconnection - The Directory: Authentication Framework},
+  year         = {1997},
+  month        = {August}
+}
+
+@inproceedings{Rowstron01SCRIBE,
+  author    = {Antony Rowstron and Anne-Marie Kermarrec and Miguel Castro and Peter Druschel},
+  title     = {{SCRIBE}: The Design of a Large-scale Event Notification Infrastructure},
+  booktitle = {Proc. of the 3rd International Workshop on Networked Group Communication (NGC)},
+  year      = {2001},
+  month     = {November},
+  %address   = {London, England}
+}
+
+@inproceedings{Zhuang01Bayeux,
+  author    = {Shelly Q. Zhuang and Ben Y. Zhao and Anthony D. Joseph and Randy H. Katz and John Kubiatowicz},
+  title     = {Bayeux: An Architecture for Scalable and Fault-tolerant Wide-Area Data Dissemination},
+  booktitle = {Proc. of the 11th International Workshop on Network and Operating Systems Support for Digital Audio and Video (NOSSDAV)},
+  year      = {2001},
+  month     = {June},
+  %address   = {Port Jefferson, New York, USA}
+}
+
+% remember to tidy the following refs up!
+
+@TechReport{Liebau04Token,
+  author  = {Nicolas Liebau and Vasilios Darlagiannis and Andreas Mauthe and Ralf Steinmetz},
+  title   = {A Token-based Accounting Scheme for P2P-Systems},
+  year    = {2004},
+  month   = {January},
+  number  = {TR-2004-05},
+  institution = {Technische Universität Darmstadt},
+}
+
+@inproceedings{Thigpen02Distributed,
+  author    = {W. Thigpen and T. J. Hacker and L. F. McGinnis and B. D. Athey},
+  title     = {Distributed Accounting on the Grid},
+  booktitle = {Proc. of the 6th Joint Conference on Information Sciences},
+  year      = {2002},
+  pages     = {1147--1150},
+}
+
+@inproceedings{Rivest96PayWord,
+  author    = {R. L. Rivest and A. Shamir},
+  title     = {{P}ay{W}ord and {M}icro{M}int: Two Simple Micropayment Schemes},
+  booktitle = {Security Protocols Workshop},
+  year      = {1996},
+  pages     = {69--87},
+}
+
+@TechReport{Agrawal03Bucking,
+  author      = {A. Agrawal and D. J. Brown and A. Ojha and S. Savage},
+  title       = {Bucking Free-Riders: Distributed Accounting and Settlement in Peer-to-Peer Networks},
+  year        = {2003},
+  month       = {June},
+  number      = {CS2003-0751},
+  institution = {UCSD},
+}
+
+@inproceedings{Dutta03Design,
+  author    = {D. Dutta and A. Goel and R. Govindan and H. Zhang},
+  title     = {The Design of A Distributed Rating Scheme for Peer-to-peer Systems},
+  booktitle = {Proc. of the Workshop on the Economics of Peer-to-Peer Systems},
+  year      = {2003},
+  month     = {June},
+  %location  = {Berkeley, California, USA},
+}
+
+@inproceedings{Vishnumurthy03Karma,
+  author    = {V. Vishnumurthy and S. Chandrakumar and E. G. Sirer},
+  title     = {{KARMA}: A Secure Economic Framework for Peer-to-Peer Resource Sharing},
+  booktitle = {Proc. of the Workshop on the Economics of Peer-to-Peer Systems},
+  year      = {2003},
+  month     = {June},
+  %location  = {Berkeley, California, USA},
+}
+
+@misc{court,
+  author = {http://www.supremecourtus.gov/opinions/04pdf/04{-}480.pdf},
+  title  = {{S}upreme {C}ourt of the {U}nited {S}tates},
+  note   = {No. 04.480. Argued March 29, 2005. Decided June 27, 2005}
+}

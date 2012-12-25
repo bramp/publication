@@ -1,0 +1,66 @@
+ACM: Copyright Form  ACM Permission and Release Form
+
+      TITLE OF NON-ACM WORK:  Stealth Distributed Hash Table: Unleashing the 
+      Real Potential of Peer-to-Peer
+
+      DESCRIPTION OF MATERIAL: 
+
+      TITLE OF ACM PUBLICATION: conext Symposium Proceedings
+
+
+      I hereby grant permission for ACM to include the above-named material (the 
+      Material) in any and all forms, in the above-named publication. I further 
+      grant permission for ACM to distribute or sell this submission as part of 
+      the above-named publication in print and electronic form, and as part of 
+      the ACM Digital Library, on CD-ROM and in translation, or on 
+      videocassette, broadcast, cablecast, laserdisc, multimedia or any other 
+      media format now or hereafter known. (Not all forms of media will be 
+      utilized.) 
+      In the event that any elements used in the Material contain the work of 
+      third-party individuals, I under-stand that it is my responsibility to 
+      secure any necessary permissions and/or licenses and will provide it in 
+      writing to ACM. If the copyright holder requires a citation to a 
+      copyrighted work, I have obtained the correct wording and have included it 
+      in the designated space in the text. 
+      I hereby release and discharge ACM and other publication sponsors and 
+      organizers from any and all liability arising out of my inclusion in the 
+      publication, or in connection with the performance of any of the 
+      activities described in this document as permitted herein. This includes, 
+      but is not limited to, my right of privacy or publicity, copyright, patent 
+      rights, trade secret rights, moral rights or trademark rights. 
+      All permissions and releases granted by me herein shall be effective in 
+      perpetuity and throughout the universe, and extend and apply to the ACM 
+      and its assigns, contractors, sublicensed distributors, successors and 
+      agents. 
+      The following statement of copyright ownership will be displayed with the 
+      Material, unless otherwise specified:
+      "Copyright is held by the author/owner." ACM reserves the right to provide 
+      a hyperlink to the author's site if the Material is used in electronic 
+      media. 
+
+      ____I have not used third-party material.
+
+      ____I have the necessary permission to use third-party material.
+
+      ________________________________________________________
+      SIGNATURE (author/owner)
+
+      ________________________________________________________
+      PRINT NAME 
+
+      DATE: 08/16/2005 
+
+      *Note to authors/panelists: Each contributor must sign and submit a signed 
+      form, or indicate that one agent signs for all authors. 
+
+
+
+      C. WHERE TO RETURN THIS FORM
+      Please return this form to: 
+      Lisa Tolles-Efinger
+      Sheridan Printing
+      1425 Third Avenue
+      Alpha, NJ 08865 (USA)
+      1-908-213-8988
+      fax: 1-908-454-2554
+

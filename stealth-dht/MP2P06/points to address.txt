@@ -1,0 +1,20 @@
+- Reduce the paper length to 5 pages
+
+- Review 1
+   - Why do we choose Pastry for a comparison?
+   - More explanation of the Stealth DHT system needed
+   - Why choose this over centralised overprovisioned servers if service nodes are stable?
+   - Improve the Related Work section
+   - explain that edonkey comment
+   
+- Review 3
+   - How are nodes addressed?
+      - How are addresses assigned?
+      - What state is kept on each node?
+   - Give a detailed example of how routing takes place, Figure 1 is too abstract...
+   - What happens if service nodes fail?
+   - What about stealth nodes getting staler over time?
+      - How do the active/passive update schemes work?
+   - What happens with malicious nodes pretending to be service nodes?
+   - There should be a comparison with non-DHT wireless p2p mechanisms
+   

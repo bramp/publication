@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 11.0, SVG Export Plug-In . SVG Version: 6.0.0 Build 78)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg 
+	 xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" i:viewOrigin="-591 1634" i:rulerOrigin="1 0" i:pageBounds="-1 2834.6455 1416.3232 0"
+	 xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 width="2594" height="434" viewBox="0 0 2594 434" overflow="visible" enable-background="new 0 0 2594 434" xml:space="preserve">
+	<style type="text/css">
+	<![CDATA[
+@font-face{font-family:'Verdana';src:url("data:;base64,\
+T1RUTwADACAAAQAQQ0ZGIIjeb8AAAABwAAACxEdQT1Ov9L8ZAAADNAAAAFBjbWFwAH4AbQAAADwA\
+AAA0AAAAAQAAAAMAAAAMAAQAKAAAAAYABAABAAIAQwBY//8AAABBAFj////A/6wAAQAAAAAAAAEA\
+BAIAAQEBCFZlcmRhbmEAAQEBN/gbAfgYBPgcDBUl/DscC5McCAEFHqAASIKBJf+Lix6gAEiCgSX/\
+i4sMB/cjD4wQ9yoRk/lQEgACAQEwPVZlcmRhbmEgaXMgYSB0cmFkZW1hcmsgb2YgTWljcm9zb2Z0\
+IENvcnBvcmF0aW9uL0ZTVHlwZSAwIGRlZgAAAQAiAgA5AAAFAgABAB8ATwEqAeICGPeUFhwGABwG\
+ABz6AAcc+oD3FBUcBQAcBQAc+wAGDiAcBV4W+2cG+yb4MwX9GAb7JvwzBftdBviyHAXRBfecBvcQ\
+/hwV+5n5b/ua/W8FDiQcBSv4XhVBfUpvUh5vUmVdXGZTX05sSHgIeEg1giQb/KQcBdH4TQb3AdyH\
+g8EfwYO/erxywm6yZ6ReCKRel1VMGkR5T2daHmdZW2NPbQiDB/B22l/FSAjFR6g1JBr74fkzFa+F\
+qX+kHn+keJ9wmmydZZZekAiPXlSNSRv7gPxC95QGybyOkrAfsJGtmKqfqp+ipZirCJiqkbG2GvcT\
+/TsVx4K7ea4eea5qqVyka5xkll6QCJBdU41KG/vL/L73mgbi0pCUwh/ClLmbrqOwpaepnKwInKyU\
+tsAaDj4cBUb3ABVme2p8bn1tfWR8W3xifl+AXIMIgltWhlIb+wApmqozHzKpPrpKzEvKWdxn7Qhn\
+7Hn3BvcVGvcPnPcBruweruy93MzOyszYvOWtCK3k75z3ARvb24F42x/aeORp7FoI+398BznQOr06\
+qgiqOjWbLxtAR39zTx9OclVlXFhdWWdMcj8IcT5+MycaIpkxqEAep0CvTbhculrBZsp0CHPJzX/Q\
+G+rlm6zeH96s2bzUzAiZBg4jHAU4HAXRFfyW/XT4lf2FBft5Bvwq+Pn8NPz5BftsBvib+Xz8j/l9\
+Bfd4Bvgl/PH4LvjxBQ4cCAAUHAXjFQABAAAACgAeACwAAURGTFQACAAEAAAAAP//AAEAAAABa2Vy\
+bgAIAAAAAQAAAAEABAACAAAAAQAIAAEAEgAEAAAAAQAMAAEAA//2AAEAAQAE")}
+	]]>
+	</style>
+	<metadata>
+		<variableSets  xmlns="&ns_vars;">
+			<variableSet  varSetName="binding1" locked="none">
+				<variables></variables>
+				<v:sampleDataSets  xmlns="&ns_custom;" xmlns:v="&ns_vars;"></v:sampleDataSets>
+			</variableSet>
+		</variableSets>
+		<sfw  xmlns="&ns_sfw;">
+			<slices></slices>
+			<sliceSourceBounds  x="-591" y="1200" width="2594" height="434" bottomLeftOrigin="true"></sliceSourceBounds>
+		</sfw>
+<?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?><x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 3.0-29, framework 1.6'>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
+
+ <rdf:Description rdf:about=''
+  xmlns:pdf='http://ns.adobe.com/pdf/1.3/'>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:tiff='http://ns.adobe.com/tiff/1.0/'>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:xap='http://ns.adobe.com/xap/1.0/'
+  xmlns:xapGImg='http://ns.adobe.com/xap/1.0/g/img/'>
+  <xap:CreateDate>2005-10-19T00:01:51Z</xap:CreateDate>
+  <xap:ModifyDate>2005-10-19T00:01:51Z</xap:ModifyDate>
+  <xap:CreatorTool>Illustrator</xap:CreatorTool>
+  <xap:Thumbnails>
+   <rdf:Alt>
+    <rdf:li rdf:parseType='Resource'>
+     <xapGImg:format>JPEG</xapGImg:format>
+     <xapGImg:width>256</xapGImg:width>
+     <xapGImg:height>44</xapGImg:height>
+     <xapGImg:image>/9j/4AAQSkZJRgABAgEASABIAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA&#xA;AQBIAAAAAQAB/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoK&#xA;DBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8f&#xA;Hx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgALAEAAwER&#xA;AAIRAQMRAf/EAaIAAAAHAQEBAQEAAAAAAAAAAAQFAwIGAQAHCAkKCwEAAgIDAQEBAQEAAAAAAAAA&#xA;AQACAwQFBgcICQoLEAACAQMDAgQCBgcDBAIGAnMBAgMRBAAFIRIxQVEGE2EicYEUMpGhBxWxQiPB&#xA;UtHhMxZi8CRygvElQzRTkqKyY3PCNUQnk6OzNhdUZHTD0uIIJoMJChgZhJRFRqS0VtNVKBry4/PE&#xA;1OT0ZXWFlaW1xdXl9WZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo+Ck5SVlpeYmZ&#xA;qbnJ2en5KjpKWmp6ipqqusra6voRAAICAQIDBQUEBQYECAMDbQEAAhEDBCESMUEFURNhIgZxgZEy&#xA;obHwFMHR4SNCFVJicvEzJDRDghaSUyWiY7LCB3PSNeJEgxdUkwgJChgZJjZFGidkdFU38qOzwygp&#xA;0+PzhJSktMTU5PRldYWVpbXF1eX1RlZmdoaWprbG1ub2R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo&#xA;+DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A9I2GnaXHotvL9QikKWyP&#xA;wWJCzERg0ApuTiqQ2XnLyZJoGnapf2A0+61HikWjyWxkvhM3SL6vGjSVPUHjShB6HFVSLUNUuSr2&#xA;3khkgbhRruWzgk4sDyPpqZSOJA2NDviqpc6/5b0u6jg1iyW3t5l5x6m1k0VoNwvCV25em3JgAWID&#xA;EgDfFWSfonSv+WKD/kUn9MVS3StK0s3+sg2cBAvEA/dpt/odufDFUF+mPL8XmLUdIvdMSxhsLeG5&#xA;XVLiKOO1lEvLmqSMAvKPjvv+rFUFB5kstTUSeXfK02qWjFOGoSRQ2Vs6MGqyG54StxK0+GKnviqv&#xA;JqDWdib7U/LfpmOnr2FpAt5MqEbSK8dFk+P4eCry79MVTjSW8ravafW9Njtbq35FDJHGho6/aVgR&#xA;UMO4OKqWq6VpYv8ARgLOAA3jg/u03/0O4Phiqj5jvNK0T9GMdG+tx6hfR2UskEKEWySI7m4mNKLE&#xA;np/Ex6VxVB3nmTyst8+naVpZ1zUYmRbi30+3jdYvUUlWluJPTt0G24MnL2xVdZS6jOx+veWIdKg4&#xA;oUnb0r1izDdDDAAwoduVcVVtD1jyxq11JYGwWy1aFWabTrqBY5eKNwaRKjjJHz+EOhIJBxVPP0Tp&#xA;X/LFB/yKT+mKpToGnaYnlXTZvqMUrLYwvwWJCzEQqaDbcnFUps/OXk2Ty/p+qX2n/ULvUQqxaK9t&#xA;zvxM3SL6uiGSp6g8QKEHYHFVSPUdVuaPa+SGSFuBU3clnBJxdSS3pqZacSAOLEHfoMVVLjXvLWm3&#xA;SwazZLawyjlDqb2ZitCKqoV3bl6bc24jnSu1OoGKsk/ROlf8sUH/ACKT+mKpbpWlaWb/AFkGzgIF&#xA;4gH7tNv9Dtz4YqgY9b8urrusaXf6bHpsOlJBIupXcccVtcLOhdvSkYBT6VKPv3xVBQ+ZLXUkEvl3&#xA;ypPqdqxX076aKGxt3RlJLJ9Z4TNxZabRU8DiqIl1D6lZG91Ly56fplfXsbS3F3MiMB+8V4xxko54&#xA;lFXl36DFU40lvK2r2YvNNS0urYsyepHGhAZTRlIpUEeBxVS1XStLF/owFnAAbxwf3ab/AOh3B8MV&#xA;UfMd5pWifoxjo31uPUL6OylkghQi2SRHc3ExpRYk9P4mPSuKoK78y+VhfSadpOlnXdQgZVuYNPgj&#xA;dITIpZfVuJPTt0rToZOXtiq+yl1Gd/8ATPLMOlwFVaOZvSuyzMtTGYoQrJvtyJI+/FVfQtX8ratc&#xA;yWIsUs9VhDtNpt1AscwSNhG0igijx8zxEikqTt1BxVMNV0rSxpd4RZwAiCSh9NP5D7Yqhr/XoNC8&#xA;pwahJGZ5BDBFa2iMqyT3EoVIoY+X7TuwH8MVX+WNJ1O1sYJ9ZvDe6xIjNdShEjjV5SrMiKoHwoEV&#xA;BU9Friqd4qp3Ftb3MLQXESTQvTnFIodTQ1FVNR1xVhsNjq/lt7/RtFnjazuIoz5dsrgtW2mcSmWN&#xA;ZH5tNHyT1DViYwaAFeIxVPfLgug+pC7IN0LiH6wQQR6n1G250IC9/YYqleiy3/mXVL/VGuTH5fiM&#xA;2nadbRCNhcqrqtxcmX4qo7x8EC9hWu+KstxV2KsV1ry8lhrEPmTR3jsLtnWLVoyvGC7geQFjMR8M&#xA;bpuwm4lv2TscVdZXOs3Vzpl1qHp+hcag8uniIg0t3srho60HXgV5bn4uRFFoAq35m1C/vtZsvLGl&#xA;zeg8/wDpOs3SBJGhskNDFxNSj3BPBWI2HIjcYqmujw39nNdWl7cLciSWS4snCBGELtVkemzMrtWo&#xA;A2YCm2KppiqU+YfLOna3bgTL6V9ARJYaggpNbzJUxSKQRXgxrwb4W6EEYqlmj33mm6uNLhklglit&#xA;ImXXZloryTMgER9Pj+7aqs0kW3EstGZa1VXfp6PQvIWnX5iNzN9UtIbSzVgjz3EypHFChb9p3YDF&#xA;VbRdH1uws7KfUNQ+u6hGspvf3aRxlrlxJIsYUfCqt0qTsMVTy3uYpw3H4ZE2libZ0Pgw/Ueh6iox&#xA;Vu5tba6ge3uYkngkFHikUOjCtd1aoOKsLjsNZ8t/XdE0KeN7SdYm8v2lwx52zuZDPGkknMyoOBkX&#xA;kT6dacStBirINA9dZdV+tFfrAuYvXKn4ef1G25UNBtX2xVJtKOp+Z7vVNTF4YNEHradpMMYjZZkR&#xA;gs9y0grySWROKcT9kVrvirIorm8gUC5Qzr09aMfFtseSdzt+x17Liqr+ltMH2rqJG7o7hGHsVajA&#xA;/PFWIaomj2HmezvtAu4bTUbkFtTto0c211aI6CRppUDwwPGZARIRyb7PfFUws7jWbq50y61D0vRu&#xA;NQaXTxEQaW72Vw0YNB1CkcviNW5EfDxGKu8x6hqN9rtl5Z0qX0PUH1nW7tVjkMVmAQIeLcuL3DfC&#xA;rEbAMRUjFU6tYbiy5xtJ68bO8gLABhzYs3TbqfDviqLE8VKk8f8AW2+49D9GKpJ5r0XQ9VsGlupR&#xA;bXdrSWy1SL+/tpkqY5FK7sEY1KNVW6MCMVSuDUPNF5ZW4lkt5bW30+UazPGaNJcNB8FEK/u2r8Tx&#xA;VHDkN2GKpfNq1nqkWni+STTdP8vXkMlw1+qwx3ipbUEsHrLR445ZKl+QpxJ8CFXoMckcsayRsHjc&#xA;BkdSCrKRUEEdQcVXYq7FWJfmRKI9O0uRFrcw6rYTQvSVvTpcJG7lYt2HGXgQevKnWmKoC38w61YT&#xA;XenajbEavqdxMrahZRytYWrx2lsI2mldW9MFXBHLqQRiqe+UF0vTfLunaTDMg+pQpbA/CgkdPgLJ&#xA;QKrc2+IEda1PXFU/xVbLNFDGZJXWONd2dyFAHuTiqXatc6nLp866OkZu6BY5br1Eg3oW3SkjfCdi&#xA;nfv1xV57oOp67pOgaVcPZrd6LpUl3DY2dnHcNfyz2q30SxLG9fhZEQL4EmtAMVZRotxZR67qGs3L&#xA;s0+rxwfVoxGWlt7eCMfuJQic0cPI7sp6V9sVZDH6tzcxT+m0MUQbizUDuWoBspNEpuQ1DWm22Koz&#xA;FVnqqdl+M+C+/v0xVgznzDD+Yl8NKS1aW7tLKW8M/wBYMawRXUsTFWU8RK0R+EUoWX5nFUFpeowa&#xA;5pugCeGaytdBuIDLFeRBPrZjtjEslukqH1EV5OXMGlASPi4lVXofrJOjLFUhhQt0pUeB3xVdLbxS&#xA;lSwIZTVXUlWH0j9WKqJN3Dt6qT0GyuCjnfqWTkPuTFWI/mAdaP6IuPSt0tLTUbOVW/0ia4WdrqOF&#xA;WVYgi8DFLIrBtySAN6Yqo23mHXrF7rTdTtuOt6nPMr6hYxytp9rIlpbCNpZpFb0wVcEc+pBxVkXl&#xA;FLCx8uadptoQ62UCW4KAAMYwFLgiinmfir3r44qnKJsxcD4zUr1psAP1Yq4goKhwq/5W4H01GKqF&#xA;1JctbuIVWpFOTMyih604gNXwpirzLRdY1zSPLWiXbWQv9F0xp4LK1sI55L+ee3W9gVVjf9h41Qr8&#xA;zWgGKsu0AWqa9qmrTSh59VELQCgLwW8EYAgkooZX5szsp6V8dyqyVSXcPSigECtN6keHyxVcU3qp&#xA;4mtT4H5jFULeJPMsYhdGkjdZBVSyEgEfEtR0ryHxdQMVeflfNcXmzzBRbAy3FnbSXrKt0Ea0SS6j&#xA;DIzMUE/pqgI+ySPY4qnPm/Sp73yXZXVvALu40pYb0WbBnWeJIilxAYl/vTLbvIiodiTQ7VxVP9Lu&#xA;ob3T7fUdGnSexuY1lhiY1TiwqAjLyKUr0oQOgAxVFfX2T+/tpo+3JV9VSfb0ubU/1lGKu+uTSbW1&#xA;tI1ekko9JAe9Q37z7kxVjerRWOqa7Bo0jm7u7KS11K6SOqGMxS1iLtyXii1LRovJiQa9+Sqc6fEk&#xA;11rsT14SXao1CVNGsrcGhUgj6MVSL8vZUj0qXyzeBY9W0I/VLqLi3GWBfht5wJDV0kiVatQDlVVo&#xA;AMVZR9TtFqGtIyDWrKi0NTU1B33Ir3xVckNmsgkitwJVqFYRhSA3WhIXriqB1/V49LtIZppFjluL&#xA;mC1tYyrSc5ZpAoUKpUs3GpG4A64ql+naRFo9h5Z0yJGRLW5dB6jc3Y/VLkl2NWFXJ5EA0FaDFUNd&#xA;Mmi+fxPcDjpvmOBYluCWpFqFoGoCxokYngoFp9po8VZUYyCSUWQHcmgDeHyOKtVh7xEHw4E/qBGK&#xA;rizcSSPTRRUk0JoPACuKsb8prZ6jqF35nt1Lx38MdtBdL8MUkVrNMqlE5MSDyqGYb9tsVS3WrO6f&#xA;yHoWp2kZnuNFjtL/AOrD1G9WJIOE8YjT+8doXcIpoK9TSuKst0+7s9RsLe/sJEuLO4RZYG6qVYVF&#xA;DvTFVcemv2oePhRQ3T/Vriq5W7RR0B7kcR/X8MVY1q/1PWNeh0csbiTS5bTUrmGPkpRxI3pGSTko&#xA;CinNUFSSN9uqqZ2MEdxca9BJUxy3QjehIPFrK3BoRuMVSb8vbgrpLeX7ukWsaETZ3aENSWNNoLhR&#xA;IeTpLFxPLYcqgbDFWVcQPtQg+LKAfwNDirg0YNUjJb2Xj+LUxVLfMWrRabZwvO6rLd3MNnaRcS5e&#xA;WdwvEAFatx5HqAOp2xVAadpEWj6f5X0uJGjS0uGiAdubkizuauxBbdz8R374qhZ2XRvzBMlyAmne&#xA;ZIVSGclj6eoWq0ILGiR+vBxCgbsY8VZWYyDUosg61oA3h8j+GKtVh7xkHw4E/qBGKtyScYmd/wBz&#xA;CilndiKhQKnpsBTvirEtIS01C31fzNBV11GxEEVwtVikjtjMoMaFmPHeoZgCa7bYqyjSf+OVZf8A&#xA;GCL/AIgMVSCXQ9S0GCaTyvZRTIZzcDTXuZIY29YUlVAQ8aH1CZenxHb4a1xVtfPixFkv9B1ezlG4&#xA;QWjXIIMvpr8dqZ05ftUJ6dK7VVb1HU/Neo+la6BFbWvrKfrOo3DGVrRXU8D9XATnMpHxRlqA0qSM&#xA;VTDy35ZstCgnETtcXt7M1zqF9LT1Z53pyZiAKLtRVGyjYbYqq6T/AL361/zGJ/1B2+KqGteXo7y8&#xA;j1G1Ah1SONrf60JJIj6LKxCN6Z+ILIVfie47Yqlsfm/XrNjFrnlu8iZet3p3G+t2BfgvEIRPUj4i&#xA;DHsPuxVEf4ulu7SWTS7CVrkArBbXyyWUrylii8Y5UDFARV2/ZHiQRiqnovle/l1Fdd8yzpe6qAfq&#xA;dmiKLaxRyG4RVFZJVNV9c0JHQKK1VTXVv979F/5jH/6g7jFV+uaHp2t6ZNpuoR+rbTAVAJUqymqO&#xA;rAghlYBlPY4qksuoea9GnYHR31XTpFVhJaXPqTxykrGYyl0yFkoC/MP3pxoOWKq1r53tbuRIY9Pv&#xA;7aZlLFr+1mtIECuUIkndSgO1RStajv0VQF7pHmTzXJPa6q6aZ5XLFfqls3qXF9FsQZJiF9FOSV4q&#xA;CXVqGndVl8EEMESQwRrFDGOKRoAqqB2AGwxVAeWP+Ua0n/mDt/8Ak0uKpRNo+q6DDI/lmyiniE5l&#xA;XTHuZIkKTAeqsasHijPqVl99xtU4q2nnxEIW+0LWLKU7hDZtcChkMYq9qZ0B25Ur8q4q6/1TzVqQ&#xA;itdBjt7QTLW51KZvWNqrAlP9HovOX4SGQsAu25xVMfLflqx0KzaKFmuLqdvVvb6WhmnlIHJ3I+Wy&#xA;9ANhiqrpP+9+tf8AMYn/AFB2+KobWfLcN5fx6paj0NXSF7X62JZYz6DhmCsIyA4WUhwD94riqXp5&#xA;v12zb09c8t3kRHW50/jfwHlJxXiI+M/T4jWLbFUT/iy4u7KWXStPka6oUtrW+D2UskvIoP3cic/T&#xA;BFXbstdiRTFVLRfK19JqSa/5kuFvdXVWFnaoii2sUkIYpD1Z5FNVMxoWHZRtiqa6t/vfov8AzGP/&#xA;ANQdxiq7XdEsda0yWwvIxJG/xRk1BSRd0kUqQQyncEHFUouNS80aPdsv6Gk1TTJOLJLaXCyzxMxV&#xA;DGyXLRMyihfmG/apxABbFVS287Wl1IsMVhfW0zCrNf201pAlGZSJJ3QoD8O1K1qAO9FUDd6R5i81&#xA;SSQas6ab5Z5kfUrZvUnvoxxZDLNRTCnJK8VFWU8Wp3VZJqEMMGi3UMMaxRJbyBI0AVVAQ7ADYYqg&#xA;LH639St/Q+v+h6aelX6jXhxHGv0Yqr/7kf8Al+/6ccVd/uR/5fv+nHFXf7kf+X7/AKccVd/uR/5f&#xA;v+nHFUHY+t9a1D0P0h6v1hfrVfqNPU+rxU4+3p8PpxVGf7kf+X7/AKccVd/uR/5fv+nHFXf7kf8A&#xA;l+/6ccVd/uR/5fv+nHFUHfet9a0/1/0h6v1hvqtPqNPU+ry15e3p8/pxVGf7kf8Al+/6ccVd/uR/&#xA;5fv+nHFXf7kf+X7/AKccVd/uR/5fv+nHFXf7kf8Al+/6ccVQejet+iLH6n+kPqn1eL6vz+o8vT4D&#xA;hy9+OKoz/cj/AMv3/Tjirv8Acj/y/f8ATjirv9yP/L9/044q7/cj/wAv3/TjiqDsfW+tah6H6Q9X&#xA;6wv1qv1GnqfV4qcfb0+H04qjP9yP/L9/044q7/cj/wAv3/Tjirv9yP8Ay/f9OOKu/wByP/L9/wBO&#xA;OKoO+9b61p/r/pD1frDfVafUaep9Xlry9vT5/TiqM/3I/wDL9/044q7/AHI/8v3/AE44q7/cj/y/&#xA;f9OOKu/3I/8AL9/044qoX31v6lcev9f9D039Wn1GvDieVPoxV//Z</xapGImg:image>
+    </rdf:li>
+   </rdf:Alt>
+  </xap:Thumbnails>
+ </rdf:Description>
+
+ <rdf:Description rdf:about=''
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <dc:format>image/svg+xml</dc:format>
+ </rdf:Description>
+
+</rdf:RDF>
+</x:xmpmeta>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <?xpacket end='w'?>
+			</metadata>
+		<g id="Layer_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+			<g>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M406.96,209.846"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="22">
+								<p><span>X</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_1_" />
+					</foreignObject>
+					<text id="XMLID_1_" transform="matrix(1 0 0 1 406.96 209.8457)"><tspan x="0" y="0" font-family="'Verdana'" font-size="22">X</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M11.613,233.381"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>A</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_2_" />
+					</foreignObject>
+					<text id="XMLID_2_" transform="matrix(1 0 0 1 11.6133 233.3809)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">A</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M79.172,75.353"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>B</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_3_" />
+					</foreignObject>
+					<text id="XMLID_3_" transform="matrix(1 0 0 1 79.1724 75.3525)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">B</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M391.634,134.467"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>C</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_4_" />
+					</foreignObject>
+					<text id="XMLID_4_" transform="matrix(1 0 0 1 391.6343 134.4668)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">C</tspan></text>
+				</switch>
+				<polygon i:knockout="Off" points="66.667,235.779 86.251,240.608 78.176,244.166 77.267,252.939 "/>
+				<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" d="M384.44,206.718c0,0-77.254,197.987-306.264,37.448"/>
+				<rect x="1" y="1" i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" width="432" height="432"/> 
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M838.96,209.846"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="22">
+								<p><span>X</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_5_" />
+					</foreignObject>
+					<text id="XMLID_5_" transform="matrix(1 0 0 1 838.96 209.8457)"><tspan x="0" y="0" font-family="'Verdana'" font-size="22">X</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M443.613,233.381"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>A</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_6_" />
+					</foreignObject>
+					<text id="XMLID_6_" transform="matrix(1 0 0 1 443.6133 233.3809)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">A</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M511.172,75.353"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>B</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_7_" />
+					</foreignObject>
+					<text id="XMLID_7_" transform="matrix(1 0 0 1 511.1724 75.3525)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">B</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M823.634,134.467"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>C</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_8_" />
+					</foreignObject>
+					<text id="XMLID_8_" transform="matrix(1 0 0 1 823.6343 134.4668)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">C</tspan></text>
+				</switch>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="498.667,235.779 518.251,240.608 510.176,244.166 509.267,252.939 "/>
+				<polygon i:knockout="Off" points="814.056,201.317 796.303,210.894 799.895,202.835 794.676,195.725 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M816.439,206.718c0,0-77.254,197.987-306.263,37.448"
+					/>
+				<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="8" d="M502.415,223.607
+					c0,0,138.248,78.193,297.48-20.772"/>
+				<rect x="433" y="1" i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" width="432" height="432"/> 
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1270.96,209.846"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="22">
+								<p><span>X</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_9_" />
+					</foreignObject>
+					<text id="XMLID_9_" transform="matrix(1 0 0 1 1270.96 209.8457)"><tspan x="0" y="0" font-family="'Verdana'" font-size="22">X</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M875.613,233.381"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>A</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_10_" />
+					</foreignObject>
+					<text id="XMLID_10_" transform="matrix(1 0 0 1 875.6133 233.3809)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">A</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M943.172,75.353"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>B</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_11_" />
+					</foreignObject>
+					<text id="XMLID_11_" transform="matrix(1 0 0 1 943.1724 75.3525)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">B</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1255.634,134.467"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>C</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_12_" />
+					</foreignObject>
+					<text id="XMLID_12_" transform="matrix(1 0 0 1 1255.6343 134.4668)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">C</tspan></text>
+				</switch>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="930.667,235.779 950.251,240.608 942.176,244.166 941.268,252.939 "/>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="1246.056,201.317 1228.303,210.894 1231.895,202.835 1226.676,195.725 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M1248.439,206.718c0,0-77.254,197.987-306.264,37.448"
+					/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" stroke-dasharray="8" d="M934.414,223.607
+					c0,0,138.248,78.193,297.48-20.772"/>
+				<rect x="865" y="1" i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" width="432" height="432"/> 
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1702.96,209.846"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="22">
+								<p><span>X</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_13_" />
+					</foreignObject>
+					<text id="XMLID_13_" transform="matrix(1 0 0 1 1702.96 209.8457)"><tspan x="0" y="0" font-family="'Verdana'" font-size="22">X</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1307.613,233.381"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>A</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_14_" />
+					</foreignObject>
+					<text id="XMLID_14_" transform="matrix(1 0 0 1 1307.6133 233.3809)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">A</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1375.172,75.353"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>B</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_15_" />
+					</foreignObject>
+					<text id="XMLID_15_" transform="matrix(1 0 0 1 1375.1719 75.3525)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">B</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1687.635,134.467"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>C</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_16_" />
+					</foreignObject>
+					<text id="XMLID_16_" transform="matrix(1 0 0 1 1687.6348 134.4668)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">C</tspan></text>
+				</switch>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="1362.667,235.779 1382.251,240.608 1374.176,244.166 1373.268,252.939 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M1366.414,223.607c0,0,150.679,19.431,61.227-108.181"
+					/>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="1420.035,104.577 1437,115.488 1428.209,116.238 1424.507,124.245 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M1680.439,206.718c0,0-77.254,197.987-306.264,37.448"
+					/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" stroke-dasharray="8" d="M1366.414,223.607
+					c0,0,138.248,78.193,297.48-20.772"/>
+				<rect x="1297" y="1" i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" width="432" height="432"/> 
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M2134.96,209.846"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="22">
+								<p><span>X</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_17_" />
+					</foreignObject>
+					<text id="XMLID_17_" transform="matrix(1 0 0 1 2134.96 209.8457)"><tspan x="0" y="0" font-family="'Verdana'" font-size="22">X</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1739.613,233.381"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>A</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_18_" />
+					</foreignObject>
+					<text id="XMLID_18_" transform="matrix(1 0 0 1 1739.6133 233.3809)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">A</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M1807.172,75.353"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>B</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_19_" />
+					</foreignObject>
+					<text id="XMLID_19_" transform="matrix(1 0 0 1 1807.1719 75.3525)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">B</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M2119.635,134.467"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>C</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_20_" />
+					</foreignObject>
+					<text id="XMLID_20_" transform="matrix(1 0 0 1 2119.6348 134.4668)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">C</tspan></text>
+				</switch>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="1794.667,235.779 1814.251,240.608 1806.176,244.166 1805.268,252.939 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M1798.414,223.607c0,0,150.679,19.431,61.227-108.181"
+					/>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="1852.035,104.577 1869,115.488 1860.209,116.238 1856.507,124.245 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" stroke-dasharray="8" d="M1857.256,97.169
+					c0,0,101.299,130.192,238.639,105.666"/>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="2110.056,201.317 2092.303,210.894 2095.895,202.835 2090.676,195.725 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M2112.439,206.718c0,0-77.254,197.987-306.264,37.448"
+					/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" stroke-dasharray="8" d="M1798.414,223.607
+					c0,0,138.248,78.193,297.48-20.772"/>
+				<rect x="1729" y="1" i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" width="432" height="432"/> 
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M2566.96,209.846"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="22">
+								<p><span>X</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_21_" />
+					</foreignObject>
+					<text id="XMLID_21_" transform="matrix(1 0 0 1 2566.96 209.8457)"><tspan x="0" y="0" font-family="'Verdana'" font-size="22">X</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M2171.613,233.381"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>A</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_22_" />
+					</foreignObject>
+					<text id="XMLID_22_" transform="matrix(1 0 0 1 2171.6133 233.3809)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">A</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M2239.172,75.353"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>B</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_23_" />
+					</foreignObject>
+					<text id="XMLID_23_" transform="matrix(1 0 0 1 2239.1719 75.3525)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">B</tspan></text>
+				</switch>
+				<switch i:objectNS="&ns_flows;" i:objectType="pointText">
+					<foreignObject requiredExtensions="&ns_flows;" x="0" y="0" width="1" height="1" overflow="visible">
+						<flowDef  xmlns="&ns_flows;">
+							<region  textMatrix="1 0 0 1 0 0">
+								<path d="M2551.635,134.467"/>
+							</region>
+							<flow  xmlns="&ns_flows;"  font-family="'Verdana'" font-size="33">
+								<p><span>C</span></p>
+							</flow>
+						</flowDef>
+						<x:targetRef  xlink:href="#XMLID_24_" />
+					</foreignObject>
+					<text id="XMLID_24_" transform="matrix(1 0 0 1 2551.6348 134.4668)"><tspan x="0" y="0" font-family="'Verdana'" font-size="33">C</tspan></text>
+				</switch>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="2226.667,235.779 2246.251,240.608 2238.176,244.166 2237.268,252.939 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M2230.414,223.607c0,0,150.679,19.431,61.227-108.181"
+					/>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="2284.035,104.577 2301,115.488 2292.209,116.238 2288.507,124.245 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M2289.256,97.169c0,0,116.313,95.162,213.977,53.641"
+					/>
+				<polygon i:knockout="Off" fill="#AFAFAF" points="2515.524,145.861 2501.052,159.911 2502.314,151.179 2495.355,145.758 "/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" stroke-dasharray="8" d="M2289.256,97.169
+					c0,0,101.299,130.192,238.639,105.666"/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" d="M2544.439,206.718c0,0-77.254,197.987-306.264,37.448"
+					/>
+				<path i:knockout="Off" fill="none" stroke="#AFAFAF" stroke-width="2" stroke-dasharray="8" d="M2230.414,223.607
+					c0,0,138.248,78.193,297.48-20.772"/>
+				<rect x="2161" y="1" i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" width="432" height="432"/> 
+				<g i:knockout="Off">
+					<g>
+						<circle i:knockout="Off" fill="none" cx="654.737" cy="218.916" r="168.898"/> 
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M785.31,326.042c-3.831-3.206-4.557-8.683-1.797-12.363
+								c2.695-3.73,8.188-4.621,12.319-1.955c4.221,2.726,5.229,8.407,2.17,12.636C794.874,328.534,789.1,329.219,785.31,326.042z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M766.82,345.22c-3.229-3.708-3.131-9.271,0.177-12.473
+								c3.249-3.258,8.773-3.32,12.493,0.014c3.685,3.299,3.831,9.111,0.146,12.802C775.89,349.193,770.122,349.007,766.82,345.22z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M817.692,263.326c-4.733-1.337-7.671-6.037-6.688-10.53
+								c0.974-4.493,5.494-7.586,10.448-6.835c4.876,0.735,8.25,5.529,7.147,10.631
+								C827.482,261.692,822.527,264.689,817.692,263.326z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M822.64,237.153c-4.87-0.571-8.621-4.763-8.263-9.352
+								c0.178-4.6,4.26-8.36,9.246-8.393c4.955-0.032,8.937,4.168,8.727,9.377C831.956,233.987,827.644,237.737,822.64,237.153z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M823.622,219.409
+								c0.191,50.514-23.917,100.299-63.604,131.529"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M800.519,304.173
+								c-8.485-5.188-11.717-15.347-8.245-23.197c3.599-7.793,13.356-12.075,22.856-9.14c9.497,2.925,14.552,13.899,9.948,23.967
+								C820.563,305.909,808.989,309.363,800.519,304.173z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M652.392,387.756c0.115-4.917,3.939-8.927,8.543-9.1
+								c4.602-0.142,8.714,3.435,9.212,8.429c0.493,4.897-3.315,9.391-8.526,9.559C656.409,396.837,652.277,392.778,652.392,387.756
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M625.869,385.308c0.887-4.867,5.277-8.164,9.853-7.658
+								c4.56,0.621,8.076,4.728,7.791,9.754c-0.273,4.899-4.735,8.813-9.908,8.121C628.416,394.943,624.975,390.22,625.869,385.308z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M721.622,374.025c-1.945-4.62-0.054-9.754,4.059-11.809
+								c4.125-2.04,9.391-0.368,11.851,3.897c2.504,4.347,0.828,9.909-3.851,12.228C729.01,380.67,723.53,378.57,721.622,374.025z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M745.153,361.544c-2.651-4.259-1.545-9.553,2.154-12.294
+								c3.805-2.593,9.165-1.91,12.322,1.994c3.097,3.823,2.419,9.719-1.886,12.672
+								C753.542,367.013,747.753,365.728,745.153,361.544z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M759.63,351.244
+								c-39.297,31.716-93.352,43.813-142.475,32.322"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M678.975,386.058
+								c-1.227-9.838,4.684-18.81,13.006-20.883c8.302-2.154,17.763,2.896,21.396,12.168c3.629,9.234-1.828,19.938-12.54,22.727
+								C690.094,402.733,680.199,395.948,678.975,386.058z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M521.265,322.354c4.001-3.048,9.358-2.428,12.444,0.99
+								c2.948,3.538,2.752,8.954-0.83,12.455c-3.526,3.449-9.441,3.312-12.793-0.689
+								C516.601,331.225,517.355,325.326,521.265,322.354z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M506.616,300.106c4.407-2.368,9.732-0.991,12.143,2.926
+								c2.442,3.9,1.25,9.316-2.762,12.164c-4.096,2.905-9.767,1.744-12.537-2.68C500.726,308.073,502.265,302.44,506.616,300.106z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M575.177,367.915c2.403-4.395,7.606-6.123,11.771-4.174
+								c4.167,1.948,6.131,7.122,4.325,11.7c-1.844,4.669-7.236,6.807-11.968,4.597
+								C574.581,377.823,572.807,372.241,575.177,367.915z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M599.595,378.559c1.687-4.745,6.504-7.139,10.957-5.977
+								c4.401,1.341,7.197,5.995,6.121,10.873c-1.063,4.83-6.085,7.938-11.086,6.429
+								C600.537,388.548,597.947,383.178,599.595,378.559z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M616.673,383.455
+								c-49.319-10.972-92.35-45.766-114.143-91.242"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M539.194,342.052
+								c6.953-7.142,17.556-8.005,24.441-2.858c6.856,5.177,8.816,15.704,3.811,24.337c-4.957,8.571-16.739,10.992-25.571,4.342
+								C533.041,361.221,532.268,349.144,539.194,342.052z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M490.615,179.049c4.883,1.229,7.751,5.805,6.991,10.342
+								c-0.885,4.516-5.326,7.729-10.244,7.125c-4.949-0.608-8.447-5.301-7.451-10.428
+								C480.789,180.941,485.859,177.846,490.615,179.049z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M498.892,153.73c4.592,1.973,6.851,7.005,5.271,11.322
+								c-1.504,4.346-6.514,6.777-11.236,5.416c-4.83-1.395-7.423-6.545-5.712-11.479
+								C489.006,154.087,494.351,151.775,498.892,153.73z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M488.672,249.607c4.884-0.849,9.476,2.14,10.586,6.604
+								c0.988,4.492-1.65,9.207-6.465,10.678c-4.69,1.44-9.907-1.398-11.042-6.495C480.499,255.323,483.762,250.461,488.672,249.607
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M495.531,275.345c4.646-1.596,9.781,0.578,11.492,4.848
+								c1.804,4.229-0.215,9.373-4.699,11.572c-4.44,2.18-9.88,0.133-11.924-4.669C488.452,282.251,490.776,276.98,495.531,275.345z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M502.323,291.765
+								c-21.993-45.453-21.897-100.751,0.207-146.144"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M486.429,205.353
+								c9.884,0.969,17.228,8.712,17.51,17.32c0.135,8.607-6.81,16.693-16.639,18.154c-9.834,1.473-19.136-6.232-19.351-17.274
+								C467.628,212.517,476.528,204.373,486.429,205.353z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M583.576,65.74c2.032,4.48,0.335,9.759-3.737,11.901
+								c-4.055,2.168-9.348,0.682-11.965-3.583c-2.585-4.207-1.082-9.852,3.52-12.313C576.015,59.314,581.5,61.167,583.576,65.74z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M608.544,56.466c1.317,4.815-1.239,9.61-5.569,11.166
+								c-4.39,1.38-9.319-0.762-11.243-5.421c-1.875-4.527,0.439-10.026,5.417-11.61C602.069,48.845,607.24,51.692,608.544,56.466z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M527.22,108.232c3.741,3.311,4.221,8.725,1.443,12.397
+								c-2.922,3.56-8.224,4.458-12.381,1.604c-4.042-2.768-5.105-8.635-1.807-12.682
+								C517.635,105.396,523.519,104.953,527.22,108.232z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M511.375,129.643c4.146,2.644,5.623,8.004,3.362,12.012
+								c-2.198,4.039-7.467,5.669-11.982,3.526c-4.467-2.116-6.265-7.656-3.769-12.238
+								C501.549,128.395,507.138,126.944,511.375,129.643z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M502.755,145.181
+								c21.907-45.415,65.048-80.097,114.399-90.914"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M560.37,78.82
+								c5.438,8.389,3.99,18.983-2.595,24.505c-6.626,5.479-17.259,5.139-24.555-1.649c-7.27-6.743-7.093-18.842,1.402-25.919
+								C543.105,68.67,555.003,70.521,560.37,78.82z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M730.12,67.779c-2.243,4.38-7.425,6.327-11.641,4.484
+								c-4.215-1.836-6.354-6.884-4.644-11.592c1.68-4.638,7.042-6.994,11.828-4.913C730.448,57.852,732.406,63.309,730.12,67.779z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M752.928,81.536c-2.954,4.046-8.285,5.011-12.207,2.602
+								c-3.824-2.563-5.203-7.778-2.761-12.173c2.382-4.297,8.111-5.886,12.457-2.993C754.858,71.716,755.838,77.555,752.928,81.536
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M661.771,50.195c-0.25,5.006-4.185,8.808-8.789,8.869
+								c-4.606,0.074-8.623-3.77-8.978-8.671c-0.361-5.014,3.57-9.244,8.784-9.328C658,41,662.021,45.273,661.771,50.195z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M635.152,51.184c0.533,5.003-2.772,9.292-7.296,10.129
+								c-4.542,0.736-9.092-2.342-10.221-7.157c-1.139-4.864,2.063-9.749,7.217-10.591
+								C629.987,42.627,634.638,46.301,635.152,51.184z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M617.635,54.156
+								c49.157-11.328,103.176,0.9,142.383,32.738"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M705.434,57.771
+								c-3.167,9.45-12.36,14.961-20.761,13.226c-8.42-1.65-14.772-10.325-14.034-20.211c0.733-9.94,10.273-17.201,21.133-15.082
+								C702.609,37.951,708.593,48.374,705.434,57.771z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M819.913,183.62c-4.91,0.997-9.58-1.865-10.777-6.303
+								c-1.204-4.439,1.491-9.279,6.152-10.853c4.759-1.603,9.863,1.141,11.231,6.181
+								C827.875,177.685,824.746,182.643,819.913,183.62z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M823.4,210.03c-4.977,0.211-9.26-3.341-9.65-7.926
+								c-0.594-4.562,2.955-8.935,7.789-9.747c4.97-0.833,9.453,2.701,10.114,7.877C832.104,205.43,828.355,209.821,823.4,210.03z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M791.043,119.215c-3.992,2.866-9.539,2.261-12.4-1.344
+								c-2.954-3.528-2.479-9.051,1.184-12.438c3.634-3.364,9.414-2.949,12.758,1.053
+								C795.834,110.569,795.126,116.282,791.043,119.215z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M773.674,99.018c-3.555,3.519-9.057,3.709-12.476,0.63
+								c-3.448-3.05-3.835-8.584-0.792-12.449c3.108-3.944,8.875-4.433,12.783-0.975C777.064,89.714,777.187,95.546,773.674,99.018z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M760.406,87.199
+								c39.591,31.355,63.552,81.2,63.229,131.717"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M812.302,158.094
+								c-9.338,3.407-19.296-0.383-23.285-7.987c-3.867-7.667-1.141-17.976,7.081-23.583c8.198-5.601,19.924-2.727,24.943,7.136
+								C826.145,143.481,821.644,154.696,812.302,158.094z"/>
+						</g>
+					</g>
+				</g>
+				<g i:knockout="Off">
+					<g>
+						<circle i:knockout="Off" fill="none" cx="222.737" cy="218.916" r="168.898"/> 
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M353.31,326.042c-3.831-3.206-4.557-8.683-1.796-12.363
+								c2.695-3.73,8.188-4.621,12.319-1.955c4.221,2.726,5.228,8.407,2.17,12.636C362.874,328.534,357.101,329.219,353.31,326.042z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M334.821,345.22c-3.229-3.708-3.131-9.271,0.176-12.473
+								c3.249-3.258,8.773-3.32,12.494,0.014c3.685,3.299,3.831,9.111,0.146,12.802C343.89,349.193,338.122,349.007,334.821,345.22z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M385.693,263.327c-4.733-1.338-7.671-6.038-6.688-10.531
+								c0.974-4.493,5.494-7.586,10.448-6.835c4.876,0.735,8.25,5.529,7.147,10.631
+								C395.482,261.692,390.527,264.689,385.693,263.327z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M390.64,237.153c-4.87-0.571-8.621-4.763-8.263-9.352
+								c0.178-4.6,4.26-8.36,9.246-8.393c4.955-0.032,8.936,4.168,8.727,9.377C399.956,233.987,395.644,237.737,390.64,237.153z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M391.623,219.409
+								c0.191,50.514-23.918,100.3-63.604,131.529"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M368.519,304.173
+								c-8.485-5.188-11.717-15.347-8.245-23.197c3.599-7.793,13.356-12.075,22.856-9.14c9.497,2.925,14.552,13.899,9.948,23.967
+								C388.563,305.909,376.99,309.363,368.519,304.173z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M220.392,387.756c0.114-4.917,3.939-8.927,8.543-9.1
+								c4.602-0.142,8.714,3.435,9.212,8.429c0.493,4.897-3.315,9.391-8.526,9.559C224.409,396.837,220.277,392.778,220.392,387.756
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M193.869,385.308c0.887-4.867,5.277-8.164,9.853-7.658
+								c4.56,0.621,8.076,4.728,7.79,9.754c-0.273,4.899-4.735,8.813-9.908,8.121C196.416,394.943,192.975,390.22,193.869,385.308z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M289.622,374.025c-1.944-4.62-0.054-9.754,4.06-11.809
+								c4.125-2.04,9.39-0.368,11.85,3.897c2.504,4.347,0.829,9.909-3.851,12.227C297.011,380.67,291.53,378.569,289.622,374.025z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M313.153,361.544c-2.65-4.259-1.544-9.553,2.155-12.294
+								c3.805-2.593,9.165-1.91,12.322,1.994c3.097,3.823,2.419,9.719-1.886,12.671
+								C321.542,367.013,315.753,365.728,313.153,361.544z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M327.63,351.244
+								c-39.297,31.716-93.353,43.813-142.476,32.322"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M246.975,386.058
+								c-1.228-9.838,4.683-18.81,13.006-20.883c8.302-2.154,17.763,2.896,21.396,12.168c3.628,9.234-1.828,19.938-12.54,22.727
+								C258.094,402.733,248.199,395.948,246.975,386.058z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M89.265,322.354c4.001-3.048,9.358-2.428,12.444,0.99
+								c2.948,3.538,2.752,8.954-0.83,12.455c-3.526,3.449-9.441,3.312-12.793-0.689C84.601,331.225,85.355,325.326,89.265,322.354z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M74.616,300.106c4.407-2.368,9.732-0.991,12.143,2.926
+								c2.442,3.9,1.25,9.316-2.762,12.165c-4.096,2.904-9.767,1.744-12.537-2.681C68.727,308.073,70.265,302.44,74.616,300.106z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M143.177,367.915c2.404-4.395,7.606-6.123,11.771-4.174
+								c4.167,1.948,6.131,7.122,4.325,11.7c-1.844,4.669-7.236,6.807-11.967,4.597
+								C142.581,377.823,140.807,372.241,143.177,367.915z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M167.595,378.559c1.687-4.745,6.505-7.139,10.957-5.977
+								c4.401,1.341,7.197,5.995,6.122,10.873c-1.063,4.83-6.086,7.938-11.087,6.429
+								C168.537,388.548,165.947,383.178,167.595,378.559z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M184.674,383.455
+								c-49.32-10.972-92.35-45.766-114.144-91.242"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M107.194,342.052
+								c6.953-7.142,17.556-8.005,24.441-2.858c6.856,5.177,8.816,15.704,3.811,24.337c-4.957,8.571-16.74,10.992-25.571,4.343
+								C101.041,361.221,100.268,349.144,107.194,342.052z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M58.615,179.049c4.883,1.229,7.751,5.805,6.991,10.342
+								c-0.884,4.516-5.325,7.729-10.243,7.125c-4.949-0.608-8.447-5.301-7.451-10.428
+								C48.789,180.941,53.859,177.846,58.615,179.049z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M66.892,153.73c4.592,1.973,6.851,7.005,5.271,11.322
+								c-1.504,4.346-6.514,6.777-11.236,5.416c-4.83-1.395-7.423-6.545-5.712-11.479C57.006,154.087,62.351,151.775,66.892,153.73z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M56.672,249.607c4.884-0.849,9.476,2.14,10.586,6.604
+								c0.988,4.492-1.65,9.207-6.465,10.679c-4.69,1.439-9.907-1.399-11.042-6.496C48.499,255.323,51.762,250.461,56.672,249.607z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M63.531,275.345c4.646-1.596,9.781,0.578,11.492,4.848
+								c1.804,4.229-0.215,9.373-4.699,11.572c-4.44,2.18-9.88,0.133-11.924-4.669C56.452,282.251,58.776,276.98,63.531,275.345z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M70.323,291.765
+								c-21.993-45.453-21.897-100.751,0.207-146.144"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M54.429,205.353
+								c9.884,0.969,17.228,8.712,17.51,17.32c0.135,8.607-6.81,16.693-16.639,18.155c-9.834,1.472-19.136-6.233-19.351-17.275
+								C35.628,212.517,44.528,204.373,54.429,205.353z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M151.576,65.74c2.031,4.48,0.335,9.759-3.737,11.9
+								c-4.055,2.168-9.348,0.682-11.965-3.583c-2.584-4.206-1.082-9.851,3.52-12.312C144.015,59.314,149.5,61.167,151.576,65.74z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M176.544,56.466c1.317,4.815-1.24,9.61-5.569,11.166
+								c-4.39,1.38-9.319-0.762-11.243-5.421c-1.875-4.527,0.439-10.026,5.417-11.61C170.07,48.845,175.24,51.692,176.544,56.466z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M95.22,108.232c3.741,3.311,4.221,8.725,1.443,12.397
+								c-2.922,3.56-8.224,4.458-12.381,1.604c-4.042-2.768-5.105-8.635-1.807-12.682C85.635,105.396,91.519,104.953,95.22,108.232z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M79.375,129.643c4.146,2.644,5.623,8.004,3.362,12.012
+								c-2.198,4.039-7.467,5.669-11.982,3.526c-4.467-2.116-6.265-7.656-3.769-12.238
+								C69.549,128.395,75.138,126.943,79.375,129.643z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M70.755,145.181
+								c21.907-45.415,65.048-80.097,114.399-90.914"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M128.37,78.82
+								c5.438,8.389,3.989,18.983-2.596,24.505c-6.625,5.479-17.259,5.139-24.555-1.649c-7.27-6.743-7.093-18.842,1.403-25.919
+								C111.105,68.669,123.004,70.521,128.37,78.82z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M298.12,67.779c-2.243,4.38-7.425,6.327-11.641,4.484
+								c-4.215-1.836-6.354-6.884-4.644-11.592c1.68-4.638,7.042-6.994,11.828-4.913C298.448,57.852,300.406,63.309,298.12,67.779z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M320.928,81.536c-2.954,4.046-8.285,5.011-12.208,2.601
+								c-3.824-2.563-5.203-7.778-2.761-12.173c2.382-4.297,8.112-5.886,12.458-2.992C322.858,71.716,323.838,77.555,320.928,81.536
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M229.771,50.195c-0.25,5.006-4.186,8.808-8.79,8.869
+								c-4.606,0.074-8.623-3.77-8.978-8.671c-0.361-5.014,3.57-9.244,8.784-9.328C226,41,230.021,45.273,229.771,50.195z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M203.152,51.184c0.533,5.003-2.772,9.292-7.296,10.129
+								c-4.542,0.736-9.092-2.342-10.221-7.157c-1.139-4.864,2.063-9.749,7.217-10.591
+								C197.988,42.627,202.638,46.301,203.152,51.184z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M185.635,54.156
+								c49.157-11.328,103.176,0.9,142.383,32.738"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M273.434,57.771
+								c-3.167,9.45-12.359,14.962-20.761,13.227c-8.42-1.65-14.772-10.326-14.034-20.211c0.733-9.94,10.273-17.201,21.133-15.082
+								C270.609,37.951,276.593,48.374,273.434,57.771z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M387.914,183.62c-4.91,0.997-9.58-1.865-10.777-6.303
+								c-1.204-4.439,1.491-9.279,6.152-10.853c4.759-1.603,9.863,1.141,11.231,6.181
+								C395.876,177.685,392.747,182.643,387.914,183.62z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M391.401,210.03c-4.977,0.211-9.26-3.341-9.65-7.926
+								c-0.594-4.562,2.955-8.935,7.789-9.747c4.97-0.833,9.453,2.701,10.114,7.877C400.105,205.43,396.356,209.821,391.401,210.03z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M359.043,119.215c-3.992,2.866-9.539,2.261-12.4-1.344
+								c-2.954-3.528-2.479-9.05,1.184-12.438c3.634-3.364,9.414-2.949,12.759,1.053
+								C363.834,110.569,363.126,116.282,359.043,119.215z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M341.674,99.018c-3.555,3.519-9.058,3.709-12.477,0.63
+								c-3.448-3.05-3.835-8.584-0.792-12.449c3.108-3.944,8.875-4.432,12.783-0.975C345.064,89.714,345.187,95.546,341.674,99.018z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M328.406,87.199
+								c39.591,31.355,63.553,81.2,63.229,131.717"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M380.303,158.094
+								c-9.338,3.407-19.296-0.383-23.285-7.987c-3.866-7.667-1.141-17.976,7.081-23.583c8.198-5.601,19.924-2.727,24.943,7.136
+								C394.146,143.481,389.644,154.696,380.303,158.094z"/>
+						</g>
+					</g>
+				</g>
+				<g i:knockout="On"  a:adobe-knockout="true">
+					<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2"  a:adobe-knockout="false" d="M934.414,223.607
+						c0,0,150.679,19.431,61.227-108.181"/>
+					<polygon i:knockout="Off"  a:adobe-knockout="false" points="988.035,104.577 1005,115.488 996.209,116.238 992.507,124.245 
+						"/>
+				</g>
+				<g i:knockout="Off">
+					<g>
+						<circle i:knockout="Off" fill="none" cx="1086.736" cy="218.916" r="168.898"/> 
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1217.31,326.042c-3.831-3.206-4.557-8.683-1.797-12.363
+								c2.695-3.73,8.188-4.621,12.319-1.955c4.221,2.726,5.229,8.407,2.17,12.637C1226.874,328.534,1221.1,329.219,1217.31,326.042
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1198.82,345.22c-3.229-3.708-3.131-9.271,0.177-12.473
+								c3.249-3.258,8.773-3.32,12.493,0.014c3.685,3.299,3.831,9.111,0.146,12.802
+								C1207.89,349.194,1202.122,349.007,1198.82,345.22z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1249.692,263.327c-4.733-1.338-7.671-6.038-6.688-10.531
+								c0.974-4.493,5.494-7.586,10.448-6.835c4.876,0.735,8.25,5.529,7.147,10.631
+								C1259.482,261.692,1254.527,264.689,1249.692,263.327z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1254.64,237.153c-4.87-0.571-8.621-4.763-8.264-9.352
+								c0.179-4.6,4.26-8.36,9.246-8.393c4.955-0.032,8.937,4.168,8.727,9.377C1263.956,233.987,1259.644,237.737,1254.64,237.153z"
+								/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1255.622,219.409
+								c0.191,50.514-23.917,100.3-63.604,131.529"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1232.519,304.173
+								c-8.485-5.188-11.717-15.347-8.245-23.197c3.599-7.793,13.356-12.075,22.856-9.14c9.497,2.925,14.552,13.899,9.948,23.967
+								C1252.563,305.909,1240.989,309.363,1232.519,304.173z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1084.392,387.756c0.114-4.917,3.939-8.927,8.543-9.1
+								c4.602-0.142,8.714,3.435,9.212,8.429c0.493,4.897-3.315,9.391-8.526,9.559
+								C1088.409,396.837,1084.277,392.778,1084.392,387.756z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1057.869,385.308c0.887-4.867,5.277-8.164,9.853-7.658
+								c4.56,0.621,8.076,4.728,7.79,9.754c-0.272,4.899-4.735,8.813-9.908,8.121
+								C1060.416,394.943,1056.975,390.22,1057.869,385.308z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1153.622,374.025c-1.945-4.62-0.054-9.754,4.059-11.809
+								c4.125-2.04,9.39-0.368,11.851,3.897c2.504,4.347,0.828,9.909-3.851,12.227C1161.01,380.67,1155.53,378.569,1153.622,374.025
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1177.153,361.544c-2.651-4.259-1.545-9.553,2.154-12.294
+								c3.805-2.593,9.165-1.91,12.322,1.994c3.097,3.823,2.419,9.719-1.886,12.672
+								C1185.541,367.013,1179.752,365.728,1177.153,361.544z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1191.63,351.244
+								c-39.297,31.716-93.353,43.813-142.476,32.322"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1110.975,386.058
+								c-1.227-9.838,4.683-18.81,13.006-20.883c8.302-2.154,17.763,2.896,21.396,12.168c3.628,9.234-1.828,19.938-12.54,22.727
+								C1122.094,402.733,1112.198,395.948,1110.975,386.058z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M953.265,322.354c4.001-3.048,9.358-2.428,12.444,0.99
+								c2.948,3.538,2.752,8.954-0.829,12.455c-3.526,3.449-9.441,3.312-12.793-0.689
+								C948.601,331.225,949.354,325.326,953.265,322.354z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M938.616,300.106c4.407-2.368,9.732-0.991,12.143,2.926
+								c2.442,3.9,1.25,9.316-2.761,12.164c-4.096,2.905-9.767,1.744-12.537-2.68C932.726,308.073,934.264,302.44,938.616,300.106z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1007.177,367.915c2.404-4.395,7.606-6.123,11.771-4.174
+								c4.168,1.948,6.131,7.122,4.326,11.7c-1.844,4.669-7.236,6.807-11.968,4.597
+								C1006.58,377.823,1004.807,372.241,1007.177,367.915z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1031.595,378.559c1.688-4.745,6.505-7.139,10.958-5.977
+								c4.401,1.341,7.197,5.995,6.121,10.873c-1.063,4.83-6.086,7.938-11.086,6.429
+								C1032.536,388.548,1029.947,383.178,1031.595,378.559z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1048.673,383.455
+								c-49.32-10.972-92.35-45.766-114.144-91.242"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M971.194,342.052
+								c6.953-7.142,17.556-8.005,24.441-2.858c6.856,5.177,8.816,15.704,3.811,24.337c-4.957,8.571-16.739,10.992-25.571,4.342
+								C965.041,361.221,964.268,349.144,971.194,342.052z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M922.614,179.049c4.883,1.229,7.751,5.805,6.991,10.342
+								c-0.885,4.516-5.326,7.729-10.244,7.125c-4.949-0.608-8.447-5.301-7.451-10.428
+								C912.788,180.941,917.858,177.846,922.614,179.049z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M930.891,153.73c4.592,1.973,6.851,7.005,5.271,11.322
+								c-1.504,4.346-6.514,6.777-11.235,5.416c-4.83-1.395-7.424-6.545-5.713-11.479
+								C921.006,154.087,926.351,151.775,930.891,153.73z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M920.671,249.607c4.884-0.849,9.476,2.14,10.586,6.604
+								c0.988,4.492-1.65,9.207-6.465,10.678c-4.69,1.44-9.907-1.398-11.042-6.495C912.498,255.323,915.761,250.461,920.671,249.607
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M927.53,275.345c4.646-1.596,9.781,0.578,11.492,4.848
+								c1.804,4.229-0.215,9.373-4.699,11.572c-4.44,2.18-9.879,0.133-11.924-4.669C920.451,282.251,922.775,276.98,927.53,275.345z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M934.323,291.765
+								c-21.993-45.453-21.897-100.751,0.207-146.144"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M918.428,205.353
+								c9.884,0.969,17.228,8.712,17.51,17.32c0.135,8.607-6.81,16.693-16.639,18.155c-9.834,1.472-19.136-6.233-19.351-17.275
+								C899.628,212.517,908.528,204.373,918.428,205.353z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1015.576,65.74c2.031,4.48,0.335,9.759-3.737,11.901
+								c-4.055,2.168-9.348,0.682-11.965-3.583c-2.584-4.207-1.082-9.852,3.52-12.313C1008.014,59.314,1013.5,61.167,1015.576,65.74
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1040.544,56.466c1.317,4.815-1.239,9.61-5.569,11.166
+								c-4.39,1.38-9.319-0.762-11.243-5.421c-1.875-4.527,0.439-10.026,5.417-11.61
+								C1034.069,48.845,1039.239,51.692,1040.544,56.466z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M959.22,108.232c3.741,3.311,4.221,8.725,1.443,12.397
+								c-2.922,3.56-8.224,4.458-12.38,1.604c-4.043-2.768-5.105-8.635-1.808-12.682
+								C949.634,105.396,955.519,104.953,959.22,108.232z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M943.375,129.643c4.146,2.644,5.623,8.004,3.362,12.012
+								c-2.198,4.039-7.467,5.669-11.982,3.526c-4.467-2.116-6.265-7.656-3.769-12.238
+								C933.548,128.395,939.138,126.943,943.375,129.643z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M934.754,145.181
+								c21.907-45.415,65.048-80.097,114.399-90.914"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M992.37,78.82
+								c5.438,8.389,3.989,18.983-2.596,24.505c-6.625,5.479-17.259,5.139-24.555-1.649c-7.27-6.743-7.093-18.842,1.403-25.919
+								C975.104,68.67,987.003,70.521,992.37,78.82z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1162.12,67.779c-2.243,4.38-7.426,6.327-11.641,4.484
+								c-4.215-1.836-6.354-6.884-4.645-11.592c1.68-4.638,7.042-6.994,11.828-4.913
+								C1162.447,57.852,1164.406,63.309,1162.12,67.779z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1184.928,81.536c-2.954,4.046-8.285,5.011-12.207,2.602
+								c-3.825-2.563-5.203-7.778-2.762-12.173c2.382-4.297,8.112-5.886,12.458-2.993
+								C1186.858,71.716,1187.838,77.555,1184.928,81.536z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1093.771,50.195c-0.25,5.006-4.186,8.808-8.79,8.869
+								c-4.606,0.074-8.623-3.77-8.978-8.671c-0.361-5.014,3.57-9.244,8.784-9.328C1090,41,1094.021,45.273,1093.771,50.195z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1067.152,51.184c0.533,5.003-2.772,9.292-7.295,10.129
+								c-4.543,0.736-9.092-2.342-10.221-7.157c-1.139-4.864,2.063-9.749,7.217-10.591
+								C1061.987,42.627,1066.638,46.301,1067.152,51.184z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1049.635,54.156
+								c49.157-11.328,103.175,0.9,142.382,32.738"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1137.434,57.771
+								c-3.167,9.45-12.359,14.962-20.761,13.227c-8.419-1.65-14.772-10.326-14.034-20.211c0.733-9.94,10.273-17.201,21.133-15.082
+								C1134.608,37.951,1140.593,48.374,1137.434,57.771z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1251.913,183.62c-4.91,0.997-9.58-1.865-10.777-6.303
+								c-1.204-4.439,1.491-9.28,6.152-10.853c4.759-1.603,9.863,1.141,11.231,6.181
+								C1259.875,177.685,1256.746,182.643,1251.913,183.62z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1255.4,210.03c-4.977,0.211-9.26-3.341-9.649-7.926
+								c-0.595-4.562,2.954-8.935,7.788-9.747c4.97-0.833,9.453,2.701,10.114,7.877C1264.104,205.43,1260.355,209.821,1255.4,210.03
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1223.043,119.215c-3.992,2.866-9.539,2.261-12.4-1.345
+								c-2.954-3.527-2.479-9.05,1.184-12.438c3.634-3.363,9.414-2.948,12.758,1.054
+								C1227.834,110.569,1227.126,116.281,1223.043,119.215z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1205.674,99.018c-3.555,3.519-9.057,3.709-12.477,0.63
+								c-3.448-3.05-3.835-8.584-0.791-12.449c3.108-3.944,8.874-4.433,12.783-0.975
+								C1209.064,89.714,1209.187,95.546,1205.674,99.018z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1192.406,87.199
+								c39.591,31.355,63.552,81.2,63.229,131.717"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1244.302,158.094
+								c-9.338,3.406-19.296-0.383-23.285-7.987c-3.867-7.667-1.142-17.976,7.081-23.583c8.198-5.601,19.924-2.727,24.943,7.136
+								C1258.145,143.481,1253.644,154.696,1244.302,158.094z"/>
+						</g>
+					</g>
+				</g>
+				<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="8" d="M1425.256,97.169
+					c0,0,101.299,130.192,238.639,105.666"/>
+				<polygon i:knockout="Off" points="1678.056,201.317 1660.303,210.894 1663.895,202.835 1658.676,195.725 "/>
+				<g i:knockout="Off">
+					<g>
+						<circle i:knockout="Off" fill="none" cx="1518.736" cy="218.916" r="168.898"/> 
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1649.31,326.042c-3.831-3.206-4.558-8.683-1.797-12.363
+								c2.694-3.73,8.188-4.621,12.319-1.955c4.221,2.726,5.228,8.407,2.17,12.637
+								C1658.874,328.534,1653.101,329.219,1649.31,326.042z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1630.82,345.22c-3.229-3.708-3.131-9.271,0.177-12.473
+								c3.249-3.258,8.773-3.32,12.493,0.014c3.685,3.299,3.831,9.111,0.146,12.802
+								C1639.89,349.194,1634.121,349.007,1630.82,345.22z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1681.692,263.327c-4.732-1.338-7.672-6.038-6.688-10.531
+								c0.974-4.493,5.494-7.586,10.447-6.835c4.876,0.735,8.25,5.529,7.147,10.631
+								C1691.482,261.692,1686.527,264.689,1681.692,263.327z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1686.64,237.153c-4.87-0.571-8.621-4.763-8.264-9.352
+								c0.179-4.6,4.261-8.36,9.246-8.393c4.955-0.032,8.937,4.168,8.728,9.377C1695.956,233.987,1691.644,237.737,1686.64,237.153z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1687.622,219.409
+								c0.191,50.514-23.918,100.3-63.604,131.529"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1664.519,304.173
+								c-8.485-5.188-11.717-15.347-8.245-23.197c3.6-7.793,13.356-12.075,22.856-9.14c9.497,2.925,14.553,13.899,9.948,23.967
+								C1684.563,305.909,1672.989,309.363,1664.519,304.173z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1516.392,387.756c0.114-4.917,3.939-8.927,8.543-9.1
+								c4.603-0.142,8.715,3.435,9.212,8.429c0.493,4.897-3.314,9.391-8.525,9.559
+								C1520.409,396.837,1516.277,392.778,1516.392,387.756z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1489.869,385.308c0.887-4.867,5.277-8.164,9.853-7.658
+								c4.56,0.621,8.075,4.728,7.79,9.754c-0.272,4.899-4.734,8.813-9.908,8.121
+								C1492.415,394.943,1488.975,390.22,1489.869,385.308z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1585.622,374.025c-1.944-4.62-0.054-9.754,4.06-11.809
+								c4.124-2.04,9.39-0.368,11.85,3.897c2.504,4.347,0.828,9.909-3.851,12.227C1593.01,380.67,1587.53,378.569,1585.622,374.025z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1609.153,361.544c-2.651-4.259-1.545-9.553,2.154-12.294
+								c3.805-2.593,9.165-1.91,12.322,1.994c3.097,3.823,2.419,9.719-1.886,12.672
+								C1617.541,367.013,1611.753,365.728,1609.153,361.544z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1623.63,351.244
+								c-39.297,31.716-93.353,43.813-142.476,32.322"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1542.975,386.058
+								c-1.228-9.838,4.684-18.81,13.006-20.883c8.302-2.154,17.763,2.896,21.396,12.168c3.629,9.234-1.827,19.938-12.539,22.727
+								C1554.094,402.733,1544.198,395.948,1542.975,386.058z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1385.265,322.354c4.001-3.048,9.358-2.428,12.444,0.99
+								c2.948,3.538,2.752,8.954-0.83,12.455c-3.525,3.449-9.441,3.312-12.793-0.689
+								C1380.601,331.225,1381.354,325.326,1385.265,322.354z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1370.615,300.106c4.407-2.368,9.732-0.991,12.144,2.926
+								c2.442,3.9,1.25,9.316-2.762,12.164c-4.096,2.905-9.767,1.744-12.537-2.68
+								C1364.726,308.073,1366.265,302.44,1370.615,300.106z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1439.177,367.915c2.403-4.395,7.606-6.123,11.771-4.174
+								c4.168,1.948,6.131,7.122,4.325,11.7c-1.844,4.669-7.235,6.807-11.968,4.597
+								C1438.58,377.823,1436.807,372.241,1439.177,367.915z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1463.595,378.559c1.688-4.745,6.505-7.139,10.957-5.977
+								c4.401,1.341,7.197,5.995,6.122,10.873c-1.063,4.83-6.086,7.938-11.087,6.429
+								C1464.536,388.548,1461.946,383.178,1463.595,378.559z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1480.674,383.455
+								c-49.32-10.972-92.351-45.766-114.144-91.242"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1403.194,342.052
+								c6.952-7.142,17.556-8.005,24.441-2.858c6.855,5.177,8.815,15.704,3.811,24.337c-4.957,8.571-16.739,10.992-25.571,4.342
+								C1397.04,361.221,1396.268,349.144,1403.194,342.052z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1354.614,179.049c4.884,1.229,7.752,5.805,6.991,10.342
+								c-0.885,4.516-5.326,7.729-10.243,7.125c-4.949-0.608-8.447-5.301-7.451-10.428
+								C1344.788,180.941,1349.858,177.846,1354.614,179.049z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1362.891,153.73c4.592,1.973,6.852,7.005,5.271,11.322
+								c-1.504,4.346-6.514,6.777-11.235,5.416c-4.83-1.395-7.424-6.545-5.713-11.479
+								C1353.006,154.087,1358.351,151.775,1362.891,153.73z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1352.672,249.607c4.884-0.849,9.476,2.14,10.585,6.604
+								c0.988,4.492-1.649,9.207-6.465,10.678c-4.69,1.44-9.907-1.398-11.042-6.495
+								C1344.498,255.323,1347.761,250.461,1352.672,249.607z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1359.53,275.345c4.646-1.596,9.78,0.578,11.492,4.848
+								c1.803,4.229-0.215,9.373-4.699,11.572c-4.44,2.18-9.88,0.133-11.925-4.669
+								C1352.451,282.251,1354.775,276.98,1359.53,275.345z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1366.323,291.765
+								c-21.993-45.453-21.897-100.751,0.206-146.144"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1350.428,205.353
+								c9.885,0.969,17.229,8.712,17.511,17.32c0.135,8.607-6.811,16.693-16.639,18.155c-9.835,1.472-19.137-6.233-19.351-17.275
+								C1331.628,212.517,1340.527,204.373,1350.428,205.353z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1447.575,65.74c2.032,4.48,0.336,9.759-3.736,11.901
+								c-4.056,2.168-9.349,0.682-11.965-3.583c-2.585-4.207-1.082-9.852,3.519-12.313
+								C1440.015,59.314,1445.499,61.167,1447.575,65.74z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1472.544,56.466c1.317,4.815-1.239,9.61-5.569,11.166
+								c-4.39,1.38-9.319-0.762-11.243-5.421c-1.875-4.527,0.439-10.026,5.418-11.61
+								C1466.069,48.845,1471.239,51.692,1472.544,56.466z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1391.22,108.232c3.741,3.311,4.222,8.725,1.443,12.397
+								c-2.922,3.56-8.224,4.458-12.381,1.604c-4.042-2.768-5.105-8.635-1.807-12.682
+								C1381.635,105.396,1387.519,104.953,1391.22,108.232z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1375.375,129.643c4.146,2.644,5.623,8.004,3.362,12.012
+								c-2.198,4.039-7.468,5.669-11.982,3.526c-4.467-2.116-6.265-7.656-3.77-12.238
+								C1365.549,128.395,1371.138,126.943,1375.375,129.643z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1366.755,145.181
+								c21.906-45.415,65.048-80.097,114.399-90.914"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1424.369,78.82
+								c5.438,8.389,3.99,18.983-2.595,24.505c-6.626,5.479-17.26,5.139-24.555-1.649c-7.27-6.743-7.094-18.842,1.402-25.919
+								C1407.104,68.67,1419.003,70.521,1424.369,78.82z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1594.12,67.779c-2.243,4.38-7.426,6.327-11.641,4.484
+								c-4.215-1.836-6.354-6.884-4.645-11.592c1.68-4.638,7.042-6.994,11.828-4.913
+								C1594.447,57.852,1596.406,63.309,1594.12,67.779z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1616.928,81.536c-2.954,4.046-8.284,5.011-12.207,2.602
+								c-3.824-2.563-5.203-7.778-2.762-12.173c2.383-4.297,8.111-5.886,12.457-2.993
+								C1618.858,71.716,1619.838,77.555,1616.928,81.536z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1525.771,50.195c-0.25,5.006-4.185,8.808-8.789,8.869
+								c-4.606,0.074-8.623-3.77-8.978-8.671c-0.361-5.014,3.569-9.244,8.783-9.328C1521.999,41,1526.021,45.273,1525.771,50.195z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1499.152,51.184c0.532,5.003-2.772,9.292-7.296,10.129
+								c-4.543,0.736-9.093-2.342-10.222-7.157c-1.139-4.864,2.063-9.749,7.218-10.591
+								C1493.987,42.627,1498.638,46.301,1499.152,51.184z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1481.635,54.156
+								c49.157-11.328,103.176,0.9,142.383,32.738"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1569.434,57.771
+								c-3.167,9.45-12.359,14.962-20.761,13.227c-8.42-1.65-14.772-10.326-14.034-20.211c0.732-9.94,10.273-17.201,21.133-15.082
+								C1566.608,37.951,1572.593,48.374,1569.434,57.771z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1683.913,183.62c-4.91,0.997-9.579-1.865-10.777-6.303
+								c-1.204-4.439,1.491-9.28,6.152-10.853c4.759-1.603,9.863,1.141,11.231,6.181
+								C1691.876,177.685,1688.746,182.643,1683.913,183.62z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1687.4,210.03c-4.977,0.211-9.26-3.341-9.649-7.926
+								c-0.595-4.562,2.954-8.935,7.788-9.747c4.97-0.833,9.453,2.701,10.114,7.877C1696.104,205.43,1692.355,209.821,1687.4,210.03
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1655.043,119.215c-3.991,2.866-9.539,2.261-12.4-1.345
+								c-2.953-3.527-2.479-9.05,1.185-12.438c3.634-3.363,9.414-2.948,12.759,1.054
+								C1659.834,110.569,1659.126,116.281,1655.043,119.215z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1637.674,99.018c-3.555,3.519-9.058,3.709-12.477,0.63
+								c-3.448-3.05-3.835-8.584-0.791-12.449c3.107-3.944,8.874-4.433,12.783-0.975
+								C1641.064,89.714,1641.187,95.546,1637.674,99.018z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1624.406,87.199
+								c39.591,31.355,63.553,81.2,63.229,131.717"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1676.302,158.094
+								c-9.338,3.406-19.296-0.383-23.284-7.987c-3.866-7.667-1.142-17.976,7.08-23.583c8.198-5.601,19.925-2.727,24.943,7.136
+								C1690.146,143.481,1685.644,154.696,1676.302,158.094z"/>
+						</g>
+					</g>
+				</g>
+				<g i:knockout="On"  a:adobe-knockout="true">
+					<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2"  a:adobe-knockout="false" d="M1857.256,97.169
+						c0,0,116.313,95.162,213.977,53.641"/>
+					<polygon i:knockout="Off"  a:adobe-knockout="false" points="2083.524,145.861 2069.052,159.911 2070.314,151.179 
+						2063.355,145.758 "/>
+				</g>
+				<g i:knockout="Off">
+					<g>
+						<circle i:knockout="Off" fill="none" cx="1950.736" cy="218.916" r="168.898"/> 
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2081.31,326.042c-3.831-3.206-4.558-8.683-1.797-12.363
+								c2.694-3.73,8.188-4.621,12.319-1.955c4.221,2.726,5.228,8.407,2.17,12.637
+								C2090.874,328.534,2085.101,329.219,2081.31,326.042z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2062.82,345.22c-3.229-3.708-3.131-9.271,0.177-12.473
+								c3.249-3.258,8.773-3.32,12.493,0.014c3.685,3.299,3.831,9.111,0.146,12.802
+								C2071.89,349.194,2066.121,349.007,2062.82,345.22z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2113.692,263.327c-4.732-1.338-7.672-6.038-6.688-10.531
+								c0.974-4.493,5.494-7.586,10.447-6.835c4.876,0.735,8.25,5.529,7.147,10.631
+								C2123.482,261.692,2118.527,264.689,2113.692,263.327z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2118.64,237.153c-4.87-0.571-8.621-4.763-8.264-9.352
+								c0.179-4.6,4.261-8.36,9.246-8.393c4.955-0.032,8.937,4.168,8.728,9.377C2127.956,233.987,2123.644,237.737,2118.64,237.153z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2119.622,219.409
+								c0.191,50.514-23.918,100.3-63.604,131.529"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2096.519,304.173
+								c-8.485-5.188-11.717-15.347-8.245-23.197c3.6-7.793,13.356-12.075,22.856-9.14c9.497,2.925,14.553,13.899,9.948,23.967
+								C2116.563,305.909,2104.989,309.363,2096.519,304.173z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1948.392,387.756c0.114-4.917,3.939-8.927,8.543-9.1
+								c4.603-0.142,8.715,3.435,9.212,8.429c0.493,4.897-3.314,9.391-8.525,9.559
+								C1952.409,396.837,1948.277,392.778,1948.392,387.756z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1921.869,385.308c0.887-4.867,5.277-8.164,9.853-7.658
+								c4.56,0.621,8.075,4.728,7.79,9.754c-0.272,4.899-4.734,8.813-9.908,8.121
+								C1924.415,394.943,1920.975,390.22,1921.869,385.308z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2017.622,374.025c-1.944-4.62-0.054-9.754,4.06-11.809
+								c4.124-2.04,9.39-0.368,11.85,3.897c2.504,4.347,0.828,9.909-3.851,12.227C2025.01,380.67,2019.53,378.569,2017.622,374.025z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2041.153,361.544c-2.651-4.259-1.545-9.553,2.154-12.294
+								c3.805-2.593,9.165-1.91,12.322,1.994c3.097,3.823,2.419,9.719-1.886,12.672
+								C2049.541,367.013,2043.753,365.728,2041.153,361.544z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2055.63,351.244
+								c-39.297,31.716-93.353,43.813-142.476,32.322"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1974.975,386.058
+								c-1.228-9.838,4.684-18.81,13.006-20.883c8.302-2.154,17.763,2.896,21.396,12.168c3.629,9.234-1.827,19.938-12.539,22.727
+								C1986.094,402.733,1976.198,395.948,1974.975,386.058z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1817.265,322.354c4.001-3.048,9.358-2.428,12.444,0.99
+								c2.948,3.538,2.752,8.954-0.83,12.455c-3.525,3.449-9.441,3.312-12.793-0.689
+								C1812.601,331.225,1813.354,325.326,1817.265,322.354z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1802.615,300.106c4.407-2.368,9.732-0.991,12.144,2.926
+								c2.442,3.9,1.25,9.316-2.762,12.164c-4.096,2.905-9.767,1.744-12.537-2.68
+								C1796.726,308.073,1798.265,302.44,1802.615,300.106z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1871.177,367.915c2.403-4.395,7.606-6.123,11.771-4.174
+								c4.168,1.948,6.131,7.122,4.325,11.7c-1.844,4.669-7.235,6.807-11.968,4.597
+								C1870.58,377.823,1868.807,372.241,1871.177,367.915z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1895.595,378.559c1.688-4.745,6.505-7.139,10.957-5.977
+								c4.401,1.341,7.197,5.995,6.122,10.873c-1.063,4.83-6.086,7.938-11.087,6.429
+								C1896.536,388.548,1893.947,383.178,1895.595,378.559z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1912.674,383.455
+								c-49.32-10.972-92.351-45.766-114.144-91.242"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1835.194,342.052
+								c6.952-7.142,17.556-8.005,24.44-2.858c6.856,5.177,8.816,15.704,3.812,24.337c-4.957,8.571-16.739,10.992-25.571,4.342
+								C1829.04,361.221,1828.268,349.144,1835.194,342.052z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1786.614,179.049c4.884,1.229,7.752,5.805,6.991,10.342
+								c-0.885,4.516-5.326,7.729-10.243,7.125c-4.949-0.608-8.447-5.301-7.451-10.428
+								C1776.788,180.941,1781.858,177.846,1786.614,179.049z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1794.891,153.73c4.592,1.973,6.852,7.005,5.271,11.322
+								c-1.504,4.346-6.514,6.777-11.235,5.416c-4.83-1.395-7.424-6.545-5.713-11.479
+								C1785.006,154.087,1790.351,151.775,1794.891,153.73z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1784.672,249.607c4.884-0.849,9.476,2.14,10.585,6.604
+								c0.988,4.492-1.649,9.207-6.465,10.678c-4.69,1.44-9.907-1.398-11.042-6.495
+								C1776.498,255.323,1779.761,250.461,1784.672,249.607z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1791.53,275.345c4.646-1.596,9.78,0.578,11.492,4.848
+								c1.803,4.229-0.215,9.373-4.699,11.572c-4.44,2.18-9.88,0.133-11.925-4.669
+								C1784.451,282.251,1786.775,276.98,1791.53,275.345z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1798.323,291.765
+								c-21.993-45.453-21.897-100.751,0.206-146.144"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1782.428,205.353
+								c9.885,0.969,17.229,8.712,17.511,17.32c0.135,8.607-6.81,16.693-16.639,18.155c-9.835,1.472-19.137-6.233-19.351-17.275
+								C1763.628,212.517,1772.527,204.373,1782.428,205.353z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1879.575,65.74c2.032,4.48,0.336,9.759-3.736,11.901
+								c-4.056,2.168-9.349,0.682-11.965-3.583c-2.585-4.207-1.082-9.852,3.519-12.313
+								C1872.014,59.314,1877.499,61.167,1879.575,65.74z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1904.544,56.466c1.317,4.815-1.239,9.61-5.569,11.166
+								c-4.39,1.38-9.319-0.762-11.243-5.421c-1.876-4.527,0.439-10.026,5.418-11.61
+								C1898.069,48.845,1903.239,51.692,1904.544,56.466z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1823.22,108.232c3.741,3.311,4.222,8.725,1.443,12.397
+								c-2.922,3.56-8.224,4.458-12.381,1.604c-4.042-2.768-5.105-8.635-1.807-12.682
+								C1813.635,105.396,1819.519,104.953,1823.22,108.232z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1807.375,129.643c4.146,2.644,5.623,8.004,3.362,12.012
+								c-2.198,4.039-7.468,5.669-11.982,3.526c-4.467-2.116-6.265-7.656-3.77-12.238
+								C1797.549,128.395,1803.138,126.943,1807.375,129.643z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1798.755,145.181
+								c21.906-45.415,65.048-80.097,114.399-90.914"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M1856.369,78.82
+								c5.438,8.389,3.99,18.983-2.595,24.505c-6.626,5.479-17.26,5.139-24.555-1.649c-7.27-6.743-7.094-18.842,1.402-25.919
+								C1839.104,68.67,1851.004,70.521,1856.369,78.82z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2026.12,67.779c-2.243,4.38-7.426,6.327-11.641,4.484
+								c-4.215-1.836-6.354-6.884-4.645-11.592c1.68-4.638,7.042-6.994,11.828-4.913
+								C2026.447,57.852,2028.406,63.309,2026.12,67.779z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2048.928,81.536c-2.954,4.046-8.284,5.011-12.207,2.602
+								c-3.824-2.563-5.203-7.778-2.762-12.173c2.383-4.297,8.111-5.886,12.457-2.993
+								C2050.858,71.716,2051.838,77.555,2048.928,81.536z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1957.771,50.195c-0.25,5.006-4.185,8.808-8.789,8.869
+								c-4.606,0.074-8.623-3.77-8.978-8.671c-0.361-5.014,3.569-9.244,8.783-9.328C1953.999,41,1958.021,45.273,1957.771,50.195z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M1931.152,51.184c0.532,5.003-2.772,9.292-7.296,10.129
+								c-4.543,0.736-9.093-2.342-10.222-7.157c-1.139-4.864,2.063-9.749,7.217-10.591
+								C1925.987,42.627,1930.638,46.301,1931.152,51.184z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M1913.635,54.156
+								c49.157-11.328,103.176,0.9,142.383,32.738"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2001.434,57.771
+								c-3.167,9.45-12.359,14.962-20.761,13.227c-8.42-1.65-14.772-10.326-14.034-20.211c0.732-9.94,10.273-17.201,21.133-15.082
+								C1998.608,37.951,2004.593,48.374,2001.434,57.771z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2115.913,183.62c-4.91,0.997-9.579-1.865-10.777-6.303
+								c-1.204-4.439,1.491-9.28,6.152-10.853c4.759-1.603,9.863,1.141,11.231,6.181
+								C2123.876,177.685,2120.746,182.643,2115.913,183.62z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2119.4,210.03c-4.977,0.211-9.26-3.341-9.649-7.926
+								c-0.595-4.562,2.954-8.935,7.788-9.747c4.97-0.833,9.453,2.701,10.114,7.877C2128.104,205.43,2124.355,209.821,2119.4,210.03
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2087.043,119.215c-3.991,2.866-9.539,2.261-12.4-1.345
+								c-2.953-3.527-2.479-9.05,1.185-12.438c3.634-3.363,9.414-2.948,12.759,1.054
+								C2091.834,110.569,2091.126,116.281,2087.043,119.215z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2069.674,99.018c-3.555,3.519-9.058,3.709-12.477,0.63
+								c-3.448-3.05-3.835-8.584-0.791-12.449c3.107-3.944,8.874-4.433,12.783-0.975
+								C2073.064,89.714,2073.187,95.546,2069.674,99.018z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2056.406,87.199
+								c39.591,31.355,63.553,81.2,63.229,131.717"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2108.302,158.094
+								c-9.338,3.406-19.296-0.383-23.284-7.987c-3.866-7.667-1.142-17.976,7.08-23.583c8.198-5.601,19.925-2.727,24.943,7.136
+								C2122.146,143.481,2117.644,154.696,2108.302,158.094z"/>
+						</g>
+					</g>
+				</g>
+				<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="2" d="M2518.794,151.669
+					c0,0-76.942,46.916,9.101,51.166"/>
+				<polygon i:knockout="Off" points="2542.056,201.317 2524.303,210.894 2527.895,202.835 2522.676,195.725 "/>
+				<g i:knockout="Off">
+					<g>
+						<circle i:knockout="Off" fill="none" cx="2382.736" cy="218.916" r="168.898"/> 
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2513.31,326.042c-3.831-3.206-4.558-8.683-1.797-12.363
+								c2.694-3.73,8.188-4.621,12.319-1.955c4.221,2.726,5.228,8.407,2.17,12.637
+								C2522.874,328.534,2517.101,329.219,2513.31,326.042z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2494.82,345.22c-3.229-3.708-3.131-9.271,0.177-12.473
+								c3.249-3.258,8.773-3.32,12.493,0.014c3.685,3.299,3.831,9.111,0.146,12.802
+								C2503.89,349.194,2498.121,349.007,2494.82,345.22z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2545.692,263.327c-4.732-1.338-7.672-6.038-6.688-10.531
+								c0.974-4.493,5.494-7.586,10.447-6.835c4.876,0.735,8.25,5.529,7.147,10.631
+								C2555.482,261.692,2550.527,264.689,2545.692,263.327z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2550.64,237.153c-4.87-0.571-8.621-4.763-8.264-9.352
+								c0.179-4.6,4.261-8.36,9.246-8.393c4.955-0.032,8.937,4.168,8.728,9.377C2559.956,233.987,2555.644,237.737,2550.64,237.153z
+								"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2551.622,219.409
+								c0.191,50.514-23.918,100.3-63.604,131.529"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2528.519,304.173
+								c-8.485-5.188-11.717-15.347-8.245-23.197c3.6-7.793,13.356-12.075,22.856-9.14c9.497,2.925,14.553,13.899,9.948,23.967
+								C2548.563,305.909,2536.989,309.363,2528.519,304.173z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2380.392,387.756c0.114-4.917,3.939-8.927,8.543-9.1
+								c4.603-0.142,8.715,3.435,9.212,8.429c0.493,4.897-3.314,9.391-8.525,9.559
+								C2384.409,396.837,2380.277,392.778,2380.392,387.756z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2353.869,385.308c0.887-4.867,5.277-8.164,9.853-7.658
+								c4.56,0.621,8.075,4.728,7.79,9.754c-0.272,4.899-4.734,8.813-9.908,8.121
+								C2356.415,394.943,2352.975,390.22,2353.869,385.308z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2449.622,374.025c-1.944-4.62-0.054-9.754,4.06-11.809
+								c4.124-2.04,9.39-0.368,11.85,3.897c2.504,4.347,0.828,9.909-3.851,12.227C2457.01,380.67,2451.53,378.569,2449.622,374.025z
+								"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2473.153,361.544c-2.651-4.259-1.545-9.553,2.154-12.294
+								c3.805-2.593,9.165-1.91,12.322,1.994c3.097,3.823,2.419,9.719-1.886,12.672
+								C2481.541,367.013,2475.753,365.728,2473.153,361.544z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2487.63,351.244
+								c-39.297,31.716-93.353,43.813-142.476,32.322"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2406.975,386.058
+								c-1.228-9.838,4.684-18.81,13.006-20.883c8.302-2.154,17.763,2.896,21.396,12.168c3.629,9.234-1.827,19.938-12.539,22.727
+								C2418.094,402.733,2408.198,395.948,2406.975,386.058z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2249.265,322.354c4.001-3.048,9.358-2.428,12.444,0.99
+								c2.948,3.538,2.752,8.954-0.83,12.455c-3.525,3.449-9.441,3.312-12.793-0.689
+								C2244.601,331.225,2245.354,325.326,2249.265,322.354z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2234.615,300.106c4.407-2.368,9.732-0.991,12.144,2.926
+								c2.442,3.9,1.25,9.316-2.762,12.164c-4.096,2.905-9.767,1.744-12.537-2.68
+								C2228.726,308.073,2230.265,302.44,2234.615,300.106z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2303.177,367.915c2.403-4.395,7.606-6.123,11.771-4.174
+								c4.168,1.948,6.131,7.122,4.325,11.7c-1.844,4.669-7.235,6.807-11.968,4.597
+								C2302.58,377.823,2300.807,372.241,2303.177,367.915z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2327.595,378.559c1.688-4.745,6.505-7.139,10.957-5.977
+								c4.401,1.341,7.197,5.995,6.122,10.873c-1.063,4.83-6.086,7.938-11.087,6.429
+								C2328.536,388.548,2325.947,383.178,2327.595,378.559z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2344.674,383.455
+								c-49.32-10.972-92.351-45.766-114.144-91.242"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2267.194,342.052
+								c6.952-7.142,17.556-8.005,24.44-2.858c6.856,5.177,8.816,15.704,3.812,24.337c-4.957,8.571-16.739,10.992-25.571,4.342
+								C2261.04,361.221,2260.268,349.144,2267.194,342.052z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2218.614,179.049c4.884,1.229,7.752,5.805,6.991,10.342
+								c-0.885,4.516-5.326,7.729-10.243,7.125c-4.949-0.608-8.447-5.301-7.451-10.428
+								C2208.788,180.941,2213.858,177.846,2218.614,179.049z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2226.891,153.73c4.592,1.973,6.852,7.005,5.271,11.322
+								c-1.504,4.346-6.514,6.777-11.235,5.416c-4.83-1.395-7.424-6.545-5.713-11.479
+								C2217.006,154.087,2222.351,151.775,2226.891,153.73z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2216.672,249.607c4.884-0.849,9.476,2.14,10.585,6.604
+								c0.988,4.492-1.649,9.207-6.465,10.678c-4.69,1.44-9.907-1.398-11.042-6.495
+								C2208.498,255.323,2211.761,250.461,2216.672,249.607z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2223.53,275.345c4.646-1.596,9.78,0.578,11.492,4.848
+								c1.803,4.229-0.215,9.373-4.699,11.572c-4.44,2.18-9.88,0.133-11.925-4.669
+								C2216.451,282.251,2218.775,276.98,2223.53,275.345z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2230.323,291.765
+								c-21.993-45.453-21.897-100.751,0.206-146.144"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2214.428,205.353
+								c9.885,0.969,17.229,8.712,17.511,17.32c0.135,8.607-6.81,16.693-16.639,18.155c-9.835,1.472-19.137-6.233-19.351-17.275
+								C2195.628,212.517,2204.527,204.373,2214.428,205.353z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2311.575,65.74c2.032,4.48,0.336,9.759-3.736,11.901
+								c-4.056,2.168-9.349,0.682-11.965-3.583c-2.585-4.207-1.082-9.852,3.519-12.313
+								C2304.014,59.314,2309.499,61.167,2311.575,65.74z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2336.544,56.466c1.317,4.815-1.239,9.61-5.569,11.166
+								c-4.39,1.38-9.319-0.762-11.243-5.421c-1.876-4.527,0.439-10.026,5.418-11.61
+								C2330.069,48.845,2335.239,51.692,2336.544,56.466z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2255.22,108.232c3.741,3.311,4.222,8.725,1.443,12.397
+								c-2.922,3.56-8.224,4.458-12.381,1.604c-4.042-2.768-5.105-8.635-1.807-12.682
+								C2245.635,105.396,2251.519,104.953,2255.22,108.232z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2239.375,129.643c4.146,2.644,5.623,8.004,3.362,12.012
+								c-2.198,4.039-7.468,5.669-11.982,3.526c-4.467-2.116-6.265-7.656-3.77-12.238
+								C2229.549,128.395,2235.138,126.943,2239.375,129.643z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2230.755,145.181
+								c21.906-45.415,65.048-80.097,114.399-90.914"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2288.369,78.82
+								c5.438,8.389,3.99,18.983-2.595,24.505c-6.626,5.479-17.26,5.139-24.555-1.649c-7.27-6.743-7.094-18.842,1.402-25.919
+								C2271.104,68.67,2283.004,70.521,2288.369,78.82z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2458.12,67.779c-2.243,4.38-7.426,6.327-11.641,4.484
+								c-4.215-1.836-6.354-6.884-4.645-11.592c1.68-4.638,7.042-6.994,11.828-4.913
+								C2458.447,57.852,2460.406,63.309,2458.12,67.779z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2480.928,81.536c-2.954,4.046-8.284,5.011-12.207,2.602
+								c-3.824-2.563-5.203-7.778-2.762-12.173c2.383-4.297,8.111-5.886,12.457-2.993
+								C2482.858,71.716,2483.838,77.555,2480.928,81.536z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2389.771,50.195c-0.25,5.006-4.185,8.808-8.789,8.869
+								c-4.606,0.074-8.623-3.77-8.978-8.671c-0.361-5.014,3.569-9.244,8.783-9.328C2385.999,41,2390.021,45.273,2389.771,50.195z"
+								/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2363.152,51.184c0.532,5.003-2.772,9.292-7.296,10.129
+								c-4.543,0.736-9.093-2.342-10.222-7.157c-1.139-4.864,2.063-9.749,7.217-10.591
+								C2357.987,42.627,2362.638,46.301,2363.152,51.184z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2345.635,54.156
+								c49.157-11.328,103.176,0.9,142.383,32.738"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2433.434,57.771
+								c-3.167,9.45-12.359,14.962-20.761,13.227c-8.42-1.65-14.772-10.326-14.034-20.211c0.732-9.94,10.273-17.201,21.133-15.082
+								C2430.608,37.951,2436.593,48.374,2433.434,57.771z"/>
+						</g>
+						<g>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2547.913,183.62c-4.91,0.997-9.579-1.865-10.777-6.303
+								c-1.204-4.439,1.491-9.28,6.152-10.853c4.759-1.603,9.863,1.141,11.231,6.181
+								C2555.876,177.685,2552.746,182.643,2547.913,183.62z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2551.4,210.03c-4.977,0.211-9.26-3.341-9.649-7.926
+								c-0.595-4.562,2.954-8.935,7.788-9.747c4.97-0.833,9.453,2.701,10.114,7.877C2560.104,205.43,2556.355,209.821,2551.4,210.03
+								z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2519.043,119.215c-3.991,2.866-9.539,2.261-12.4-1.345
+								c-2.953-3.527-2.479-9.05,1.185-12.438c3.634-3.363,9.414-2.948,12.759,1.054
+								C2523.834,110.569,2523.126,116.281,2519.043,119.215z"/>
+							<path i:knockout="Off" fill="#B3B3B3" stroke="#000000" d="M2501.674,99.018c-3.555,3.519-9.058,3.709-12.477,0.63
+								c-3.448-3.05-3.835-8.584-0.791-12.449c3.107-3.944,8.874-4.433,12.783-0.975
+								C2505.064,89.714,2505.187,95.546,2501.674,99.018z"/>
+							<path i:knockout="Off" fill="none" stroke="#000000" stroke-width="5" d="M2488.406,87.199
+								c39.591,31.355,63.553,81.2,63.229,131.717"/>
+							<path i:knockout="Off" fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M2540.302,158.094
+								c-9.338,3.406-19.296-0.383-23.284-7.987c-3.866-7.667-1.142-17.976,7.08-23.583c8.198-5.601,19.925-2.727,24.943,7.136
+								C2554.146,143.481,2549.644,154.696,2540.302,158.094z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>

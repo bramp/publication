@@ -1,0 +1,28 @@
+ * Can any comments be made on the effect of peer heterogeneity in the system?
+ * Clarify that service nodes _can_ be used for storing data, but are primarily used as a location service upon which other applications can be built.
+ * Section 3: clarify "how heterogeneous nodes can self-organise in a Stealth DHT", possibly comment on an automatic service node selection mechanism.
+ * Section 3.2: clarify how footnote 1 is related to the non-appearance of stealth nodes in routing tables
+
+ * Section 4.2.2, fig 6: explain the plot further. (unclear here, see review)
+ * What happens if service nodes are heterogeneous - does load balancing still work as well?
+ * Why is the Zipf function a good one to use in our context?
+ * Possibly answer more of these questions at the expense of the (obvious?) application discussion
+ ---
+ * Clarify why a Stealth DHT is useful vs. super peer constructions or a CDN like Akamai.
+ * Why is the system still useful when 95% of peers do not contribute?
+ ---
+ * Are Stealth DHTs easily partitioned and often unbalanced?
+ 
+ DONE
+  * Specify how many runs were made in the simulations to support the results
+ 
+ FUTURE WORK BITS
+ 
+ - what happens if service nodes are heterogeneous
+ - how does a Stealth DHT compare with other super-peer systems or CDNs
+ - automatic selection of service nodes
+ 
+ QUESTION
+ 
+ - why use a DHT if only 5% of your nodes contribute?
+ - do we need to discuss how a stealth DHT may/may not be more susceptible to partitioning?

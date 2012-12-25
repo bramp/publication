@@ -1,0 +1,726 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+  %\usetheme{Antibes}
+  %\usetheme{Bergen}
+  %\usetheme{Berkeley}
+  %\usetheme{Berlin}
+  %\usetheme{Boadilla}
+  %\usetheme{boxes}
+  %\usetheme{Copenhagen}
+  %\usetheme{Darmstadt}
+  %\usetheme{default}
+  %\usetheme{Dresden}
+  %\usetheme{Frankfurt}
+  %\usetheme{Goettingen}
+  %\usetheme{Hannover}
+  %\usetheme{Ilmenau}
+  %\usetheme{JuanLesPins}
+  %\usetheme{Luebeck}
+  %\usetheme{Madrid}
+  %\usetheme{Malmoe}
+  %\usetheme{Marburg}
+  %\usetheme{Montpellier}
+  %\usetheme{PaloAlto}
+  %\usetheme{Pittsburgh}
+  %\usetheme{Rochester}
+  %\usetheme{Singapore}
+  %\usetheme{Szeged}
+  \usetheme{Warsaw}
+  \setbeamercovered{transparent}
+}
+
+\usepackage[english]{babel}
+
+\usepackage[latin1]{inputenc}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+
+% adds underlines/strikethroughs
+\usepackage{ulem}
+
+\title[Stealth DHT] % (optional, use only with long paper titles)
+{Performance Analysis of Stealth Distributed Hash Table with Mobile
+Nodes}
+
+%\subtitle
+%{Presentation Subtitle} % (optional)
+
+%\author[] % (optional, use only with lots of authors)
+%{F.~Author\inst{1} \and S.~Another\inst{2}}
+%{Andrew Brampton\\a.brampton@lancs.ac.uk}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Lancaster University, UK] % (optional, but mostly needed)
+{
+%  \inst{1}%
+  Andy MacQuire, \textbf{Andrew Brampton}, Idris A. Rai and Laurent Mathy\\
+  \{macquire,brampton,rai,laurent\}@comp.lancs.ac.uk\\
+  Computing Department\\
+  Lancaster University, UK
+}
+
+\date[18th March 2006] % (optional)
+{Friday 18th March / Mobile Peer-to-Peer 2006}
+
+\subject{Stealth Distributed Hash Table}
+% This is only inserted into the PDF information catalog. Can be left
+% out.
+
+ \pgfdeclareimage[height=1.1cm]{university-logo}{lancslogo}
+ \logo{ \pgfuseimage{university-logo} }
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+% suppresses all navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%\section{Table Of Contents}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Introduction}
+
+%\subsection[DHTs - Overview]{DHTs - Overview}
+%
+%\begin{frame}
+%  \frametitle{What are Distributed Hash Tables?}
+%  %\framesubtitle{Subtitles are optional.}
+%  % - A title should summarize the slide in an understandable fashion
+%  %   for anyone how does not follow everything on the slide itself.
+%
+%  \begin{itemize}
+%    \item
+%    What are they?
+%    \begin{itemize}
+%        \item
+%            Decentralised
+%        \item
+%            Self-organising
+%        \item
+%            Fault-tolerant
+%        \item
+%            Overlay network
+%    \end{itemize}
+%    ~\\
+%    \item
+%    What do they do?
+%    \begin{itemize}
+%    \item
+%        Efficient request routing
+%    \item
+%        Deterministic object location
+%    \item
+%        Load balancing
+%    \end{itemize}
+%    ~\\
+%  \end{itemize}
+%\end{frame}
+
+%
+%\pgfdeclareimage[height=7cm]{DHT1}{Diagrams/DHT1}
+%\pgfdeclareimage[height=7cm]{DHT2}{Diagrams/DHT2}
+%\pgfdeclareimage[height=7cm]{DHT3}{Diagrams/DHT3}
+%\pgfdeclareimage[height=7cm]{DHT4}{Diagrams/DHT4}
+%
+%\begin{frame}
+%  \frametitle{How do they work?}
+%  \begin{center}
+%  \pgfuseimage{DHT1}
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{How do they work?}
+%  \begin{center}
+%  \pgfuseimage{DHT2}
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{How do they work?}
+%  \begin{center}
+%  \pgfuseimage{DHT3}
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{How do they work?}
+%  \begin{center}
+%  \pgfuseimage{DHT4}
+%  \end{center}
+%\end{frame}
+
+\subsection[Motivations]{Motivations}
+
+\begin{frame}
+  \frametitle{Problems with DHTs and Mobility?}
+    \begin{itemize}
+    \item
+        Assumes homogeneity\\
+        \begin{itemize}
+            \item All nodes are treated equally (routing, storing
+            etc.)
+            \item Similar bandwidth, processing power, uptime
+            \item \alert{Mobile environments are very heterogenous!}
+        \end{itemize}
+%    \item
+%        Churn (joins and leaves) generates overhead\\
+%        \begin{itemize}
+%            \item Join forces routing updates
+%            \item Leaves make the routing tables stale
+%            \item \alert{Mobile devices lose connectivity when out of range, changing Access
+%            Point or when Battery dies}
+%        \end{itemize}
+    \item
+        Security (or lack thereof)\\
+        \begin{itemize}
+            \item Sniffing, Man in the Middle, Routing Table Poisoning
+            \item Difficulties in supporting user authentication
+            \item \alert{Very easy to join/sniff wifi networks, need for increase
+            security}
+        \end{itemize}
+    \item
+        Churn
+        \begin{itemize}
+            \item Wait for next slide...
+        \end{itemize}
+%    \item
+%        Digital Rights Management
+%        \begin{itemize}
+%            \item Unlicensed content may be put into the network
+%        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Problems with DHTs and Mobility?}
+
+    Mobility Churn\\
+    \begin{itemize}
+        \item Join forces routing updates
+        \item Leaves make the routing tables stale
+    \end{itemize}
+    ~\\
+    When does this happen?
+    \begin{itemize}
+        %\item \alert{Mobile devices lose connectivity when out of range, changing Access Point or when Battery dies}
+        \item Loses connectivity when out of range
+        \item Batteries prone to running dry
+        \item When changing Access Point
+            \begin{itemize}
+                \item Hand-over time
+                \item May retain IP address (No need to rejoin, but data may be stale)
+                \item May change IP address (May need to rejoin, or re-announce)
+            \end{itemize}
+    \end{itemize}
+
+\end{frame}
+
+\subsection[Stealth DHTs - Overview]{Stealth DHTs - Overview}
+
+\pgfdeclareimage[height=5.7cm]{Stealth}{Diagrams/Stealth}
+
+%\subsubsection[What are they?]{What are they?}
+
+\begin{frame}
+  \frametitle{What are Stealth DHTs?}
+  \begin{columns}
+
+    \column{4.5cm}
+    \pgfuseimage{Stealth}
+
+    \column{6cm}
+    \begin{itemize}
+      \item Service Nodes
+      \begin{itemize}
+          \item Assumed to be the more capable nodes
+          \item Responsible for forwarding and storing data
+          \item e.g. \alert{Wired Node}
+      \end{itemize}
+      ~\\
+      \item Stealth Nodes
+      \begin{itemize}
+          \item Assumed to be the less capable nodes
+          \item Have no responsibilities
+          \item Invisible to all nodes, including Service nodes
+          \item e.g. \alert{Wireless Node}
+      \end{itemize}
+    \end{itemize}
+
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{How does it help?}
+    \begin{itemize}
+    \item
+        \alert{Does not} assume homogeneity\\
+        \begin{itemize}
+            \item Nodes can now be divided based on their capabilities
+            \item More powerful nodes, take more responsibility
+        \end{itemize}
+    \item
+        Churn (joins and leaves) generates \alert{little to no} overhead\\
+        \begin{itemize}
+            \item Stealth join requires less overhead
+            \item Joining of Stealth nodes does not require routing
+            updates
+            \item Stealth nodes leaving does not make routing tables stale
+        \end{itemize}
+    \item
+        Security \alert{\sout{(or lack thereof)}}\\
+        \begin{itemize}
+            \item Authentication for the Service nodes ensure that
+            only authorised nodes route and store message
+            \item Stealth nodes cannot commit sniffing, corruption
+            attacks
+        \end{itemize}
+%    \item
+%        Digital Rights Management (\alert{well nearly})
+%        \begin{itemize}
+%            \item Only authenticated nodes are permitted to put
+%            content into the network
+%        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\subsection[Stealth DHTs - How do they work?]{Stealth DHTs - How do they work?}
+
+\pgfdeclareimage[height=6.5cm]{Join1}{Diagrams/Pastry1}
+\pgfdeclareimage[height=6.5cm]{Join2}{Diagrams/Pastry2}
+\pgfdeclareimage[height=6.5cm]{Join3}{Diagrams/Pastry3}
+\pgfdeclareimage[height=6.5cm]{Join4}{Diagrams/Pastry4}
+\pgfdeclareimage[height=6.5cm]{Join5}{Diagrams/Pastry5}
+\pgfdeclareimage[height=6.5cm]{Join6}{Diagrams/Pastry6}
+\pgfdeclareimage[height=6.5cm]{Join7}{Diagrams/Pastry7}
+\pgfdeclareimage[height=6.5cm]{Join8}{Diagrams/Pastry8}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+    \pgfuseimage{Join1}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{Join2}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{Join3}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{Join4}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{Join5}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{Join6}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{Join7}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pastry's Join - Announcement}
+  \begin{center}
+  \pgfuseimage{Join8}
+  \end{center}
+\end{frame}
+
+\pgfdeclareimage[height=7cm]{SJoin1}{Diagrams/Join1}
+\pgfdeclareimage[height=7cm]{SJoin2}{Diagrams/Join2}
+\pgfdeclareimage[height=7cm]{SJoin3}{Diagrams/Join3}
+\pgfdeclareimage[height=7cm]{SJoin4}{Diagrams/Join4}
+\pgfdeclareimage[height=7cm]{SJoin5}{Diagrams/Join5}
+\pgfdeclareimage[height=7cm]{SJoin6}{Diagrams/Join6}
+\pgfdeclareimage[height=7cm]{SJoin7}{Diagrams/Join7}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+    \pgfuseimage{SJoin1}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{SJoin2}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{SJoin3}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{SJoin4}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{SJoin5}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{SJoin6}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - State Gathering}
+  \begin{center}
+  \pgfuseimage{SJoin7}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Stealth Node's Join - Announcement}
+  \begin{center}
+  \alert{and NO announcement!}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{How does it work? - Summary}
+  \begin{itemize}
+
+    \item Service nodes join normally
+    \item Stealth nodes join but do not announce
+    \\~\\
+    \item Therefore
+      \begin{itemize}
+        \item Stealth nodes never appear in any node's routing tables
+        \item Stealth nodes still have complete routing tables, thus resistance and optimal routing (of their own messages)
+        \item Stealth nodes are not responsible for routing, or storing keys, etc
+        \item Stealth node's churn affects no one
+        \item Stealth nodes are effectively invisible
+      \end{itemize}
+    \item However
+      \begin{itemize}
+        \item Stealth nodes won't receiving routing updates
+      \end{itemize}
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{How does it work? - Summary}
+  However Stealth nodes don't receiving routing updates. (ie knowledge that new service nodes have joined)\\
+  Therefore they have an increasingly stale routing table \\
+  ~\\
+  Three solutions to this:
+  \begin{itemize}
+    \item Polling for updates
+    \item Piggy backing updates
+    \item Periodically rejoining the network
+  \end{itemize}
+\end{frame}
+
+\section{Evaluation}
+
+\subsection[Methodology]{Methodology}
+
+\begin{frame}
+  \frametitle{Methodology}
+  \begin{itemize}
+  \item
+    Implementation
+    \begin{itemize}
+      \item Wrote a Peer-to-Peer simulator in java
+      \item Implemented both Pastry and Stealth DHT (based on
+      Pastry)
+    \end{itemize}
+%    ~\\
+  \item
+    Constructed networks of 1-1000 peers
+    \begin{itemize}
+      \item 1000 Router transit-stub GT-ITM network (4\% transit nodes)
+      \item Each stub/edge router was a wifi access point
+      \item Connected Stealth nodes in a random fashion to the APs
+      \item Connected Service nodes in a random fashion via wired
+      links to the APs
+%      \item Varying numbers of service and stealth nodes
+    \end{itemize}
+%    ~\\
+  \item
+    Simulations (Realistic Scenario)
+    \begin{itemize}
+      \item Place 1 million keys in the network
+      \item Requested keys due to a Zipf distribution $\alpha = 1.2$
+      \item With and Without Mobility Churn
+        \begin{itemize}
+            \item Random Waypoint Model with mean 60min "thinking" times
+        \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\pgfdeclareimage[height=6.5cm]{Mobile}{Diagrams/Mobile}
+\begin{frame}
+  \frametitle{Methodology}
+  \begin{columns}
+
+    \column{6cm}
+    \pgfuseimage{Mobile}
+
+    \column{5cm}
+    \begin{itemize}
+      \item Service Nodes
+      \begin{itemize}
+        \item PCs (workstation/servers etc)
+        \item Connected via a wired Network
+      \end{itemize}
+      ~\\
+      \item Stealth Nodes
+      \begin{itemize}
+        \item Mobile devices
+        \item Connected via the wifi Access Points
+      \end{itemize}
+      ~\\
+      \item Service/Stealth all in the same DHT
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+%\subsection[Results part 1]{Results part 1}
+%
+%    \begin{frame}
+%  \frametitle{Average messages per node during join vs DHT size}
+%  \begin{center}
+%    \pgfdeclareimage[height=6.8cm]{join_per_peer}{Diagrams/join_per_peer}
+%    \pgfuseimage{join_per_peer}
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{Average DHT hops vs DHT size}
+%  \begin{center}
+%    \pgfdeclareimage[height=7cm]{hops}{Diagrams/hops}
+%    \pgfuseimage{hops}
+%  \end{center}
+%\end{frame}
+
+%\begin{frame}
+%  \frametitle{Average DHT hops vs \# of Stealth nodes}
+%  \begin{center}
+%    \pgfdeclareimage[height=7cm]{hops_vs_stealth}{Diagrams/hops_vs_stealth}
+%    \pgfuseimage{hops_vs_stealth}
+%  \end{center}
+%\end{frame}
+
+%\begin{frame}
+%  \frametitle{Stretch vs DHT size}
+%  \begin{center}
+%    \pgfdeclareimage[height=6cm]{churnstretch}{Diagrams/churnstretch}
+%    \pgfuseimage{churnstretch}\\
+%    Stretch = DHT End-to-end delay / Unicast End-to-end delay
+%  \end{center}
+%\end{frame}
+
+%\begin{frame}
+%  \frametitle{Recv'ed messages per node vs DHT size}
+%  \begin{center}
+%    \pgfdeclareimage[height=7cm]{recv_per_node}{Diagrams/recv_per_node}
+%    \pgfuseimage{recv_per_node}\\
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{Recv'ed messages per node vs DHT size (with Churn)}
+%  \begin{center}
+%    \pgfdeclareimage[height=7cm]{recv_per_node_churn}{Diagrams/recv_per_node_churn}
+%    \pgfuseimage{recv_per_node_churn}\\
+%  \end{center}
+%\end{frame}
+
+\subsection[Results]{Results}
+%
+%\begin{frame}
+%  \frametitle{Network Stress vs DHT size}
+%  \begin{center}
+%    \pgfdeclareimage[height=7cm]{stress}{Diagrams/stress}
+%    \pgfuseimage{stress}\\
+%  \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%  \frametitle{Network Stress vs DHT size (with Churn)}
+%  \begin{center}
+%    \pgfdeclareimage[height=7cm]{stress_churn}{Diagrams/stress_churn}
+%    \pgfuseimage{stress_churn}\\
+%  \end{center}
+%\end{frame}
+
+\begin{frame}
+  \frametitle{Results - Introduction}
+  \begin{itemize}
+    \item All plots show 1000 Peer networks
+    \begin{itemize}
+        \item 1\% Service nodes
+        \item 99\% Stealth nodes
+    \end{itemize}
+    ~\\
+    \item Plots on the x-axis show fractions of Stealth nodes who were wireless vs wired
+    ~\\~\\
+    \item Moving \{Stealth, Pastry\} refers to simulations where wireless nodes
+    moved from AP point to AP. (A new IP is obtained)
+    \item Static \{Stealth, Pastry\} refer to simulations where nodes
+    did not move
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Total number of messages}
+  \begin{center}
+    \pgfdeclareimage[height=6.75cm]{mobile_messages}{Diagrams/mobile_messagecount}
+    \pgfuseimage{mobile_messages}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Failed packets due to nodes being unreachable}
+
+  \begin{center}
+    \pgfdeclareimage[height=7cm]{mobile_unreachable}{Diagrams/mobile_unreachable}
+    \pgfuseimage{mobile_unreachable}\\
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Average lookup latency}
+
+  \begin{center}
+    \pgfdeclareimage[height=7cm]{mobile_lookup}{Diagrams/mobile_lookup}
+    \pgfuseimage{mobile_lookup}\\
+  \end{center}
+
+\end{frame}
+
+
+\section{Summary}
+
+\subsection[Summary and Outlook]{Summary and Outlook}
+
+\begin{frame}
+  \frametitle<presentation>{Summary}
+
+  Stealth DHT
+  \begin{itemize}
+  \item
+    \alert{Partitions the network} into two groups
+  \item
+    \alert{Increases DHT performance} in most areas
+  \item
+    \alert{Returns control} to the service operator
+  \end{itemize}
+
+  % The following outlook is optional.
+  \vskip0pt plus.5fill
+Outlook
+  \begin{itemize}
+    \item
+      Investigate \alert{possible applications} to run on top of a Stealth DHT
+      \begin{itemize}
+        \item Content Distribution Networks
+        \item Novel Peer-to-Peer Applications
+      \end{itemize}
+
+    \item
+      Automatically decide who is Stealth/Service node, and
+      change them on the fly
+
+    \item
+      Look in detail how this can be applied to MANETs
+  \end{itemize}
+\end{frame}
+
+%\subsection[Current state of work]{Current state of work}
+%
+%\begin{frame}
+%  \frametitle{Current state of work}
+%
+%  Stealth DHT
+%  \begin{itemize}
+%  \item
+%    We have a C++ implementation running on planetlab
+%  \item
+%    We have an Authentication model to enforce roles (and improve security)
+%  \end{itemize}
+%
+%\end{frame}
+
+\subsection[Thank you]{Thank you}
+
+\begin{frame}
+  \frametitle{Thank you for listening}
+  \begin{center}
+    \alert{Questions?}
+    \titlepage
+  \end{center}
+\end{frame}
+
+\end{document}
