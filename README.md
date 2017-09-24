@@ -1,7 +1,7 @@
 Publication
 ===========
 
-A selection of Andrew Brampton's publications (with source tex/resources/etc)
+A selection of [Andrew Brampton](https://bramp.net)'s publications (with source tex/resources/etc)
 
 Index
 -----
